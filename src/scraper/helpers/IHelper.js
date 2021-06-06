@@ -35,7 +35,7 @@ export default class IHelper {
    * @returns {Promise<Object>} - Object with banner, fanart and poster
    * images.
    */
-  getImages({tmdbId, imdbId, tvdbId}: Object): Promise<Object> {
+  getImages({ tmdbId, imdbId, tvdbId }: Object): Promise<Object> {
     throw new Error('Using default method: \'getImages\'')
   }
 

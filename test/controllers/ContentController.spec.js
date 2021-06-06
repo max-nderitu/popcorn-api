@@ -1,7 +1,8 @@
 // Import the necessary modules.
 // @flow
 /* eslint-disable no-unused-expressions */
-import 'dotenv/config'
+import dotenv from 'dotenv'
+
 import { expect } from 'chai'
 import express, { type $Application } from 'express'
 import request from 'supertest'
@@ -23,6 +24,7 @@ import {
   Show
 } from '../../src/models'
 import { name } from '../../package.json'
+dotenv.config()
 
 /**
   * Test suite for fetching content from the database.

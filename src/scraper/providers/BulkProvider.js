@@ -30,7 +30,7 @@ export default class BulkProvider extends BaseProvider {
     Model,
     Helper
   }: Object): Promise<Array<Object>> {
-    this.setConfig({name, api, contentType, Model, Helper})
+    this.setConfig({ name, api, contentType, Model, Helper })
 
     logger.info(`${this.name}: Started scraping...`)
     return this.api.getAll().then(contents => {

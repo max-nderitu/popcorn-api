@@ -1,6 +1,7 @@
 // Import the necessary modules.
 // @flow
-import 'dotenv/config'
+import dotenv from 'dotenv'
+
 import { isMaster } from 'cluster'
 import { join } from 'path'
 import {
@@ -22,6 +23,7 @@ import {
   name,
   version
 } from '../package.json'
+dotenv.config();
 
 /** Setup the api. */
 (async () => {

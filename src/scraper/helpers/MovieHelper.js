@@ -206,7 +206,7 @@ export default class MovieHelper extends AbstractHelper {
    * from.
    * @returns {Promise<Object>} - Object with banner, fanart and poster images.
    */
-  getImages({tmdbId, imdbId}: Object): Promise<Object> {
+  getImages({ tmdbId, imdbId }: Object): Promise<Object> {
     return this._getTmdbImages(imdbId)
       .catch(() => this._getOmdbImages(tmdbId))
       .catch(() => this._getFanartImages(tmdbId))

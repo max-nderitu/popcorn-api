@@ -357,7 +357,7 @@ export default class ShowHelper extends AbstractHelper {
    * from.
    * @returns {Promise<Object>} - Object with banner, fanart and poster images.
    */
-  getImages({tmdbId, tvdbId}: Object): Promise<Object> {
+  getImages({ tmdbId, tvdbId }: Object): Promise<Object> {
     return this._getTmdbImages(tmdbId)
       .catch(() => this._getTvdbImages(tvdbId))
       .catch(() => this._getFanartImages(tmdbId))

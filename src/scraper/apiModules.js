@@ -1,6 +1,7 @@
 // Import the necessary modules.
 // @flow
-import 'dotenv/config'
+import dotenv from 'dotenv'
+
 /**
  * An EZTV API wrapper to get data from eztv.ag.
  * @external {Eztv} https://github.com/ChrisAlderson/eztv-api-pt
@@ -51,6 +52,7 @@ import Tvdb from 'node-tvdb'
  * @external {Yts} https://github.com/ChrisAlderson/yts-api-pt
  */
 import Yts from 'yts-api-pt'
+dotenv.config()
 
 /**
  * A configured Eztv API.

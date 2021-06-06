@@ -26,7 +26,7 @@ export default class MovieProvider extends BaseProvider {
    * @returns {Object|undefined} - Information about the content from the
    * torrent.
    */
-  extractContent({torrent, regex, lang}: Object): Object | void {
+  extractContent({ torrent, regex, lang }: Object): Object | void {
     let movieTitle
     let slug
 
@@ -89,7 +89,7 @@ export default class MovieProvider extends BaseProvider {
    * @param {!string} [options.lang] - The language of the torrent.
    * @returns {Object} - The content with the newly attached torrent.
    */
-  attachTorrent({movie, torrent, quality, lang}: Object): Object {
+  attachTorrent({ movie, torrent, quality, lang }: Object): Object {
     if (!movie.torrents[lang]) {
       movie.torrents[lang] = {}
     }

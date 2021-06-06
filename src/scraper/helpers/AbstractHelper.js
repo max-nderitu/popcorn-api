@@ -51,7 +51,7 @@ export default class AbstractHelper extends IHelper {
    * @param {!string} name - The name of the content provider.
    * @param {!AnimeMovie|AnimeShow|Movie|Show} Model - The model to help fill.
    */
-  constructor({name, Model}: Object): void {
+  constructor({ name, Model }: Object): void {
     super()
 
     /**

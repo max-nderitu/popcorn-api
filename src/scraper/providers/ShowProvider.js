@@ -24,7 +24,7 @@ export default class ShowProvider extends BaseProvider {
    * @returns {Object|undefined} - Information about the content from the
    * torrent.
    */
-  extractContent({torrent, regex}: Object): Object | void {
+  extractContent({ torrent, regex }: Object): Object | void {
     let episode
     let season
     let slug
@@ -133,7 +133,7 @@ export default class ShowProvider extends BaseProvider {
    * @returns {Promise<Array<Object>, Error>} - A list of object with
    * content information extracted from the torrents.
    */
-  getAllContent({torrents}: Object): Promise<Array<Object>> {
+  getAllContent({ torrents }: Object): Promise<Array<Object>> {
     const shows = new Map()
 
     return pMap(torrents, t => {

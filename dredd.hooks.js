@@ -1,6 +1,7 @@
 // Import the neccesary modules.
 // @flow
-import 'dotenv/config'
+import dotenv from 'dotenv'
+
 // @flow-ignore
 import hooks from 'hooks'
 import pMap from 'p-map'
@@ -22,6 +23,8 @@ import {
   Show
 } from './src/models'
 import { name } from './package'
+// import { config } from 'chai'
+dotenv.config()
 
 process.env.TEMP_DIR = process.env.TEMP_DIR || join(...['tmp'])
 
