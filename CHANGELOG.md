@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.4.5"></a>
+## [3.4.5](https://github.com/popcorn-official/popcorn-api/compare/v3.5.1...v3.4.5) (2021-06-06)
+
+
+
+<a name="3.4.4"></a>
+## [3.4.4](https://github.com/popcorn-official/popcorn-api/compare/v3.5.1...v3.4.4) (2021-06-06)
+
+
+
+<a name="3.4.3"></a>
+## [3.4.3](https://github.com/popcorn-official/popcorn-api/compare/v3.5.1...v3.4.3) (2021-06-06)
+
+
+
+<a name="3.4.2"></a>
+## [3.4.2](https://github.com/popcorn-official/popcorn-api/compare/v3.5.1...v3.4.2) (2021-06-06)
+
+
+
+<a name="3.4.1"></a>
+## [3.4.1](https://github.com/popcorn-official/popcorn-api/compare/v3.5.1...v3.4.1) (2021-06-06)
+
+
+
 <a name="3.5.1"></a>
 ## [3.5.1](https://github.com/popcorn-official/popcorn-api/compare/v3.5.0...v3.5.1) (2021-06-06)
 

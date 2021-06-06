@@ -61,7 +61,7 @@
       },
       {
         "lineNumber": 37,
-        "line": "  getImages({tmdbId, imdbId, tvdbId}: Object): Promise<Object> {"
+        "line": "  getImages({ tmdbId, imdbId, tvdbId }: Object): Promise<Object> {"
       }
     ],
     "codeParams": [
@@ -119,7 +119,7 @@
       },
       {
         "lineNumber": 208,
-        "line": "  getImages({tmdbId, imdbId}: Object): Promise<Object> {"
+        "line": "  getImages({ tmdbId, imdbId }: Object): Promise<Object> {"
       }
     ],
     "codeParams": [
@@ -176,7 +176,7 @@
       },
       {
         "lineNumber": 359,
-        "line": "  getImages({tmdbId, tvdbId}: Object): Promise<Object> {"
+        "line": "  getImages({ tmdbId, tvdbId }: Object): Promise<Object> {"
       }
     ],
     "codeParams": [
@@ -249,7 +249,7 @@
       },
       {
         "lineNumber": 140,
-        "line": "  extractContent({torrent, regex, lang}: Object): Object | void {"
+        "line": "  extractContent({ torrent, regex, lang }: Object): Object | void {"
       }
     ],
     "codeParams": [
@@ -318,7 +318,7 @@
       },
       {
         "lineNumber": 28,
-        "line": "  extractContent({torrent, regex, lang}: Object): Object | void {"
+        "line": "  extractContent({ torrent, regex, lang }: Object): Object | void {"
       }
     ],
     "codeParams": [
@@ -379,7 +379,7 @@
       },
       {
         "lineNumber": 22,
-        "line": "  extractContent({torrent, lang}: Object): Object | void {"
+        "line": "  extractContent({ torrent, lang }: Object): Object | void {"
       }
     ],
     "codeParams": [

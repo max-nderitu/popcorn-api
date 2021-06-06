@@ -535,115 +535,115 @@ window.esdocSearchIndex = [
   ],
   [
     "contentcontroller src/controllers/contentcontroller.js~contentcontroller,contentcontroller",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber40",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber42",
     "ContentController",
     "test"
   ],
   [
     "contentcontroller#constructor contentcontroller#constructor,contentcontroller#constructor",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber99",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber101",
     "ContentController should check the attributes of the ContentController",
     "test"
   ],
   [
     "contentcontroller#registerroutes src/controllers/contentcontroller.js~contentcontroller#registerroutes,contentcontroller#registerroutes",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber107",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber109",
     "ContentController should not throw an error when calling the implemented registerRoutes method",
     "test"
   ],
   [
     "contentcontroller src/controllers/contentcontroller.js~contentcontroller,contentcontroller",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber248",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber250",
     "ContentController will throw errors",
     "test"
   ],
   [
     "contentcontroller#getcontents contentcontroller#getcontents,contentcontroller#getcontents",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber250",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber252",
     "ContentController will throw errors ",
     "test"
   ],
   [
     "contentcontroller#getpage src/controllers/contentcontroller.js~contentcontroller#getpage,contentcontroller#getpage",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber264",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber266",
     "ContentController will throw errors ",
     "test"
   ],
   [
     "contentcontroller#getcontent contentcontroller#getcontent,contentcontroller#getcontent",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber278",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber280",
     "ContentController will throw errors ",
     "test"
   ],
   [
     "contentcontroller#getrandomcontent contentcontroller#getrandomcontent,contentcontroller#getrandomcontent",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber292",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber294",
     "ContentController will throw errors ",
     "test"
   ],
   [
     "contentcontroller src/controllers/contentcontroller.js~contentcontroller,contentcontroller",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber158",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber160",
     "ContentController with a filled database",
     "test"
   ],
   [
     "contentcontroller#getpage src/controllers/contentcontroller.js~contentcontroller#getpage,contentcontroller#getpage",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber190",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber192",
     "ContentController with a filled database ",
     "test"
   ],
   [
     "contentcontroller#getpage src/controllers/contentcontroller.js~contentcontroller#getpage,contentcontroller#getpage",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber209",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber211",
     "ContentController with a filled database ",
     "test"
   ],
   [
     "contentcontroller#getcontent contentcontroller#getcontent,contentcontroller#getcontent",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber231",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber233",
     "ContentController with a filled database ",
     "test"
   ],
   [
     "contentcontroller#getrandomcontent contentcontroller#getrandomcontent,contentcontroller#getrandomcontent",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber239",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber241",
     "ContentController with a filled database ",
     "test"
   ],
   [
     "contentcontroller#getcontents contentcontroller#getcontents,contentcontroller#getcontents",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber182",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber184",
     "ContentController with a filled database ",
     "test"
   ],
   [
     "contentcontroller src/controllers/contentcontroller.js~contentcontroller,contentcontroller",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber113",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber115",
     "ContentController with an empty database",
     "test"
   ],
   [
     "contentcontroller#getcontents contentcontroller#getcontents,contentcontroller#getcontents",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber125",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber127",
     "ContentController with an empty database ",
     "test"
   ],
   [
     "contentcontroller#getpage src/controllers/contentcontroller.js~contentcontroller#getpage,contentcontroller#getpage",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber133",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber135",
     "ContentController with an empty database ",
     "test"
   ],
   [
     "contentcontroller#getcontent contentcontroller#getcontent,contentcontroller#getcontent",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber141",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber143",
     "ContentController with an empty database ",
     "test"
   ],
   [
     "contentcontroller#getrandomcontent contentcontroller#getrandomcontent,contentcontroller#getrandomcontent",
-    "test-file/test/controllers/ContentController.spec.js.html#lineNumber149",
+    "test-file/test/controllers/ContentController.spec.js.html#lineNumber151",
     "ContentController with an empty database ",
     "test"
   ],
