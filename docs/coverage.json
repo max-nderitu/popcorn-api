@@ -1,0 +1,188 @@
+{
+  "coverage": "91.89%",
+  "expectCount": 185,
+  "actualCount": 170,
+  "files": {
+    "src/controllers/ContentController.js": {
+      "expectCount": 6,
+      "actualCount": 6,
+      "undocumentLines": []
+    },
+    "src/controllers/ExportController.js": {
+      "expectCount": 3,
+      "actualCount": 3,
+      "undocumentLines": []
+    },
+    "src/controllers/IndexController.js": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
+    },
+    "src/controllers/index.js": {
+      "expectCount": 5,
+      "actualCount": 2,
+      "undocumentLines": [
+        35,
+        49,
+        59
+      ]
+    },
+    "src/middleware/Cli.js": {
+      "expectCount": 19,
+      "actualCount": 19,
+      "undocumentLines": []
+    },
+    "src/middleware/promptschemas.js": {
+      "expectCount": 13,
+      "actualCount": 7,
+      "undocumentLines": [
+        7,
+        28,
+        73,
+        83,
+        148,
+        159
+      ]
+    },
+    "src/models/animemovie/AnimeMovieModel.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/models/animeshow/AnimeShowModel.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/models/content/ContentModel.js": {
+      "expectCount": 13,
+      "actualCount": 13,
+      "undocumentLines": []
+    },
+    "src/models/content/contentSchema.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        8
+      ]
+    },
+    "src/models/movie/MovieModel.js": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "src/models/movie/movieSchema.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/models/providerconfig/ProviderConfigModel.js": {
+      "expectCount": 10,
+      "actualCount": 10,
+      "undocumentLines": []
+    },
+    "src/models/show/ShowModel.js": {
+      "expectCount": 12,
+      "actualCount": 12,
+      "undocumentLines": []
+    },
+    "src/models/show/showSchema.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/scraper/apiModules.js": {
+      "expectCount": 10,
+      "actualCount": 10,
+      "undocumentLines": []
+    },
+    "src/scraper/configs/bulkConfigs.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        30
+      ]
+    },
+    "src/scraper/configs/movieConfigs.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/scraper/configs/showConfigs.js": {
+      "expectCount": 5,
+      "actualCount": 2,
+      "undocumentLines": [
+        51,
+        64,
+        77
+      ]
+    },
+    "src/scraper/configs/ytsConfigs.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/scraper/helpers/AbstractHelper.js": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "src/scraper/helpers/IHelper.js": {
+      "expectCount": 4,
+      "actualCount": 4,
+      "undocumentLines": []
+    },
+    "src/scraper/helpers/MovieHelper.js": {
+      "expectCount": 9,
+      "actualCount": 9,
+      "undocumentLines": []
+    },
+    "src/scraper/helpers/ShowHelper.js": {
+      "expectCount": 12,
+      "actualCount": 12,
+      "undocumentLines": []
+    },
+    "src/scraper/index.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/scraper/providers/BaseProvider.js": {
+      "expectCount": 20,
+      "actualCount": 20,
+      "undocumentLines": []
+    },
+    "src/scraper/providers/BulkProvider.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "src/scraper/providers/MovieProvider.js": {
+      "expectCount": 4,
+      "actualCount": 4,
+      "undocumentLines": []
+    },
+    "src/scraper/providers/ShowProvider.js": {
+      "expectCount": 4,
+      "actualCount": 4,
+      "undocumentLines": []
+    },
+    "src/scraper/providers/YtsProvider.js": {
+      "expectCount": 3,
+      "actualCount": 3,
+      "undocumentLines": []
+    },
+    "src/scraper/providers/maps/movieMap.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/scraper/providers/maps/showMap.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        7
+      ]
+    }
+  }
+}

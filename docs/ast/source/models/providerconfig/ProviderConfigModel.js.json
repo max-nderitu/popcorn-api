@@ -1,0 +1,6305 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 2495,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 113,
+      "column": 0
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 2495,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 113,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "ImportDeclaration",
+        "start": 42,
+        "end": 74,
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 0
+          },
+          "end": {
+            "line": 3,
+            "column": 32
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportSpecifier",
+            "start": 51,
+            "end": 56,
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 9
+              },
+              "end": {
+                "line": 3,
+                "column": 14
+              }
+            },
+            "imported": {
+              "type": "Identifier",
+              "start": 51,
+              "end": 56,
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 9
+                },
+                "end": {
+                  "line": 3,
+                  "column": 14
+                },
+                "identifierName": "Model"
+              },
+              "name": "Model",
+              "leadingComments": null
+            },
+            "importKind": null,
+            "local": {
+              "type": "Identifier",
+              "start": 51,
+              "end": 56,
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 9
+                },
+                "end": {
+                  "line": 3,
+                  "column": 14
+                },
+                "identifierName": "Model"
+              },
+              "name": "Model"
+            },
+            "leadingComments": null
+          }
+        ],
+        "importKind": "value",
+        "source": {
+          "type": "StringLiteral",
+          "start": 64,
+          "end": 74,
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 22
+            },
+            "end": {
+              "line": 3,
+              "column": 32
+            }
+          },
+          "extra": {
+            "rawValue": "mongoose",
+            "raw": "'mongoose'"
+          },
+          "value": "mongoose",
+          "leadingComments": null,
+          "trailingComments": null
+        },
+        "leadingComments": [
+          {
+            "type": "CommentLine",
+            "value": " Import the necessary modules.",
+            "start": 0,
+            "end": 32,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 1,
+                "column": 32
+              }
+            }
+          },
+          {
+            "type": "CommentLine",
+            "value": " @flow",
+            "start": 33,
+            "end": 41,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 2,
+                "column": 8
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Class for provider configuration attributes and methods.\n * @extends {Model}\n * @type {ProviderConfigModel}\n ",
+            "start": 76,
+            "end": 194,
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 0
+              },
+              "end": {
+                "line": 9,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 195,
+        "end": 2494,
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 0
+          },
+          "end": {
+            "line": 112,
+            "column": 1
+          }
+        },
+        "declaration": {
+          "type": "ClassDeclaration",
+          "start": 210,
+          "end": 2494,
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 15
+            },
+            "end": {
+              "line": 112,
+              "column": 1
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 216,
+            "end": 235,
+            "loc": {
+              "start": {
+                "line": 10,
+                "column": 21
+              },
+              "end": {
+                "line": 10,
+                "column": 40
+              },
+              "identifierName": "ProviderConfigModel"
+            },
+            "name": "ProviderConfigModel",
+            "leadingComments": null
+          },
+          "superClass": {
+            "type": "Identifier",
+            "start": 244,
+            "end": 249,
+            "loc": {
+              "start": {
+                "line": 10,
+                "column": 49
+              },
+              "end": {
+                "line": 10,
+                "column": 54
+              },
+              "identifierName": "Model"
+            },
+            "name": "Model"
+          },
+          "body": {
+            "type": "ClassBody",
+            "start": 250,
+            "end": 2494,
+            "loc": {
+              "start": {
+                "line": 10,
+                "column": 55
+              },
+              "end": {
+                "line": 112,
+                "column": 1
+              }
+            },
+            "body": [
+              {
+                "type": "ClassProperty",
+                "start": 330,
+                "end": 341,
+                "loc": {
+                  "start": {
+                    "line": 16,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 16,
+                    "column": 13
+                  }
+                },
+                "static": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 330,
+                  "end": 333,
+                  "loc": {
+                    "start": {
+                      "line": 16,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 16,
+                      "column": 5
+                    },
+                    "identifierName": "_id"
+                  },
+                  "name": "_id",
+                  "leadingComments": null
+                },
+                "variance": null,
+                "typeAnnotation": {
+                  "type": "TypeAnnotation",
+                  "start": 333,
+                  "end": 341,
+                  "loc": {
+                    "start": {
+                      "line": 16,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 16,
+                      "column": 13
+                    }
+                  },
+                  "typeAnnotation": {
+                    "type": "StringTypeAnnotation",
+                    "start": 335,
+                    "end": 341,
+                    "loc": {
+                      "start": {
+                        "line": 16,
+                        "column": 7
+                      },
+                      "end": {
+                        "line": 16,
+                        "column": 13
+                      }
+                    },
+                    "trailingComments": null
+                  },
+                  "trailingComments": null
+                },
+                "value": null,
+                "leadingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n * @desc \n * The id of the provider configuration. \n * @type \n * {string} \n * @type \n * {string} \n",
+                    "start": 255,
+                    "end": 327,
+                    "loc": {
+                      "start": {
+                        "line": 12,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 15,
+                        "column": 5
+                      }
+                    }
+                  }
+                ],
+                "trailingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n   * The API of the provider configuration.\n   * @type {string}\n   ",
+                    "start": 345,
+                    "end": 418,
+                    "loc": {
+                      "start": {
+                        "line": 18,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 21,
+                        "column": 5
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ClassProperty",
+                "start": 421,
+                "end": 432,
+                "loc": {
+                  "start": {
+                    "line": 22,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 22,
+                    "column": 13
+                  }
+                },
+                "static": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 421,
+                  "end": 424,
+                  "loc": {
+                    "start": {
+                      "line": 22,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 22,
+                      "column": 5
+                    },
+                    "identifierName": "api"
+                  },
+                  "name": "api",
+                  "leadingComments": null
+                },
+                "variance": null,
+                "typeAnnotation": {
+                  "type": "TypeAnnotation",
+                  "start": 424,
+                  "end": 432,
+                  "loc": {
+                    "start": {
+                      "line": 22,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 22,
+                      "column": 13
+                    }
+                  },
+                  "typeAnnotation": {
+                    "type": "StringTypeAnnotation",
+                    "start": 426,
+                    "end": 432,
+                    "loc": {
+                      "start": {
+                        "line": 22,
+                        "column": 7
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 13
+                      }
+                    },
+                    "trailingComments": null
+                  },
+                  "trailingComments": null
+                },
+                "value": null,
+                "leadingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n * @desc \n * The API of the provider configuration. \n * @type \n * {string} \n * @type \n * {string} \n",
+                    "start": 345,
+                    "end": 418,
+                    "loc": {
+                      "start": {
+                        "line": 18,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 21,
+                        "column": 5
+                      }
+                    }
+                  }
+                ],
+                "trailingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n   * The modelType of the provider configuration.\n   * @type {string}\n   ",
+                    "start": 436,
+                    "end": 515,
+                    "loc": {
+                      "start": {
+                        "line": 24,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 27,
+                        "column": 5
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ClassProperty",
+                "start": 518,
+                "end": 535,
+                "loc": {
+                  "start": {
+                    "line": 28,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 28,
+                    "column": 19
+                  }
+                },
+                "static": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 518,
+                  "end": 527,
+                  "loc": {
+                    "start": {
+                      "line": 28,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 28,
+                      "column": 11
+                    },
+                    "identifierName": "modelType"
+                  },
+                  "name": "modelType",
+                  "leadingComments": null
+                },
+                "variance": null,
+                "typeAnnotation": {
+                  "type": "TypeAnnotation",
+                  "start": 527,
+                  "end": 535,
+                  "loc": {
+                    "start": {
+                      "line": 28,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 28,
+                      "column": 19
+                    }
+                  },
+                  "typeAnnotation": {
+                    "type": "StringTypeAnnotation",
+                    "start": 529,
+                    "end": 535,
+                    "loc": {
+                      "start": {
+                        "line": 28,
+                        "column": 13
+                      },
+                      "end": {
+                        "line": 28,
+                        "column": 19
+                      }
+                    },
+                    "trailingComments": null
+                  },
+                  "trailingComments": null
+                },
+                "value": null,
+                "leadingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n * @desc \n * The modelType of the provider configuration. \n * @type \n * {string} \n * @type \n * {string} \n",
+                    "start": 436,
+                    "end": 515,
+                    "loc": {
+                      "start": {
+                        "line": 24,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 27,
+                        "column": 5
+                      }
+                    }
+                  }
+                ],
+                "trailingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n   * The name of the provider configuration.\n   * @type {string}\n   ",
+                    "start": 539,
+                    "end": 613,
+                    "loc": {
+                      "start": {
+                        "line": 30,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 33,
+                        "column": 5
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ClassProperty",
+                "start": 616,
+                "end": 628,
+                "loc": {
+                  "start": {
+                    "line": 34,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 34,
+                    "column": 14
+                  }
+                },
+                "static": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 616,
+                  "end": 620,
+                  "loc": {
+                    "start": {
+                      "line": 34,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 34,
+                      "column": 6
+                    },
+                    "identifierName": "name"
+                  },
+                  "name": "name",
+                  "leadingComments": null
+                },
+                "variance": null,
+                "typeAnnotation": {
+                  "type": "TypeAnnotation",
+                  "start": 620,
+                  "end": 628,
+                  "loc": {
+                    "start": {
+                      "line": 34,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 34,
+                      "column": 14
+                    }
+                  },
+                  "typeAnnotation": {
+                    "type": "StringTypeAnnotation",
+                    "start": 622,
+                    "end": 628,
+                    "loc": {
+                      "start": {
+                        "line": 34,
+                        "column": 8
+                      },
+                      "end": {
+                        "line": 34,
+                        "column": 14
+                      }
+                    },
+                    "trailingComments": null
+                  },
+                  "trailingComments": null
+                },
+                "value": null,
+                "leadingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n * @desc \n * The name of the provider configuration. \n * @type \n * {string} \n * @type \n * {string} \n",
+                    "start": 539,
+                    "end": 613,
+                    "loc": {
+                      "start": {
+                        "line": 30,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 33,
+                        "column": 5
+                      }
+                    }
+                  }
+                ],
+                "trailingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n   * The type of the provider configuration.\n   * @type {string}\n   ",
+                    "start": 632,
+                    "end": 706,
+                    "loc": {
+                      "start": {
+                        "line": 36,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 39,
+                        "column": 5
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ClassProperty",
+                "start": 709,
+                "end": 721,
+                "loc": {
+                  "start": {
+                    "line": 40,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 40,
+                    "column": 14
+                  }
+                },
+                "static": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 709,
+                  "end": 713,
+                  "loc": {
+                    "start": {
+                      "line": 40,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 40,
+                      "column": 6
+                    },
+                    "identifierName": "type"
+                  },
+                  "name": "type",
+                  "leadingComments": null
+                },
+                "variance": null,
+                "typeAnnotation": {
+                  "type": "TypeAnnotation",
+                  "start": 713,
+                  "end": 721,
+                  "loc": {
+                    "start": {
+                      "line": 40,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 40,
+                      "column": 14
+                    }
+                  },
+                  "typeAnnotation": {
+                    "type": "StringTypeAnnotation",
+                    "start": 715,
+                    "end": 721,
+                    "loc": {
+                      "start": {
+                        "line": 40,
+                        "column": 8
+                      },
+                      "end": {
+                        "line": 40,
+                        "column": 14
+                      }
+                    },
+                    "trailingComments": null
+                  },
+                  "trailingComments": null
+                },
+                "value": null,
+                "leadingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n * @desc \n * The type of the provider configuration. \n * @type \n * {string} \n * @type \n * {string} \n",
+                    "start": 632,
+                    "end": 706,
+                    "loc": {
+                      "start": {
+                        "line": 36,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 39,
+                        "column": 5
+                      }
+                    }
+                  }
+                ],
+                "trailingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n   * The clazz of the provider configuration.\n   * @type {string}\n   ",
+                    "start": 725,
+                    "end": 800,
+                    "loc": {
+                      "start": {
+                        "line": 42,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 45,
+                        "column": 5
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ClassProperty",
+                "start": 803,
+                "end": 816,
+                "loc": {
+                  "start": {
+                    "line": 46,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 46,
+                    "column": 15
+                  }
+                },
+                "static": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 803,
+                  "end": 808,
+                  "loc": {
+                    "start": {
+                      "line": 46,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 46,
+                      "column": 7
+                    },
+                    "identifierName": "clazz"
+                  },
+                  "name": "clazz",
+                  "leadingComments": null
+                },
+                "variance": null,
+                "typeAnnotation": {
+                  "type": "TypeAnnotation",
+                  "start": 808,
+                  "end": 816,
+                  "loc": {
+                    "start": {
+                      "line": 46,
+                      "column": 7
+                    },
+                    "end": {
+                      "line": 46,
+                      "column": 15
+                    }
+                  },
+                  "typeAnnotation": {
+                    "type": "StringTypeAnnotation",
+                    "start": 810,
+                    "end": 816,
+                    "loc": {
+                      "start": {
+                        "line": 46,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 46,
+                        "column": 15
+                      }
+                    },
+                    "trailingComments": null
+                  },
+                  "trailingComments": null
+                },
+                "value": null,
+                "leadingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n * @desc \n * The clazz of the provider configuration. \n * @type \n * {string} \n * @type \n * {string} \n",
+                    "start": 725,
+                    "end": 800,
+                    "loc": {
+                      "start": {
+                        "line": 42,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 45,
+                        "column": 5
+                      }
+                    }
+                  }
+                ],
+                "trailingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n   * The query of the provider configuration.\n   * @type {Object}\n   ",
+                    "start": 820,
+                    "end": 895,
+                    "loc": {
+                      "start": {
+                        "line": 48,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 51,
+                        "column": 5
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ClassProperty",
+                "start": 898,
+                "end": 911,
+                "loc": {
+                  "start": {
+                    "line": 52,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 52,
+                    "column": 15
+                  }
+                },
+                "static": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 898,
+                  "end": 903,
+                  "loc": {
+                    "start": {
+                      "line": 52,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 52,
+                      "column": 7
+                    },
+                    "identifierName": "query"
+                  },
+                  "name": "query",
+                  "leadingComments": null
+                },
+                "variance": null,
+                "typeAnnotation": {
+                  "type": "TypeAnnotation",
+                  "start": 903,
+                  "end": 911,
+                  "loc": {
+                    "start": {
+                      "line": 52,
+                      "column": 7
+                    },
+                    "end": {
+                      "line": 52,
+                      "column": 15
+                    }
+                  },
+                  "typeAnnotation": {
+                    "type": "GenericTypeAnnotation",
+                    "start": 905,
+                    "end": 911,
+                    "loc": {
+                      "start": {
+                        "line": 52,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 52,
+                        "column": 15
+                      }
+                    },
+                    "typeParameters": null,
+                    "id": {
+                      "type": "Identifier",
+                      "start": 905,
+                      "end": 911,
+                      "loc": {
+                        "start": {
+                          "line": 52,
+                          "column": 9
+                        },
+                        "end": {
+                          "line": 52,
+                          "column": 15
+                        },
+                        "identifierName": "Object"
+                      },
+                      "name": "Object",
+                      "leadingComments": null,
+                      "trailingComments": null
+                    },
+                    "trailingComments": null
+                  },
+                  "trailingComments": null
+                },
+                "value": null,
+                "leadingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n * @desc \n * The query of the provider configuration. \n * @type \n * {Object} \n * @type \n * {Object} \n",
+                    "start": 820,
+                    "end": 895,
+                    "loc": {
+                      "start": {
+                        "line": 48,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 51,
+                        "column": 5
+                      }
+                    }
+                  }
+                ],
+                "trailingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n   * Create a new ProviderConfig object.\n   * @param {!Object} config - The configuration object for the content.\n   * @param {!string} api - The API of the provider configuration.\n   * @param {!string} modelType - The modelType of the provider configuration.\n   * @param {!string} name - The name of the provider configuration.\n   * @param {!string} type - The type of the provider configuration.\n   * @param {!string} clazz - The clazz of the provider configuration.\n   * @param {?Object} query - The query of the provider configuration.\n   ",
+                    "start": 915,
+                    "end": 1464,
+                    "loc": {
+                      "start": {
+                        "line": 54,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 63,
+                        "column": 5
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ClassMethod",
+                "start": 1467,
+                "end": 2317,
+                "loc": {
+                  "start": {
+                    "line": 64,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 102,
+                    "column": 3
+                  }
+                },
+                "static": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 1467,
+                  "end": 1478,
+                  "loc": {
+                    "start": {
+                      "line": 64,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 64,
+                      "column": 13
+                    },
+                    "identifierName": "constructor"
+                  },
+                  "name": "constructor",
+                  "leadingComments": null
+                },
+                "kind": "constructor",
+                "id": null,
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "params": [
+                  {
+                    "type": "AssignmentPattern",
+                    "start": 1479,
+                    "end": 1534,
+                    "loc": {
+                      "start": {
+                        "line": 64,
+                        "column": 14
+                      },
+                      "end": {
+                        "line": 64,
+                        "column": 69
+                      }
+                    },
+                    "left": {
+                      "type": "ObjectPattern",
+                      "start": 1479,
+                      "end": 1529,
+                      "loc": {
+                        "start": {
+                          "line": 64,
+                          "column": 14
+                        },
+                        "end": {
+                          "line": 64,
+                          "column": 64
+                        }
+                      },
+                      "properties": [
+                        {
+                          "type": "ObjectProperty",
+                          "start": 1480,
+                          "end": 1483,
+                          "loc": {
+                            "start": {
+                              "line": 64,
+                              "column": 15
+                            },
+                            "end": {
+                              "line": 64,
+                              "column": 18
+                            }
+                          },
+                          "method": false,
+                          "shorthand": true,
+                          "computed": false,
+                          "key": {
+                            "type": "Identifier",
+                            "start": 1480,
+                            "end": 1483,
+                            "loc": {
+                              "start": {
+                                "line": 64,
+                                "column": 15
+                              },
+                              "end": {
+                                "line": 64,
+                                "column": 18
+                              },
+                              "identifierName": "api"
+                            },
+                            "name": "api"
+                          },
+                          "value": {
+                            "type": "Identifier",
+                            "start": 1480,
+                            "end": 1483,
+                            "loc": {
+                              "start": {
+                                "line": 64,
+                                "column": 15
+                              },
+                              "end": {
+                                "line": 64,
+                                "column": 18
+                              },
+                              "identifierName": "api"
+                            },
+                            "name": "api"
+                          },
+                          "extra": {
+                            "shorthand": true
+                          }
+                        },
+                        {
+                          "type": "ObjectProperty",
+                          "start": 1485,
+                          "end": 1494,
+                          "loc": {
+                            "start": {
+                              "line": 64,
+                              "column": 20
+                            },
+                            "end": {
+                              "line": 64,
+                              "column": 29
+                            }
+                          },
+                          "method": false,
+                          "shorthand": true,
+                          "computed": false,
+                          "key": {
+                            "type": "Identifier",
+                            "start": 1485,
+                            "end": 1494,
+                            "loc": {
+                              "start": {
+                                "line": 64,
+                                "column": 20
+                              },
+                              "end": {
+                                "line": 64,
+                                "column": 29
+                              },
+                              "identifierName": "modelType"
+                            },
+                            "name": "modelType"
+                          },
+                          "value": {
+                            "type": "Identifier",
+                            "start": 1485,
+                            "end": 1494,
+                            "loc": {
+                              "start": {
+                                "line": 64,
+                                "column": 20
+                              },
+                              "end": {
+                                "line": 64,
+                                "column": 29
+                              },
+                              "identifierName": "modelType"
+                            },
+                            "name": "modelType"
+                          },
+                          "extra": {
+                            "shorthand": true
+                          }
+                        },
+                        {
+                          "type": "ObjectProperty",
+                          "start": 1496,
+                          "end": 1500,
+                          "loc": {
+                            "start": {
+                              "line": 64,
+                              "column": 31
+                            },
+                            "end": {
+                              "line": 64,
+                              "column": 35
+                            }
+                          },
+                          "method": false,
+                          "shorthand": true,
+                          "computed": false,
+                          "key": {
+                            "type": "Identifier",
+                            "start": 1496,
+                            "end": 1500,
+                            "loc": {
+                              "start": {
+                                "line": 64,
+                                "column": 31
+                              },
+                              "end": {
+                                "line": 64,
+                                "column": 35
+                              },
+                              "identifierName": "name"
+                            },
+                            "name": "name"
+                          },
+                          "value": {
+                            "type": "Identifier",
+                            "start": 1496,
+                            "end": 1500,
+                            "loc": {
+                              "start": {
+                                "line": 64,
+                                "column": 31
+                              },
+                              "end": {
+                                "line": 64,
+                                "column": 35
+                              },
+                              "identifierName": "name"
+                            },
+                            "name": "name"
+                          },
+                          "extra": {
+                            "shorthand": true
+                          }
+                        },
+                        {
+                          "type": "ObjectProperty",
+                          "start": 1502,
+                          "end": 1506,
+                          "loc": {
+                            "start": {
+                              "line": 64,
+                              "column": 37
+                            },
+                            "end": {
+                              "line": 64,
+                              "column": 41
+                            }
+                          },
+                          "method": false,
+                          "shorthand": true,
+                          "computed": false,
+                          "key": {
+                            "type": "Identifier",
+                            "start": 1502,
+                            "end": 1506,
+                            "loc": {
+                              "start": {
+                                "line": 64,
+                                "column": 37
+                              },
+                              "end": {
+                                "line": 64,
+                                "column": 41
+                              },
+                              "identifierName": "type"
+                            },
+                            "name": "type"
+                          },
+                          "value": {
+                            "type": "Identifier",
+                            "start": 1502,
+                            "end": 1506,
+                            "loc": {
+                              "start": {
+                                "line": 64,
+                                "column": 37
+                              },
+                              "end": {
+                                "line": 64,
+                                "column": 41
+                              },
+                              "identifierName": "type"
+                            },
+                            "name": "type"
+                          },
+                          "extra": {
+                            "shorthand": true
+                          }
+                        },
+                        {
+                          "type": "ObjectProperty",
+                          "start": 1508,
+                          "end": 1513,
+                          "loc": {
+                            "start": {
+                              "line": 64,
+                              "column": 43
+                            },
+                            "end": {
+                              "line": 64,
+                              "column": 48
+                            }
+                          },
+                          "method": false,
+                          "shorthand": true,
+                          "computed": false,
+                          "key": {
+                            "type": "Identifier",
+                            "start": 1508,
+                            "end": 1513,
+                            "loc": {
+                              "start": {
+                                "line": 64,
+                                "column": 43
+                              },
+                              "end": {
+                                "line": 64,
+                                "column": 48
+                              },
+                              "identifierName": "clazz"
+                            },
+                            "name": "clazz"
+                          },
+                          "value": {
+                            "type": "Identifier",
+                            "start": 1508,
+                            "end": 1513,
+                            "loc": {
+                              "start": {
+                                "line": 64,
+                                "column": 43
+                              },
+                              "end": {
+                                "line": 64,
+                                "column": 48
+                              },
+                              "identifierName": "clazz"
+                            },
+                            "name": "clazz"
+                          },
+                          "extra": {
+                            "shorthand": true
+                          }
+                        },
+                        {
+                          "type": "ObjectProperty",
+                          "start": 1515,
+                          "end": 1520,
+                          "loc": {
+                            "start": {
+                              "line": 64,
+                              "column": 50
+                            },
+                            "end": {
+                              "line": 64,
+                              "column": 55
+                            }
+                          },
+                          "method": false,
+                          "shorthand": true,
+                          "computed": false,
+                          "key": {
+                            "type": "Identifier",
+                            "start": 1515,
+                            "end": 1520,
+                            "loc": {
+                              "start": {
+                                "line": 64,
+                                "column": 50
+                              },
+                              "end": {
+                                "line": 64,
+                                "column": 55
+                              },
+                              "identifierName": "query"
+                            },
+                            "name": "query"
+                          },
+                          "value": {
+                            "type": "Identifier",
+                            "start": 1515,
+                            "end": 1520,
+                            "loc": {
+                              "start": {
+                                "line": 64,
+                                "column": 50
+                              },
+                              "end": {
+                                "line": 64,
+                                "column": 55
+                              },
+                              "identifierName": "query"
+                            },
+                            "name": "query"
+                          },
+                          "extra": {
+                            "shorthand": true
+                          }
+                        }
+                      ],
+                      "typeAnnotation": {
+                        "type": "TypeAnnotation",
+                        "start": 1521,
+                        "end": 1529,
+                        "loc": {
+                          "start": {
+                            "line": 64,
+                            "column": 56
+                          },
+                          "end": {
+                            "line": 64,
+                            "column": 64
+                          }
+                        },
+                        "typeAnnotation": {
+                          "type": "GenericTypeAnnotation",
+                          "start": 1523,
+                          "end": 1529,
+                          "loc": {
+                            "start": {
+                              "line": 64,
+                              "column": 58
+                            },
+                            "end": {
+                              "line": 64,
+                              "column": 64
+                            }
+                          },
+                          "typeParameters": null,
+                          "id": {
+                            "type": "Identifier",
+                            "start": 1523,
+                            "end": 1529,
+                            "loc": {
+                              "start": {
+                                "line": 64,
+                                "column": 58
+                              },
+                              "end": {
+                                "line": 64,
+                                "column": 64
+                              },
+                              "identifierName": "Object"
+                            },
+                            "name": "Object"
+                          }
+                        }
+                      }
+                    },
+                    "right": {
+                      "type": "ObjectExpression",
+                      "start": 1532,
+                      "end": 1534,
+                      "loc": {
+                        "start": {
+                          "line": 64,
+                          "column": 67
+                        },
+                        "end": {
+                          "line": 64,
+                          "column": 69
+                        }
+                      },
+                      "properties": []
+                    }
+                  }
+                ],
+                "returnType": {
+                  "type": "TypeAnnotation",
+                  "start": 1535,
+                  "end": 1541,
+                  "loc": {
+                    "start": {
+                      "line": 64,
+                      "column": 70
+                    },
+                    "end": {
+                      "line": 64,
+                      "column": 76
+                    }
+                  },
+                  "typeAnnotation": {
+                    "type": "VoidTypeAnnotation",
+                    "start": 1537,
+                    "end": 1541,
+                    "loc": {
+                      "start": {
+                        "line": 64,
+                        "column": 72
+                      },
+                      "end": {
+                        "line": 64,
+                        "column": 76
+                      }
+                    }
+                  },
+                  "predicate": null
+                },
+                "body": {
+                  "type": "BlockStatement",
+                  "start": 1542,
+                  "end": 2317,
+                  "loc": {
+                    "start": {
+                      "line": 64,
+                      "column": 77
+                    },
+                    "end": {
+                      "line": 102,
+                      "column": 3
+                    }
+                  },
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "start": 1548,
+                      "end": 1555,
+                      "loc": {
+                        "start": {
+                          "line": 65,
+                          "column": 4
+                        },
+                        "end": {
+                          "line": 65,
+                          "column": 11
+                        }
+                      },
+                      "expression": {
+                        "type": "CallExpression",
+                        "start": 1548,
+                        "end": 1555,
+                        "loc": {
+                          "start": {
+                            "line": 65,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 65,
+                            "column": 11
+                          }
+                        },
+                        "callee": {
+                          "type": "Super",
+                          "start": 1548,
+                          "end": 1553,
+                          "loc": {
+                            "start": {
+                              "line": 65,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 65,
+                              "column": 9
+                            }
+                          }
+                        },
+                        "arguments": [],
+                        "trailingComments": null
+                      },
+                      "trailingComments": [
+                        {
+                          "type": "CommentBlock",
+                          "value": "*\n     * The id of the provider configuration.\n     * @type {string}\n     ",
+                          "start": 1561,
+                          "end": 1639,
+                          "loc": {
+                            "start": {
+                              "line": 67,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 70,
+                              "column": 7
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "start": 1644,
+                      "end": 1659,
+                      "loc": {
+                        "start": {
+                          "line": 71,
+                          "column": 4
+                        },
+                        "end": {
+                          "line": 71,
+                          "column": 19
+                        }
+                      },
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "start": 1644,
+                        "end": 1659,
+                        "loc": {
+                          "start": {
+                            "line": 71,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 71,
+                            "column": 19
+                          }
+                        },
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "start": 1644,
+                          "end": 1652,
+                          "loc": {
+                            "start": {
+                              "line": 71,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 71,
+                              "column": 12
+                            }
+                          },
+                          "object": {
+                            "type": "ThisExpression",
+                            "start": 1644,
+                            "end": 1648,
+                            "loc": {
+                              "start": {
+                                "line": 71,
+                                "column": 4
+                              },
+                              "end": {
+                                "line": 71,
+                                "column": 8
+                              }
+                            },
+                            "leadingComments": null
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 1649,
+                            "end": 1652,
+                            "loc": {
+                              "start": {
+                                "line": 71,
+                                "column": 9
+                              },
+                              "end": {
+                                "line": 71,
+                                "column": 12
+                              },
+                              "identifierName": "_id"
+                            },
+                            "name": "_id"
+                          },
+                          "computed": false,
+                          "leadingComments": null
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "start": 1655,
+                          "end": 1659,
+                          "loc": {
+                            "start": {
+                              "line": 71,
+                              "column": 15
+                            },
+                            "end": {
+                              "line": 71,
+                              "column": 19
+                            },
+                            "identifierName": "name"
+                          },
+                          "name": "name",
+                          "leadingComments": null,
+                          "trailingComments": null
+                        },
+                        "leadingComments": null,
+                        "trailingComments": null
+                      },
+                      "leadingComments": [
+                        {
+                          "type": "CommentBlock",
+                          "value": "*\n     * The id of the provider configuration.\n     * @type {string}\n     ",
+                          "start": 1561,
+                          "end": 1639,
+                          "loc": {
+                            "start": {
+                              "line": 67,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 70,
+                              "column": 7
+                            }
+                          }
+                        }
+                      ],
+                      "trailingComments": [
+                        {
+                          "type": "CommentBlock",
+                          "value": "*\n     * The API of the provider configuration.\n     * @type {string}\n     ",
+                          "start": 1664,
+                          "end": 1743,
+                          "loc": {
+                            "start": {
+                              "line": 72,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 75,
+                              "column": 7
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "start": 1748,
+                      "end": 1762,
+                      "loc": {
+                        "start": {
+                          "line": 76,
+                          "column": 4
+                        },
+                        "end": {
+                          "line": 76,
+                          "column": 18
+                        }
+                      },
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "start": 1748,
+                        "end": 1762,
+                        "loc": {
+                          "start": {
+                            "line": 76,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 76,
+                            "column": 18
+                          }
+                        },
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "start": 1748,
+                          "end": 1756,
+                          "loc": {
+                            "start": {
+                              "line": 76,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 76,
+                              "column": 12
+                            }
+                          },
+                          "object": {
+                            "type": "ThisExpression",
+                            "start": 1748,
+                            "end": 1752,
+                            "loc": {
+                              "start": {
+                                "line": 76,
+                                "column": 4
+                              },
+                              "end": {
+                                "line": 76,
+                                "column": 8
+                              }
+                            },
+                            "leadingComments": null
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 1753,
+                            "end": 1756,
+                            "loc": {
+                              "start": {
+                                "line": 76,
+                                "column": 9
+                              },
+                              "end": {
+                                "line": 76,
+                                "column": 12
+                              },
+                              "identifierName": "api"
+                            },
+                            "name": "api"
+                          },
+                          "computed": false,
+                          "leadingComments": null
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "start": 1759,
+                          "end": 1762,
+                          "loc": {
+                            "start": {
+                              "line": 76,
+                              "column": 15
+                            },
+                            "end": {
+                              "line": 76,
+                              "column": 18
+                            },
+                            "identifierName": "api"
+                          },
+                          "name": "api",
+                          "leadingComments": null,
+                          "trailingComments": null
+                        },
+                        "leadingComments": null,
+                        "trailingComments": null
+                      },
+                      "leadingComments": [
+                        {
+                          "type": "CommentBlock",
+                          "value": "*\n     * The API of the provider configuration.\n     * @type {string}\n     ",
+                          "start": 1664,
+                          "end": 1743,
+                          "loc": {
+                            "start": {
+                              "line": 72,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 75,
+                              "column": 7
+                            }
+                          }
+                        }
+                      ],
+                      "trailingComments": [
+                        {
+                          "type": "CommentBlock",
+                          "value": "*\n     * The modelType of the provider configuration.\n     * @type {string}\n     ",
+                          "start": 1767,
+                          "end": 1852,
+                          "loc": {
+                            "start": {
+                              "line": 77,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 80,
+                              "column": 7
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "start": 1857,
+                      "end": 1883,
+                      "loc": {
+                        "start": {
+                          "line": 81,
+                          "column": 4
+                        },
+                        "end": {
+                          "line": 81,
+                          "column": 30
+                        }
+                      },
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "start": 1857,
+                        "end": 1883,
+                        "loc": {
+                          "start": {
+                            "line": 81,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 81,
+                            "column": 30
+                          }
+                        },
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "start": 1857,
+                          "end": 1871,
+                          "loc": {
+                            "start": {
+                              "line": 81,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 81,
+                              "column": 18
+                            }
+                          },
+                          "object": {
+                            "type": "ThisExpression",
+                            "start": 1857,
+                            "end": 1861,
+                            "loc": {
+                              "start": {
+                                "line": 81,
+                                "column": 4
+                              },
+                              "end": {
+                                "line": 81,
+                                "column": 8
+                              }
+                            },
+                            "leadingComments": null
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 1862,
+                            "end": 1871,
+                            "loc": {
+                              "start": {
+                                "line": 81,
+                                "column": 9
+                              },
+                              "end": {
+                                "line": 81,
+                                "column": 18
+                              },
+                              "identifierName": "modelType"
+                            },
+                            "name": "modelType"
+                          },
+                          "computed": false,
+                          "leadingComments": null
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "start": 1874,
+                          "end": 1883,
+                          "loc": {
+                            "start": {
+                              "line": 81,
+                              "column": 21
+                            },
+                            "end": {
+                              "line": 81,
+                              "column": 30
+                            },
+                            "identifierName": "modelType"
+                          },
+                          "name": "modelType",
+                          "leadingComments": null,
+                          "trailingComments": null
+                        },
+                        "leadingComments": null,
+                        "trailingComments": null
+                      },
+                      "leadingComments": [
+                        {
+                          "type": "CommentBlock",
+                          "value": "*\n     * The modelType of the provider configuration.\n     * @type {string}\n     ",
+                          "start": 1767,
+                          "end": 1852,
+                          "loc": {
+                            "start": {
+                              "line": 77,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 80,
+                              "column": 7
+                            }
+                          }
+                        }
+                      ],
+                      "trailingComments": [
+                        {
+                          "type": "CommentBlock",
+                          "value": "*\n     * The name of the provider configuration.\n     * @type {string}\n     ",
+                          "start": 1888,
+                          "end": 1968,
+                          "loc": {
+                            "start": {
+                              "line": 82,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 85,
+                              "column": 7
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "start": 1973,
+                      "end": 1989,
+                      "loc": {
+                        "start": {
+                          "line": 86,
+                          "column": 4
+                        },
+                        "end": {
+                          "line": 86,
+                          "column": 20
+                        }
+                      },
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "start": 1973,
+                        "end": 1989,
+                        "loc": {
+                          "start": {
+                            "line": 86,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 86,
+                            "column": 20
+                          }
+                        },
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "start": 1973,
+                          "end": 1982,
+                          "loc": {
+                            "start": {
+                              "line": 86,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 86,
+                              "column": 13
+                            }
+                          },
+                          "object": {
+                            "type": "ThisExpression",
+                            "start": 1973,
+                            "end": 1977,
+                            "loc": {
+                              "start": {
+                                "line": 86,
+                                "column": 4
+                              },
+                              "end": {
+                                "line": 86,
+                                "column": 8
+                              }
+                            },
+                            "leadingComments": null
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 1978,
+                            "end": 1982,
+                            "loc": {
+                              "start": {
+                                "line": 86,
+                                "column": 9
+                              },
+                              "end": {
+                                "line": 86,
+                                "column": 13
+                              },
+                              "identifierName": "name"
+                            },
+                            "name": "name"
+                          },
+                          "computed": false,
+                          "leadingComments": null
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "start": 1985,
+                          "end": 1989,
+                          "loc": {
+                            "start": {
+                              "line": 86,
+                              "column": 16
+                            },
+                            "end": {
+                              "line": 86,
+                              "column": 20
+                            },
+                            "identifierName": "name"
+                          },
+                          "name": "name",
+                          "leadingComments": null,
+                          "trailingComments": null
+                        },
+                        "leadingComments": null,
+                        "trailingComments": null
+                      },
+                      "leadingComments": [
+                        {
+                          "type": "CommentBlock",
+                          "value": "*\n     * The name of the provider configuration.\n     * @type {string}\n     ",
+                          "start": 1888,
+                          "end": 1968,
+                          "loc": {
+                            "start": {
+                              "line": 82,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 85,
+                              "column": 7
+                            }
+                          }
+                        }
+                      ],
+                      "trailingComments": [
+                        {
+                          "type": "CommentBlock",
+                          "value": "*\n     * The type of the provider configuration.\n     * @type {string}\n     ",
+                          "start": 1994,
+                          "end": 2074,
+                          "loc": {
+                            "start": {
+                              "line": 87,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 90,
+                              "column": 7
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "start": 2079,
+                      "end": 2095,
+                      "loc": {
+                        "start": {
+                          "line": 91,
+                          "column": 4
+                        },
+                        "end": {
+                          "line": 91,
+                          "column": 20
+                        }
+                      },
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "start": 2079,
+                        "end": 2095,
+                        "loc": {
+                          "start": {
+                            "line": 91,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 91,
+                            "column": 20
+                          }
+                        },
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "start": 2079,
+                          "end": 2088,
+                          "loc": {
+                            "start": {
+                              "line": 91,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 91,
+                              "column": 13
+                            }
+                          },
+                          "object": {
+                            "type": "ThisExpression",
+                            "start": 2079,
+                            "end": 2083,
+                            "loc": {
+                              "start": {
+                                "line": 91,
+                                "column": 4
+                              },
+                              "end": {
+                                "line": 91,
+                                "column": 8
+                              }
+                            },
+                            "leadingComments": null
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 2084,
+                            "end": 2088,
+                            "loc": {
+                              "start": {
+                                "line": 91,
+                                "column": 9
+                              },
+                              "end": {
+                                "line": 91,
+                                "column": 13
+                              },
+                              "identifierName": "type"
+                            },
+                            "name": "type"
+                          },
+                          "computed": false,
+                          "leadingComments": null
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "start": 2091,
+                          "end": 2095,
+                          "loc": {
+                            "start": {
+                              "line": 91,
+                              "column": 16
+                            },
+                            "end": {
+                              "line": 91,
+                              "column": 20
+                            },
+                            "identifierName": "type"
+                          },
+                          "name": "type",
+                          "leadingComments": null,
+                          "trailingComments": null
+                        },
+                        "leadingComments": null,
+                        "trailingComments": null
+                      },
+                      "leadingComments": [
+                        {
+                          "type": "CommentBlock",
+                          "value": "*\n     * The type of the provider configuration.\n     * @type {string}\n     ",
+                          "start": 1994,
+                          "end": 2074,
+                          "loc": {
+                            "start": {
+                              "line": 87,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 90,
+                              "column": 7
+                            }
+                          }
+                        }
+                      ],
+                      "trailingComments": [
+                        {
+                          "type": "CommentBlock",
+                          "value": "*\n     * The clazz of the provider configuration.\n     * @type {string}\n     ",
+                          "start": 2100,
+                          "end": 2181,
+                          "loc": {
+                            "start": {
+                              "line": 92,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 95,
+                              "column": 7
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "start": 2186,
+                      "end": 2204,
+                      "loc": {
+                        "start": {
+                          "line": 96,
+                          "column": 4
+                        },
+                        "end": {
+                          "line": 96,
+                          "column": 22
+                        }
+                      },
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "start": 2186,
+                        "end": 2204,
+                        "loc": {
+                          "start": {
+                            "line": 96,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 96,
+                            "column": 22
+                          }
+                        },
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "start": 2186,
+                          "end": 2196,
+                          "loc": {
+                            "start": {
+                              "line": 96,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 96,
+                              "column": 14
+                            }
+                          },
+                          "object": {
+                            "type": "ThisExpression",
+                            "start": 2186,
+                            "end": 2190,
+                            "loc": {
+                              "start": {
+                                "line": 96,
+                                "column": 4
+                              },
+                              "end": {
+                                "line": 96,
+                                "column": 8
+                              }
+                            },
+                            "leadingComments": null
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 2191,
+                            "end": 2196,
+                            "loc": {
+                              "start": {
+                                "line": 96,
+                                "column": 9
+                              },
+                              "end": {
+                                "line": 96,
+                                "column": 14
+                              },
+                              "identifierName": "clazz"
+                            },
+                            "name": "clazz"
+                          },
+                          "computed": false,
+                          "leadingComments": null
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "start": 2199,
+                          "end": 2204,
+                          "loc": {
+                            "start": {
+                              "line": 96,
+                              "column": 17
+                            },
+                            "end": {
+                              "line": 96,
+                              "column": 22
+                            },
+                            "identifierName": "clazz"
+                          },
+                          "name": "clazz",
+                          "leadingComments": null,
+                          "trailingComments": null
+                        },
+                        "leadingComments": null,
+                        "trailingComments": null
+                      },
+                      "leadingComments": [
+                        {
+                          "type": "CommentBlock",
+                          "value": "*\n     * The clazz of the provider configuration.\n     * @type {string}\n     ",
+                          "start": 2100,
+                          "end": 2181,
+                          "loc": {
+                            "start": {
+                              "line": 92,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 95,
+                              "column": 7
+                            }
+                          }
+                        }
+                      ],
+                      "trailingComments": [
+                        {
+                          "type": "CommentBlock",
+                          "value": "*\n     * The query of the provider configuration.\n     * @type {Object}\n     ",
+                          "start": 2209,
+                          "end": 2290,
+                          "loc": {
+                            "start": {
+                              "line": 97,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 100,
+                              "column": 7
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "start": 2295,
+                      "end": 2313,
+                      "loc": {
+                        "start": {
+                          "line": 101,
+                          "column": 4
+                        },
+                        "end": {
+                          "line": 101,
+                          "column": 22
+                        }
+                      },
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "start": 2295,
+                        "end": 2313,
+                        "loc": {
+                          "start": {
+                            "line": 101,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 101,
+                            "column": 22
+                          }
+                        },
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "start": 2295,
+                          "end": 2305,
+                          "loc": {
+                            "start": {
+                              "line": 101,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 101,
+                              "column": 14
+                            }
+                          },
+                          "object": {
+                            "type": "ThisExpression",
+                            "start": 2295,
+                            "end": 2299,
+                            "loc": {
+                              "start": {
+                                "line": 101,
+                                "column": 4
+                              },
+                              "end": {
+                                "line": 101,
+                                "column": 8
+                              }
+                            },
+                            "leadingComments": null
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 2300,
+                            "end": 2305,
+                            "loc": {
+                              "start": {
+                                "line": 101,
+                                "column": 9
+                              },
+                              "end": {
+                                "line": 101,
+                                "column": 14
+                              },
+                              "identifierName": "query"
+                            },
+                            "name": "query"
+                          },
+                          "computed": false,
+                          "leadingComments": null
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "start": 2308,
+                          "end": 2313,
+                          "loc": {
+                            "start": {
+                              "line": 101,
+                              "column": 17
+                            },
+                            "end": {
+                              "line": 101,
+                              "column": 22
+                            },
+                            "identifierName": "query"
+                          },
+                          "name": "query"
+                        },
+                        "leadingComments": null
+                      },
+                      "leadingComments": [
+                        {
+                          "type": "CommentBlock",
+                          "value": "*\n     * The query of the provider configuration.\n     * @type {Object}\n     ",
+                          "start": 2209,
+                          "end": 2290,
+                          "loc": {
+                            "start": {
+                              "line": 97,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 100,
+                              "column": 7
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "directives": [],
+                  "trailingComments": null
+                },
+                "leadingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n   * Create a new ProviderConfig object.\n   * @param {!Object} config - The configuration object for the content.\n   * @param {!string} api - The API of the provider configuration.\n   * @param {!string} modelType - The modelType of the provider configuration.\n   * @param {!string} name - The name of the provider configuration.\n   * @param {!string} type - The type of the provider configuration.\n   * @param {!string} clazz - The clazz of the provider configuration.\n   * @param {?Object} query - The query of the provider configuration.\n   ",
+                    "start": 915,
+                    "end": 1464,
+                    "loc": {
+                      "start": {
+                        "line": 54,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 63,
+                        "column": 5
+                      }
+                    }
+                  }
+                ],
+                "trailingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n   * Getter for the id of the provider configuration.\n   * @return {string} - The id of the provider configuration.\n   ",
+                    "start": 2321,
+                    "end": 2446,
+                    "loc": {
+                      "start": {
+                        "line": 104,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 107,
+                        "column": 5
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ClassMethod",
+                "start": 2449,
+                "end": 2491,
+                "loc": {
+                  "start": {
+                    "line": 108,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 110,
+                    "column": 3
+                  }
+                },
+                "static": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 2453,
+                  "end": 2455,
+                  "loc": {
+                    "start": {
+                      "line": 108,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 108,
+                      "column": 8
+                    },
+                    "identifierName": "id"
+                  },
+                  "name": "id"
+                },
+                "kind": "get",
+                "id": null,
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "params": [],
+                "returnType": {
+                  "type": "TypeAnnotation",
+                  "start": 2457,
+                  "end": 2465,
+                  "loc": {
+                    "start": {
+                      "line": 108,
+                      "column": 10
+                    },
+                    "end": {
+                      "line": 108,
+                      "column": 18
+                    }
+                  },
+                  "typeAnnotation": {
+                    "type": "StringTypeAnnotation",
+                    "start": 2459,
+                    "end": 2465,
+                    "loc": {
+                      "start": {
+                        "line": 108,
+                        "column": 12
+                      },
+                      "end": {
+                        "line": 108,
+                        "column": 18
+                      }
+                    }
+                  },
+                  "predicate": null
+                },
+                "body": {
+                  "type": "BlockStatement",
+                  "start": 2466,
+                  "end": 2491,
+                  "loc": {
+                    "start": {
+                      "line": 108,
+                      "column": 19
+                    },
+                    "end": {
+                      "line": 110,
+                      "column": 3
+                    }
+                  },
+                  "body": [
+                    {
+                      "type": "ReturnStatement",
+                      "start": 2472,
+                      "end": 2487,
+                      "loc": {
+                        "start": {
+                          "line": 109,
+                          "column": 4
+                        },
+                        "end": {
+                          "line": 109,
+                          "column": 19
+                        }
+                      },
+                      "argument": {
+                        "type": "MemberExpression",
+                        "start": 2479,
+                        "end": 2487,
+                        "loc": {
+                          "start": {
+                            "line": 109,
+                            "column": 11
+                          },
+                          "end": {
+                            "line": 109,
+                            "column": 19
+                          }
+                        },
+                        "object": {
+                          "type": "ThisExpression",
+                          "start": 2479,
+                          "end": 2483,
+                          "loc": {
+                            "start": {
+                              "line": 109,
+                              "column": 11
+                            },
+                            "end": {
+                              "line": 109,
+                              "column": 15
+                            }
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "start": 2484,
+                          "end": 2487,
+                          "loc": {
+                            "start": {
+                              "line": 109,
+                              "column": 16
+                            },
+                            "end": {
+                              "line": 109,
+                              "column": 19
+                            },
+                            "identifierName": "_id"
+                          },
+                          "name": "_id"
+                        },
+                        "computed": false
+                      }
+                    }
+                  ],
+                  "directives": []
+                },
+                "leadingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n * @desc \n * Getter for the id of the provider configuration. \n * @return \n * {string} - The id of the provider configuration. \n * @type \n * {string} \n",
+                    "start": 2321,
+                    "end": 2446,
+                    "loc": {
+                      "start": {
+                        "line": 104,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 107,
+                        "column": 5
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Class for provider configuration attributes and methods.\n * @extends {Model}\n * @type {ProviderConfigModel}\n ",
+              "start": 76,
+              "end": 194,
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 0
+                },
+                "end": {
+                  "line": 9,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": []
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Class for provider configuration attributes and methods.\n * @extends {Model}\n * @type {ProviderConfigModel}\n ",
+            "start": 76,
+            "end": 194,
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 0
+              },
+              "end": {
+                "line": 9,
+                "column": 3
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentLine",
+      "value": " Import the necessary modules.",
+      "start": 0,
+      "end": 32,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " @flow",
+      "start": 33,
+      "end": 41,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Class for provider configuration attributes and methods.\n * @extends {Model}\n * @type {ProviderConfigModel}\n ",
+      "start": 76,
+      "end": 194,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 9,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * The id of the provider configuration.\n   * @type {string}\n   ",
+      "start": 255,
+      "end": 327,
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 2
+        },
+        "end": {
+          "line": 15,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * The API of the provider configuration.\n   * @type {string}\n   ",
+      "start": 345,
+      "end": 418,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 2
+        },
+        "end": {
+          "line": 21,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * The modelType of the provider configuration.\n   * @type {string}\n   ",
+      "start": 436,
+      "end": 515,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 2
+        },
+        "end": {
+          "line": 27,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * The name of the provider configuration.\n   * @type {string}\n   ",
+      "start": 539,
+      "end": 613,
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 2
+        },
+        "end": {
+          "line": 33,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * The type of the provider configuration.\n   * @type {string}\n   ",
+      "start": 632,
+      "end": 706,
+      "loc": {
+        "start": {
+          "line": 36,
+          "column": 2
+        },
+        "end": {
+          "line": 39,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * The clazz of the provider configuration.\n   * @type {string}\n   ",
+      "start": 725,
+      "end": 800,
+      "loc": {
+        "start": {
+          "line": 42,
+          "column": 2
+        },
+        "end": {
+          "line": 45,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * The query of the provider configuration.\n   * @type {Object}\n   ",
+      "start": 820,
+      "end": 895,
+      "loc": {
+        "start": {
+          "line": 48,
+          "column": 2
+        },
+        "end": {
+          "line": 51,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * Create a new ProviderConfig object.\n   * @param {!Object} config - The configuration object for the content.\n   * @param {!string} api - The API of the provider configuration.\n   * @param {!string} modelType - The modelType of the provider configuration.\n   * @param {!string} name - The name of the provider configuration.\n   * @param {!string} type - The type of the provider configuration.\n   * @param {!string} clazz - The clazz of the provider configuration.\n   * @param {?Object} query - The query of the provider configuration.\n   ",
+      "start": 915,
+      "end": 1464,
+      "loc": {
+        "start": {
+          "line": 54,
+          "column": 2
+        },
+        "end": {
+          "line": 63,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     * The id of the provider configuration.\n     * @type {string}\n     ",
+      "start": 1561,
+      "end": 1639,
+      "loc": {
+        "start": {
+          "line": 67,
+          "column": 4
+        },
+        "end": {
+          "line": 70,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     * The API of the provider configuration.\n     * @type {string}\n     ",
+      "start": 1664,
+      "end": 1743,
+      "loc": {
+        "start": {
+          "line": 72,
+          "column": 4
+        },
+        "end": {
+          "line": 75,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     * The modelType of the provider configuration.\n     * @type {string}\n     ",
+      "start": 1767,
+      "end": 1852,
+      "loc": {
+        "start": {
+          "line": 77,
+          "column": 4
+        },
+        "end": {
+          "line": 80,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     * The name of the provider configuration.\n     * @type {string}\n     ",
+      "start": 1888,
+      "end": 1968,
+      "loc": {
+        "start": {
+          "line": 82,
+          "column": 4
+        },
+        "end": {
+          "line": 85,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     * The type of the provider configuration.\n     * @type {string}\n     ",
+      "start": 1994,
+      "end": 2074,
+      "loc": {
+        "start": {
+          "line": 87,
+          "column": 4
+        },
+        "end": {
+          "line": 90,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     * The clazz of the provider configuration.\n     * @type {string}\n     ",
+      "start": 2100,
+      "end": 2181,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 4
+        },
+        "end": {
+          "line": 95,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     * The query of the provider configuration.\n     * @type {Object}\n     ",
+      "start": 2209,
+      "end": 2290,
+      "loc": {
+        "start": {
+          "line": 97,
+          "column": 4
+        },
+        "end": {
+          "line": 100,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * Getter for the id of the provider configuration.\n   * @return {string} - The id of the provider configuration.\n   ",
+      "start": 2321,
+      "end": 2446,
+      "loc": {
+        "start": {
+          "line": 104,
+          "column": 2
+        },
+        "end": {
+          "line": 107,
+          "column": 5
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentLine",
+      "value": " Import the necessary modules.",
+      "start": 0,
+      "end": 32,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " @flow",
+      "start": 33,
+      "end": 41,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 42,
+      "end": 48,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 49,
+      "end": 50,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 7
+        },
+        "end": {
+          "line": 3,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "Model",
+      "start": 51,
+      "end": 56,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 9
+        },
+        "end": {
+          "line": 3,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 57,
+      "end": 58,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 15
+        },
+        "end": {
+          "line": 3,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 59,
+      "end": 63,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 17
+        },
+        "end": {
+          "line": 3,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "mongoose",
+      "start": 64,
+      "end": 74,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 22
+        },
+        "end": {
+          "line": 3,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Class for provider configuration attributes and methods.\n * @extends {Model}\n * @type {ProviderConfigModel}\n ",
+      "start": 76,
+      "end": 194,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 9,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 195,
+      "end": 201,
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "default",
+        "keyword": "default",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "default",
+      "start": 202,
+      "end": 209,
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 7
+        },
+        "end": {
+          "line": 10,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "class",
+        "keyword": "class",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "class",
+      "start": 210,
+      "end": 215,
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 15
+        },
+        "end": {
+          "line": 10,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ProviderConfigModel",
+      "start": 216,
+      "end": 235,
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 21
+        },
+        "end": {
+          "line": 10,
+          "column": 40
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "extends",
+        "keyword": "extends",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "extends",
+      "start": 236,
+      "end": 243,
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 41
+        },
+        "end": {
+          "line": 10,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "Model",
+      "start": 244,
+      "end": 249,
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 49
+        },
+        "end": {
+          "line": 10,
+          "column": 54
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 250,
+      "end": 251,
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 55
+        },
+        "end": {
+          "line": 10,
+          "column": 56
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * The id of the provider configuration.\n   * @type {string}\n   ",
+      "start": 255,
+      "end": 327,
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 2
+        },
+        "end": {
+          "line": 15,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "_id",
+      "start": 330,
+      "end": 333,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 2
+        },
+        "end": {
+          "line": 16,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 333,
+      "end": 334,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 5
+        },
+        "end": {
+          "line": 16,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "string",
+      "start": 335,
+      "end": 341,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 7
+        },
+        "end": {
+          "line": 16,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * The API of the provider configuration.\n   * @type {string}\n   ",
+      "start": 345,
+      "end": 418,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 2
+        },
+        "end": {
+          "line": 21,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "api",
+      "start": 421,
+      "end": 424,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 2
+        },
+        "end": {
+          "line": 22,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 424,
+      "end": 425,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 5
+        },
+        "end": {
+          "line": 22,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "string",
+      "start": 426,
+      "end": 432,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 7
+        },
+        "end": {
+          "line": 22,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * The modelType of the provider configuration.\n   * @type {string}\n   ",
+      "start": 436,
+      "end": 515,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 2
+        },
+        "end": {
+          "line": 27,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "modelType",
+      "start": 518,
+      "end": 527,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 2
+        },
+        "end": {
+          "line": 28,
+          "column": 11
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 527,
+      "end": 528,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 11
+        },
+        "end": {
+          "line": 28,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "string",
+      "start": 529,
+      "end": 535,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 13
+        },
+        "end": {
+          "line": 28,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * The name of the provider configuration.\n   * @type {string}\n   ",
+      "start": 539,
+      "end": 613,
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 2
+        },
+        "end": {
+          "line": 33,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "name",
+      "start": 616,
+      "end": 620,
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 2
+        },
+        "end": {
+          "line": 34,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 620,
+      "end": 621,
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 6
+        },
+        "end": {
+          "line": 34,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "string",
+      "start": 622,
+      "end": 628,
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 8
+        },
+        "end": {
+          "line": 34,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * The type of the provider configuration.\n   * @type {string}\n   ",
+      "start": 632,
+      "end": 706,
+      "loc": {
+        "start": {
+          "line": 36,
+          "column": 2
+        },
+        "end": {
+          "line": 39,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "type",
+      "start": 709,
+      "end": 713,
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 2
+        },
+        "end": {
+          "line": 40,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 713,
+      "end": 714,
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 6
+        },
+        "end": {
+          "line": 40,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "string",
+      "start": 715,
+      "end": 721,
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 8
+        },
+        "end": {
+          "line": 40,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * The clazz of the provider configuration.\n   * @type {string}\n   ",
+      "start": 725,
+      "end": 800,
+      "loc": {
+        "start": {
+          "line": 42,
+          "column": 2
+        },
+        "end": {
+          "line": 45,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "clazz",
+      "start": 803,
+      "end": 808,
+      "loc": {
+        "start": {
+          "line": 46,
+          "column": 2
+        },
+        "end": {
+          "line": 46,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 808,
+      "end": 809,
+      "loc": {
+        "start": {
+          "line": 46,
+          "column": 7
+        },
+        "end": {
+          "line": 46,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "string",
+      "start": 810,
+      "end": 816,
+      "loc": {
+        "start": {
+          "line": 46,
+          "column": 9
+        },
+        "end": {
+          "line": 46,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * The query of the provider configuration.\n   * @type {Object}\n   ",
+      "start": 820,
+      "end": 895,
+      "loc": {
+        "start": {
+          "line": 48,
+          "column": 2
+        },
+        "end": {
+          "line": 51,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "query",
+      "start": 898,
+      "end": 903,
+      "loc": {
+        "start": {
+          "line": 52,
+          "column": 2
+        },
+        "end": {
+          "line": 52,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 903,
+      "end": 904,
+      "loc": {
+        "start": {
+          "line": 52,
+          "column": 7
+        },
+        "end": {
+          "line": 52,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "Object",
+      "start": 905,
+      "end": 911,
+      "loc": {
+        "start": {
+          "line": 52,
+          "column": 9
+        },
+        "end": {
+          "line": 52,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * Create a new ProviderConfig object.\n   * @param {!Object} config - The configuration object for the content.\n   * @param {!string} api - The API of the provider configuration.\n   * @param {!string} modelType - The modelType of the provider configuration.\n   * @param {!string} name - The name of the provider configuration.\n   * @param {!string} type - The type of the provider configuration.\n   * @param {!string} clazz - The clazz of the provider configuration.\n   * @param {?Object} query - The query of the provider configuration.\n   ",
+      "start": 915,
+      "end": 1464,
+      "loc": {
+        "start": {
+          "line": 54,
+          "column": 2
+        },
+        "end": {
+          "line": 63,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "constructor",
+      "start": 1467,
+      "end": 1478,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 2
+        },
+        "end": {
+          "line": 64,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1478,
+      "end": 1479,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 13
+        },
+        "end": {
+          "line": 64,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1479,
+      "end": 1480,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 14
+        },
+        "end": {
+          "line": 64,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "api",
+      "start": 1480,
+      "end": 1483,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 15
+        },
+        "end": {
+          "line": 64,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1483,
+      "end": 1484,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 18
+        },
+        "end": {
+          "line": 64,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "modelType",
+      "start": 1485,
+      "end": 1494,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 20
+        },
+        "end": {
+          "line": 64,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1494,
+      "end": 1495,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 29
+        },
+        "end": {
+          "line": 64,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "name",
+      "start": 1496,
+      "end": 1500,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 31
+        },
+        "end": {
+          "line": 64,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1500,
+      "end": 1501,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 35
+        },
+        "end": {
+          "line": 64,
+          "column": 36
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "type",
+      "start": 1502,
+      "end": 1506,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 37
+        },
+        "end": {
+          "line": 64,
+          "column": 41
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1506,
+      "end": 1507,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 41
+        },
+        "end": {
+          "line": 64,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "clazz",
+      "start": 1508,
+      "end": 1513,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 43
+        },
+        "end": {
+          "line": 64,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1513,
+      "end": 1514,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 48
+        },
+        "end": {
+          "line": 64,
+          "column": 49
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "query",
+      "start": 1515,
+      "end": 1520,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 50
+        },
+        "end": {
+          "line": 64,
+          "column": 55
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1520,
+      "end": 1521,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 55
+        },
+        "end": {
+          "line": 64,
+          "column": 56
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1521,
+      "end": 1522,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 56
+        },
+        "end": {
+          "line": 64,
+          "column": 57
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "Object",
+      "start": 1523,
+      "end": 1529,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 58
+        },
+        "end": {
+          "line": 64,
+          "column": 64
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 1530,
+      "end": 1531,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 65
+        },
+        "end": {
+          "line": 64,
+          "column": 66
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1532,
+      "end": 1533,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 67
+        },
+        "end": {
+          "line": 64,
+          "column": 68
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1533,
+      "end": 1534,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 68
+        },
+        "end": {
+          "line": 64,
+          "column": 69
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1534,
+      "end": 1535,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 69
+        },
+        "end": {
+          "line": 64,
+          "column": 70
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1535,
+      "end": 1536,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 70
+        },
+        "end": {
+          "line": 64,
+          "column": 71
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "void",
+      "start": 1537,
+      "end": 1541,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 72
+        },
+        "end": {
+          "line": 64,
+          "column": 76
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1542,
+      "end": 1543,
+      "loc": {
+        "start": {
+          "line": 64,
+          "column": 77
+        },
+        "end": {
+          "line": 64,
+          "column": 78
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "super",
+        "keyword": "super",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "super",
+      "start": 1548,
+      "end": 1553,
+      "loc": {
+        "start": {
+          "line": 65,
+          "column": 4
+        },
+        "end": {
+          "line": 65,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1553,
+      "end": 1554,
+      "loc": {
+        "start": {
+          "line": 65,
+          "column": 9
+        },
+        "end": {
+          "line": 65,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1554,
+      "end": 1555,
+      "loc": {
+        "start": {
+          "line": 65,
+          "column": 10
+        },
+        "end": {
+          "line": 65,
+          "column": 11
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     * The id of the provider configuration.\n     * @type {string}\n     ",
+      "start": 1561,
+      "end": 1639,
+      "loc": {
+        "start": {
+          "line": 67,
+          "column": 4
+        },
+        "end": {
+          "line": 70,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "this",
+        "keyword": "this",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "this",
+      "start": 1644,
+      "end": 1648,
+      "loc": {
+        "start": {
+          "line": 71,
+          "column": 4
+        },
+        "end": {
+          "line": 71,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1648,
+      "end": 1649,
+      "loc": {
+        "start": {
+          "line": 71,
+          "column": 8
+        },
+        "end": {
+          "line": 71,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "_id",
+      "start": 1649,
+      "end": 1652,
+      "loc": {
+        "start": {
+          "line": 71,
+          "column": 9
+        },
+        "end": {
+          "line": 71,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 1653,
+      "end": 1654,
+      "loc": {
+        "start": {
+          "line": 71,
+          "column": 13
+        },
+        "end": {
+          "line": 71,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "name",
+      "start": 1655,
+      "end": 1659,
+      "loc": {
+        "start": {
+          "line": 71,
+          "column": 15
+        },
+        "end": {
+          "line": 71,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     * The API of the provider configuration.\n     * @type {string}\n     ",
+      "start": 1664,
+      "end": 1743,
+      "loc": {
+        "start": {
+          "line": 72,
+          "column": 4
+        },
+        "end": {
+          "line": 75,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "this",
+        "keyword": "this",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "this",
+      "start": 1748,
+      "end": 1752,
+      "loc": {
+        "start": {
+          "line": 76,
+          "column": 4
+        },
+        "end": {
+          "line": 76,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1752,
+      "end": 1753,
+      "loc": {
+        "start": {
+          "line": 76,
+          "column": 8
+        },
+        "end": {
+          "line": 76,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "api",
+      "start": 1753,
+      "end": 1756,
+      "loc": {
+        "start": {
+          "line": 76,
+          "column": 9
+        },
+        "end": {
+          "line": 76,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 1757,
+      "end": 1758,
+      "loc": {
+        "start": {
+          "line": 76,
+          "column": 13
+        },
+        "end": {
+          "line": 76,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "api",
+      "start": 1759,
+      "end": 1762,
+      "loc": {
+        "start": {
+          "line": 76,
+          "column": 15
+        },
+        "end": {
+          "line": 76,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     * The modelType of the provider configuration.\n     * @type {string}\n     ",
+      "start": 1767,
+      "end": 1852,
+      "loc": {
+        "start": {
+          "line": 77,
+          "column": 4
+        },
+        "end": {
+          "line": 80,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "this",
+        "keyword": "this",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "this",
+      "start": 1857,
+      "end": 1861,
+      "loc": {
+        "start": {
+          "line": 81,
+          "column": 4
+        },
+        "end": {
+          "line": 81,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1861,
+      "end": 1862,
+      "loc": {
+        "start": {
+          "line": 81,
+          "column": 8
+        },
+        "end": {
+          "line": 81,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "modelType",
+      "start": 1862,
+      "end": 1871,
+      "loc": {
+        "start": {
+          "line": 81,
+          "column": 9
+        },
+        "end": {
+          "line": 81,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 1872,
+      "end": 1873,
+      "loc": {
+        "start": {
+          "line": 81,
+          "column": 19
+        },
+        "end": {
+          "line": 81,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "modelType",
+      "start": 1874,
+      "end": 1883,
+      "loc": {
+        "start": {
+          "line": 81,
+          "column": 21
+        },
+        "end": {
+          "line": 81,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     * The name of the provider configuration.\n     * @type {string}\n     ",
+      "start": 1888,
+      "end": 1968,
+      "loc": {
+        "start": {
+          "line": 82,
+          "column": 4
+        },
+        "end": {
+          "line": 85,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "this",
+        "keyword": "this",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "this",
+      "start": 1973,
+      "end": 1977,
+      "loc": {
+        "start": {
+          "line": 86,
+          "column": 4
+        },
+        "end": {
+          "line": 86,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1977,
+      "end": 1978,
+      "loc": {
+        "start": {
+          "line": 86,
+          "column": 8
+        },
+        "end": {
+          "line": 86,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "name",
+      "start": 1978,
+      "end": 1982,
+      "loc": {
+        "start": {
+          "line": 86,
+          "column": 9
+        },
+        "end": {
+          "line": 86,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 1983,
+      "end": 1984,
+      "loc": {
+        "start": {
+          "line": 86,
+          "column": 14
+        },
+        "end": {
+          "line": 86,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "name",
+      "start": 1985,
+      "end": 1989,
+      "loc": {
+        "start": {
+          "line": 86,
+          "column": 16
+        },
+        "end": {
+          "line": 86,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     * The type of the provider configuration.\n     * @type {string}\n     ",
+      "start": 1994,
+      "end": 2074,
+      "loc": {
+        "start": {
+          "line": 87,
+          "column": 4
+        },
+        "end": {
+          "line": 90,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "this",
+        "keyword": "this",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "this",
+      "start": 2079,
+      "end": 2083,
+      "loc": {
+        "start": {
+          "line": 91,
+          "column": 4
+        },
+        "end": {
+          "line": 91,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 2083,
+      "end": 2084,
+      "loc": {
+        "start": {
+          "line": 91,
+          "column": 8
+        },
+        "end": {
+          "line": 91,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "type",
+      "start": 2084,
+      "end": 2088,
+      "loc": {
+        "start": {
+          "line": 91,
+          "column": 9
+        },
+        "end": {
+          "line": 91,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 2089,
+      "end": 2090,
+      "loc": {
+        "start": {
+          "line": 91,
+          "column": 14
+        },
+        "end": {
+          "line": 91,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "type",
+      "start": 2091,
+      "end": 2095,
+      "loc": {
+        "start": {
+          "line": 91,
+          "column": 16
+        },
+        "end": {
+          "line": 91,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     * The clazz of the provider configuration.\n     * @type {string}\n     ",
+      "start": 2100,
+      "end": 2181,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 4
+        },
+        "end": {
+          "line": 95,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "this",
+        "keyword": "this",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "this",
+      "start": 2186,
+      "end": 2190,
+      "loc": {
+        "start": {
+          "line": 96,
+          "column": 4
+        },
+        "end": {
+          "line": 96,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 2190,
+      "end": 2191,
+      "loc": {
+        "start": {
+          "line": 96,
+          "column": 8
+        },
+        "end": {
+          "line": 96,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "clazz",
+      "start": 2191,
+      "end": 2196,
+      "loc": {
+        "start": {
+          "line": 96,
+          "column": 9
+        },
+        "end": {
+          "line": 96,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 2197,
+      "end": 2198,
+      "loc": {
+        "start": {
+          "line": 96,
+          "column": 15
+        },
+        "end": {
+          "line": 96,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "clazz",
+      "start": 2199,
+      "end": 2204,
+      "loc": {
+        "start": {
+          "line": 96,
+          "column": 17
+        },
+        "end": {
+          "line": 96,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     * The query of the provider configuration.\n     * @type {Object}\n     ",
+      "start": 2209,
+      "end": 2290,
+      "loc": {
+        "start": {
+          "line": 97,
+          "column": 4
+        },
+        "end": {
+          "line": 100,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "this",
+        "keyword": "this",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "this",
+      "start": 2295,
+      "end": 2299,
+      "loc": {
+        "start": {
+          "line": 101,
+          "column": 4
+        },
+        "end": {
+          "line": 101,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 2299,
+      "end": 2300,
+      "loc": {
+        "start": {
+          "line": 101,
+          "column": 8
+        },
+        "end": {
+          "line": 101,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "query",
+      "start": 2300,
+      "end": 2305,
+      "loc": {
+        "start": {
+          "line": 101,
+          "column": 9
+        },
+        "end": {
+          "line": 101,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 2306,
+      "end": 2307,
+      "loc": {
+        "start": {
+          "line": 101,
+          "column": 15
+        },
+        "end": {
+          "line": 101,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "query",
+      "start": 2308,
+      "end": 2313,
+      "loc": {
+        "start": {
+          "line": 101,
+          "column": 17
+        },
+        "end": {
+          "line": 101,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2316,
+      "end": 2317,
+      "loc": {
+        "start": {
+          "line": 102,
+          "column": 2
+        },
+        "end": {
+          "line": 102,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n   * Getter for the id of the provider configuration.\n   * @return {string} - The id of the provider configuration.\n   ",
+      "start": 2321,
+      "end": 2446,
+      "loc": {
+        "start": {
+          "line": 104,
+          "column": 2
+        },
+        "end": {
+          "line": 107,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "get",
+      "start": 2449,
+      "end": 2452,
+      "loc": {
+        "start": {
+          "line": 108,
+          "column": 2
+        },
+        "end": {
+          "line": 108,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "id",
+      "start": 2453,
+      "end": 2455,
+      "loc": {
+        "start": {
+          "line": 108,
+          "column": 6
+        },
+        "end": {
+          "line": 108,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2455,
+      "end": 2456,
+      "loc": {
+        "start": {
+          "line": 108,
+          "column": 8
+        },
+        "end": {
+          "line": 108,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2456,
+      "end": 2457,
+      "loc": {
+        "start": {
+          "line": 108,
+          "column": 9
+        },
+        "end": {
+          "line": 108,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 2457,
+      "end": 2458,
+      "loc": {
+        "start": {
+          "line": 108,
+          "column": 10
+        },
+        "end": {
+          "line": 108,
+          "column": 11
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "string",
+      "start": 2459,
+      "end": 2465,
+      "loc": {
+        "start": {
+          "line": 108,
+          "column": 12
+        },
+        "end": {
+          "line": 108,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2466,
+      "end": 2467,
+      "loc": {
+        "start": {
+          "line": 108,
+          "column": 19
+        },
+        "end": {
+          "line": 108,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "return",
+        "keyword": "return",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "return",
+      "start": 2472,
+      "end": 2478,
+      "loc": {
+        "start": {
+          "line": 109,
+          "column": 4
+        },
+        "end": {
+          "line": 109,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "this",
+        "keyword": "this",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "this",
+      "start": 2479,
+      "end": 2483,
+      "loc": {
+        "start": {
+          "line": 109,
+          "column": 11
+        },
+        "end": {
+          "line": 109,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 2483,
+      "end": 2484,
+      "loc": {
+        "start": {
+          "line": 109,
+          "column": 15
+        },
+        "end": {
+          "line": 109,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "_id",
+      "start": 2484,
+      "end": 2487,
+      "loc": {
+        "start": {
+          "line": 109,
+          "column": 16
+        },
+        "end": {
+          "line": 109,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2490,
+      "end": 2491,
+      "loc": {
+        "start": {
+          "line": 110,
+          "column": 2
+        },
+        "end": {
+          "line": 110,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2493,
+      "end": 2494,
+      "loc": {
+        "start": {
+          "line": 112,
+          "column": 0
+        },
+        "end": {
+          "line": 112,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 2495,
+      "end": 2495,
+      "loc": {
+        "start": {
+          "line": 113,
+          "column": 0
+        },
+        "end": {
+          "line": 113,
+          "column": 0
+        }
+      }
+    }
+  ]
+}

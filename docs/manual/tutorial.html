@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../">
+  <title data-ice="title">Manual | popcorn-api</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="og:type" content="website"><meta property="og:url" content="https://popcorntime.sh"><meta property="og:site_name" content="popcorn-api"><meta property="og:title" content="popcorn-api"><meta property="og:image" content="https://avatars2.githubusercontent.com/u/7267937"><meta property="og:description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="og:author" content="https://twitter.com/popcorntimetv"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="popcorn-api"><meta property="twitter:description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="twitter:image" content="https://avatars2.githubusercontent.com/u/7267937"></head>
+<body class="layout-container manual-root" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/popcorn-official/popcorn-api"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div class="manual-toc-root">
+  
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/overview.html"><a href="manual/overview.html#overview" data-ice="link">Overview</a></li>
+<li data-ice="manualNav" class="indent-h1" data-link="manual/overview.html"><a href="manual/overview.html#documentation" data-ice="link">Documentation</a></li>
+<li data-ice="manualNav" class="indent-h1" data-link="manual/overview.html"><a href="manual/overview.html#folder-structure" data-ice="link">Folder structure</a></li>
+<li data-ice="manualNav" class="indent-h1" data-link="manual/overview.html"><a href="manual/overview.html#versioning" data-ice="link">Versioning</a></li>
+<li data-ice="manualNav" class="indent-h1" data-link="manual/overview.html"><a href="manual/overview.html#license" data-ice="link">License</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/installation.html"><a href="manual/installation.html" data-ice="link">Installation</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/usage.html"><a href="manual/usage.html" data-ice="link">Usage</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/usage.html"><a href="manual/usage.html#npm" data-ice="link">npm</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/usage.html"><a href="manual/usage.html#gulp" data-ice="link">Gulp</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/usage.html"><a href="manual/usage.html#global" data-ice="link">Global</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/example.html"><a href="manual/example.html#example" data-ice="link">Example</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#status" data-ice="link">Status</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#logs" data-ice="link">Logs</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#export" data-ice="link">Export</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#anime" data-ice="link">Anime</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#movie" data-ice="link">Movie</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#show" data-ice="link">Show</a></li>
+<li data-ice="manualNav" class="indent-h1" data-link="manual/example.html"><a href="manual/example.html#query-strings" data-ice="link">Query strings</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#sorting" data-ice="link">Sorting</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#ordering" data-ice="link">Ordering</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#genres" data-ice="link">Genres</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/example.html"><a href="manual/example.html#movies--amp--shows" data-ice="link">Movies &amp; Shows</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/example.html"><a href="manual/example.html#anime" data-ice="link">Anime</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#keywords" data-ice="link">Keywords</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/tutorial.html"><a href="manual/tutorial.html" data-ice="link">Tutorial</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial.html"><a href="manual/tutorial.html#scraper" data-ice="link">Scraper</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial.html"><a href="manual/tutorial.html#content-providers" data-ice="link">Content Providers</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#extratorrent" data-ice="link">ExtraTorrent</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#eztv" data-ice="link">EZTV</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial.html"><a href="manual/tutorial.html#getallshows" data-ice="link">getAllShows</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial.html"><a href="manual/tutorial.html#getshowdata" data-ice="link">getShowData</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#horriblesubs" data-ice="link">Horriblesubs</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial.html"><a href="manual/tutorial.html#getallanime" data-ice="link">getAllAnime</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial.html"><a href="manual/tutorial.html#getanimedata" data-ice="link">getAnimeData</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#kat" data-ice="link">KAT</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#nyaa" data-ice="link">Nyaa</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#yts" data-ice="link">YTS</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial.html"><a href="manual/tutorial.html#extractors" data-ice="link">Extractors</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#base-extractor" data-ice="link">Base Extractor</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#anime-extractor" data-ice="link">Anime Extractor</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#movie-extractor" data-ice="link">Movie Extractor</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#show-extractor" data-ice="link">Show Extractor</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial.html"><a href="manual/tutorial.html#helpers" data-ice="link">Helpers</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#anime--amp--show-helpers" data-ice="link">Anime &amp; Show Helpers</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#movie-helper" data-ice="link">Movie Helper</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial.html"><a href="manual/tutorial.html#metadata-providers" data-ice="link">Metadata Providers</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#-a-href--https---trakt-tv---trakt-tv--a-" data-ice="link">Trakt.tv</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#-a-href--https---thetvdb-com---thetvdb-com--a-" data-ice="link">TheTVDB.com</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#-a-href--https---hummingbird-me--hummingbird-me--a-" data-ice="link">Hummingbird.me</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#-a-href--https---fanart-tv---fanart-tv--a-" data-ice="link">Fanart.tv</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#-a-href--https---www-omdbapi-com---omdbapi-com--a-" data-ice="link">OMDBapi.com</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#-a-href--https---www-themoviedb-org---themoviedb-org--a-" data-ice="link">TheMovieDB.org</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#change-log" data-ice="link">Change Log</a></li>
+<li data-ice="manualNav" class="indent-h1" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#3-1-0--2021-06-06-" data-ice="link">3.1.0 (2021-06-06)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-83ca4a24f77ea749f827a7d623db48e2ca821ed0--2-2-4--a---17-12-2016-" data-ice="link">2.2.4 (17-12-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-e7537765cf91e16ed81999325e06657e7ebcfbf6--2-2-3--a---19-11-2016-" data-ice="link">2.2.3 (19-11-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-528abcbe1e4dca514647ff23881a2baf23c7df8b--2-2-2--a---26-10-2016-" data-ice="link">2.2.2 (26-10-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-3d4c99b1fc9ce8455542b427017ccd6cc74833f6--2-2-1--a---23-08-2016-" data-ice="link">2.2.1 (23-08-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-1fcf1f130ba3f2eeb167b2d115b9ae5c1e32ed04--2-2-0--a---11-08-2016-" data-ice="link">2.2.0 (11-08-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-3c94446e39fad43a744cfb30134f26b433dc8e67--2-1-0--a---02-08-2016-" data-ice="link">2.1.0 (02-08-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-c773837a3932261618db33b2bcbd25474c86cc9a--2-0-0--a---20-06-2016-" data-ice="link">2.0.0 (20-06-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-433dc80daad41228c000a86d607abfb1d092c18b--1-1-0--a---20-03-2016-" data-ice="link">1.1.0 (20-03-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-cb89f8a0d5d8baf1b87d606b334b125d7ae2cfba--1-0-2--a---14-03-2016-" data-ice="link">1.0.2 (14-03-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-3280e84bdf7def38c24c2012215cec0be3aceaf9--1-0-1--a---06-03-2016-" data-ice="link">1.0.1 (06-03-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-75bb4c9a958cadcf906d3eb25edd3c7650ea349f--1-0-0--a---01-03-2016-" data-ice="link">1.0.0 (01-03-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html" data-ice="link">Contributing</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#raising-issues" data-ice="link">Raising Issues</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#report-a-bug" data-ice="link">Report A Bug</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#feature-requests" data-ice="link">Feature Requests</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#pull-requests" data-ice="link">Pull Requests</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#commit-messages" data-ice="link">Commit Messages</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#styleguides" data-ice="link">Styleguides</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#javascript-styleguide" data-ice="link">JavaScript Styleguide</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#tests-styleguide" data-ice="link">Tests Styleguide</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#documentation-styleguide" data-ice="link">Documentation Styleguide</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#setting-up-for-development" data-ice="link">Setting up for development</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#npm-scripts" data-ice="link">npm scripts</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#git-hooks" data-ice="link">Git hooks</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/CODE_OF_CONDUCT.html"><a href="manual/CODE_OF_CONDUCT.html" data-ice="link">Contributor Covenant Code of Conduct</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CODE_OF_CONDUCT.html"><a href="manual/CODE_OF_CONDUCT.html#our-pledge" data-ice="link">Our Pledge</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CODE_OF_CONDUCT.html"><a href="manual/CODE_OF_CONDUCT.html#our-standards" data-ice="link">Our Standards</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CODE_OF_CONDUCT.html"><a href="manual/CODE_OF_CONDUCT.html#our-responsibilities" data-ice="link">Our Responsibilities</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CODE_OF_CONDUCT.html"><a href="manual/CODE_OF_CONDUCT.html#scope" data-ice="link">Scope</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CODE_OF_CONDUCT.html"><a href="manual/CODE_OF_CONDUCT.html#enforcement" data-ice="link">Enforcement</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CODE_OF_CONDUCT.html"><a href="manual/CODE_OF_CONDUCT.html#attribution" data-ice="link">Attribution</a></li>
+</ul>
+  </div>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="tutorial">Tutorial</h1><p>In this tutorial section you can read about the scraping process of the API.</p>
+<h2 id="scraper">Scraper</h2><p>The <a href="https://popcorn-official.github.io/popcorn-api/class/src/scraper.js~Scraper.html"><code>Scraper</code></a> class is the entry point to start the scraping process with the <a href="https://popcorn-official.github.io/popcorn-api/class/src/scraper.js~Scraper.html#instance-method-scrape"><code>scrape</code></a> method. This method will iterate through an array of methods to scrape each individual content provider.</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">scrape() {
+  Scraper._util.setLastUpdated();
+
+  asyncq.eachSeries([
+    this._scrapeExtratorrentShows,
+    this._scrapeEZTVShows,
+    this._scrapeKATShows,
+
+    this._scrapeExtratorrentMovies,
+    this._scrapeKATMovies,
+    this._scrapeYTSMovies,
+
+    this._scrapeExtratorrentAnime,
+    this._scrapeKATAnime,
+    this._scrapeHorribelSubsAnime,
+    this._scrapeNyaaAnime
+  ], scraper =&gt; scraper()).then(value =&gt; Scraper._util.setStatus())
+    .catch(err =&gt; Scraper._util.onError(`Error while scraping: ${err}`));
+};</code>
+</code></pre>
+<h2 id="content-providers">Content Providers</h2><p>Popcorn API gets its torrent content from various sources. Here you can see where the content is coming from.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Anime</th>
+<th>Movie</th>
+<th>Show</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://extratorrent.cc">ExtraTorrent</a></td>
+<td>X [1]</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td><a href="https://eztv.ag/">EZTV</a></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td><a href="https://horriblesubs.info/">Horriblesubs</a></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://kat.cr/">KAT</a> [2]</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td><a href="https://nyaa.se/">Nyaa</a></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://yts.ag/">YTS</a></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>[1] Anime can be scraped from ExtraTorrent, but currently this is not done. The reason for this is because it is very ineffective to scrape anime torrents from <a href="https://extratorrent.cc/">ExtraTorrent</a>. The ineffectiveness is due to a lack of good ExtraTorrent providers.</p>
+</li>
+<li><p>[2] The main website of <a href="https://kat.cr/">KAT</a> is down at the moment, but it was used for movie and tv show scraping. Around the development of the anime provider <a href="https://kat.cr/">KAT</a> got taken down. If <a href="https://kat.cr/">KAT</a> ever comes back in the state it was before it was taken down it can be used again. If this scenario happens the <code>baseUrl</code> of <a href="https://github.com/ChrisAlderson/kat-api-pt">kat-api-pt</a> needs to be changed, or the <code>options</code> in the constructor need to change to override the default <code>baseUrl</code>.</p>
+</li>
+</ul>
+<h3 id="extratorrent">ExtraTorrent</h3><p>Content from <a href="https://extratorrent.cc/">extratorrent.cc</a> is grabbed with so-called &apos;ExtraTorrent providers&apos; which are defined in the
+ <a href="https://popcorn-official.github.io/popcorn-api/variable/index.html#static-variable-extratorrentAnimeProviders"><code>extratorrentAnimeProviders</code></a>,  <a href="https://popcorn-official.github.io/popcorn-api/variable/index.html#static-variable-extratorrentMovieProviders"><code>extratorrentMovieProviders</code></a> and <a href="https://popcorn-official.github.io/popcorn-api/variable/index.html#static-variable-extratorrentShowProviders"><code>extratorrentShowProviders</code></a> arrays. The ExtraTorrent providers will be converted to a search query to <a href="https://extratorrent.cc/">extratorrent.cc</a> by the <a href="https://github.com/ChrisAlderson/extratorrent-api">extratorrent-api</a> module.</p>
+<p>Each provider needs a <code>name</code> property and a <code>query</code> property. The <code>name</code> property is a <code>String</code> will be used for logging purposes so that issues with the provider can be figured out easier. The <code>query</code> property is an <code>Object</code> which can contain various properties. These properties will be converted into a search query to <a href="https://extratorrent.cc/">extratorrent.cc</a>:</p>
+<p>The following <code>query</code> properties can be used:</p>
+<pre><code><code class="source-code prettyprint">- page                    # Number of the page you want to search
+- with_words              # With all of the words **REQUIRED!**
+- extact                  # With the exact phrase
+- without                 # Without the words
+- category                # See categories
+- added                   # Number of last added 1 day (1), 3 days (3) or week (7)
+- seeds_from              # Seeds more than the number given
+- seeds_to                # Seeds less than the number given
+- leechers_from           # Leecher more than the number given
+- leechers_to             # Leechers less than the number given
+- size_from               # Torrent size more than the number given
+- size_to                 # Torrent size less than the number given
+- size_type               # b for byte, kb for kilobyte etc</code>
+</code></pre><p>All three types of content can be scraped from <a href="https://extratorrent.cc/">extratorrent.cc</a> through the <code>ExtraTorrent</code> class in each folder of the providers. By default the <code>ExtraTorrent</code> class adds a few default properties to the providers. The <code>page</code> property does not need to be indicated since the algorithm for scraping <a href="https://extratorrent.cc/">extratorrent.cc</a> will go through all the available pages (max of 200 pages/10.000 torrents due to site limitations). The <code>category</code> property will also have a default value to its corresponding content.</p>
+<p><strong>An example of an ExtraTorrent provider:</strong></p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">{
+  name: &apos;ETTV LOL&apos;,
+  query: {
+    with_words: &apos;ettv hdtv x264 lol&apos;,
+    without: &apos;720p 1080p&apos;
+  }
+}</code>
+</code></pre>
+<p>If you want to make a provider for <a href="https://extratorrent.cc/">extratorrent.cc</a> it is highly recommended you try it first in the browser by manually going to <a href="https://extratorrent.cc/">extratorrent.cc</a> and search for the content. This is because the title of the torrent will be subjected to regular expressions by the <a href="#extractors"><code>Extractors</code></a> to &apos;extract&apos; information about the torrent which will be used to find <a href="#metadata-providers">metadata</a>.</p>
+<h3 id="eztv">EZTV</h3><p>Content from <a href="https://eztv.ag/">eztv.ag</a> is grabbed through the <a href="https://github.com/ChrisAlderson/eztv-api-pt">eztv-api-pt</a> module. The module contains two methods <code>getAllShows</code> and <code>getShowData</code>.</p>
+<h4 id="getallshows">getAllShows</h4><p>This method returns a list of all the available shows listed <a href="https://eztv.ag/showlist/">here</a>. Through regular expression it grabs the show title, the id used by <a href="https://eztv.ag/">eztv.ag</a> and the slug.</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">[{
+    show: &apos;10 O\&apos;Clock Live&apos;,
+    id: &apos;449&apos;,
+    slug: &apos;10-o-clock-live&apos;
+  }, {
+    show: &apos;10 Things I Hate About You&apos;,
+    id: &apos;308&apos;,
+    slug: &apos;10-things-i-hate-about-you&apos;
+  },
+  ...
+]</code>
+</code></pre>
+<h4 id="getshowdata">getShowData</h4><p>Each show from the <code>getAllShows</code> can be passed into the <code>getShowData</code> method to get more data on the individual show. Through this process the slug can change to another slug or imdb id which is compatible with <a href="https://trakt.tv/">Trakt.tv</a>. Torrents are being added to the <code>episodes</code> property which is compatible with the <a href="#helpers"><code>Helper</code></a> class to insert the torrents into the MongoDB database. Nested within the <code>episodes</code> property there is the <code>season number</code> within the <code>season number</code> is the <code>episode number</code> and within the <code>episode number</code> are the different <code>qualities</code> of the torrent.</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">{ show: &apos;10 O\&apos;Clock Live&apos;,
+  id: &apos;449&apos;,
+  slug: &apos;tt1811399&apos;,
+  episodes:
+    dateBased: false,
+    { &apos;1&apos;:
+      { &apos;1&apos;:
+         { &apos;480p&apos;:
+            { url: &apos;magnet:?xt=urn:btih:LMJXHHNOW33Z3YGXJLCTJZ23WK2D6VO4&amp;dn=10.OClock.Live.S01E01.WS.PDTV.XviD-PVR&amp;tr=udp://tracker.openbittorrent.com:80&amp;tr=udp://open.demonii.com:80&amp;tr=udp://tracker.coppersurfer.tk:80&amp;tr=udp://tracker.leechers-paradise.org:6969&amp;tr=udp://exodus.desync.com:6969&apos;,
+              seeds: 0,
+              peers: 0,
+              provider: &apos;EZTV&apos; } },
+        ...
+      }
+    }
+}</code>
+</code></pre>
+<h3 id="horriblesubs">Horriblesubs</h3><p>Content from <a href="https://horriblesubs.info/">horriblesubs.info</a> is grabbed through the <a href="https://github.com/ChrisAlderson/horriblesubs-api">horriblesubs-api</a> module. The module contains two methods <code>getAllAnime</code> and <code>getAnimeData</code>. This module is based on <a href="https://github.com/ChrisAlderson/eztv-api-pt">eztv-api-pt</a> module and the usage of the module within the API is very similar to the <a href="#eztv">EZTV provider</a>.</p>
+<h4 id="getallanime">getAllAnime</h4><p>This method returns a list of all the available shows listed <a href="http://horriblesubs.info/shows/">here</a>. Through the <a href="https://github.com/cheeriojs/cheerio">cheerio</a> module it grabs the anime title, the slug, and the link to get more details about the anime.</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">[{
+  link: &apos;/shows/91-days&apos;,
+  slug: &apos;91-days&apos;,
+  title: &apos;91 Days&apos;
+}, {
+  link: &apos;/shows/absolute-duo&apos;,
+  slug: &apos;absolute-duo&apos;,
+  title: &apos;Absolute Duo&apos;
+}, ...]</code>
+</code></pre>
+<h4 id="getanimedata">getAnimeData</h4><p>Each anime from the <code>getAllAnime</code> can be passed into the <code>getAnimeData</code> method to get more data on the individual anime. Through this process the slug can change to another slug which is compatible with <a href="https://hummingbird.me">Hummingbird.me</a>. The <code>hs_showid</code> is added and torrents are being added to the <code>episodes</code> property which is compatible with the <a href="#helpers"><code>Helper</code></a> class to insert the torrents into the MongoDB database. Nested within the <code>episodes</code> property there is the <code>season number</code> within the <code>season number</code> is the <code>episode number</code> and within the <code>episode number</code> are the different <code>qualities</code> of the torrent.</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">{ link: &apos;/shows/91-days&apos;,
+  slug: &apos;ninety-one-days&apos;,
+  title: &apos;91 Days&apos;,
+  hs_showid: &apos;731&apos;,
+  episodes:
+   { &apos;1&apos;:
+      { &apos;1&apos;:
+        { &apos;480&apos;:
+          { url: &apos;magnet:?xt=urn:btih:AYIJKPLP5WVVF36O25JBB3FFPNJEBBPQ&amp;tr=http://open.nyaatorrents.info:6544/announce&amp;tr=udp://tracker.openbittorrent.com:80/announce&amp;tr=udp://tracker.coppersurfer.tk:6969/announce&apos;,
+          seeds: 0,
+          peers: 0,
+          provider: &apos;HorribleSubs&apos; } },
+        ...
+      }
+    }
+}</code>
+</code></pre>
+<h3 id="kat">KAT</h3><p>Content from <a href="https://kat.cr/">kat.cr</a> is grabbed with so-called <code>KAT providers</code> which are defined in the
+ <a href="https://popcorn-official.github.io/popcorn-api/variable/index.html#static-variable-katAnimeProviders"><code>katAnimeProviders</code></a>,  <a href="https://popcorn-official.github.io/popcorn-api/variable/index.html#static-variable-katMovieProviders"><code>katMovieProviders</code></a> and <a href="https://popcorn-official.github.io/popcorn-api/variable/index.html#static-variable-katShowProviders"><code>katShowProviders</code></a> arrays. The KAT providers will be converted to a search query to <a href="https://kat.cr/">kat.cr</a> by the <a href="https://github.com/ChrisAlderson/kat-api-pt">kat-api-pt</a> module.</p>
+<p>The following <code>query</code> properties can be used:</p>
+<pre><code><code class="source-code prettyprint"> - query               # Search for keywords
+ - category            # The category to search for e.g. tv or movies
+ - uploader            # The name of the uploader of the torrents
+ - min_seeds           # The minimum amount of seeds
+ - age                 # The age of the torrents
+ - min_files           # The minimum amount of files
+ - imdb                # The imdb id for a tv show (only works with category:tv)
+ - tvrage              # The tvrage id for a tv show (only works with category:tv)
+ - language            # The language of the movie/tv show e.g. en or pl
+ - adult_filter        # Filter out the adult torrents
+ - verified            # Show only the verified torrents
+ - season              # Season number of a tv show (only works with category:tv)
+ - episode             # Episode number of a tv show (only works with category:tv)
+ - page                # The page to search on.
+ - sort_by             # Sort by property
+ - order               # Order the list asc or desc</code>
+</code></pre><p>All three types of content can be scraped from <a href="https://kat.cr/">kat.cr</a> through the <code>KAT</code> class in each folder of the providers. By default the <code>KAT</code> class adds a few default properties to the providers. The <code>page</code> property does not need to be indicated since the algorithm for scraping <a href="https://kat.cr/">kat.cr</a> will go through all the available pages (max of 400 pages/10.000 torrents due to site limitations). The <code>category</code> property will also have a default value to its corresponding content. The <code>adult_filter</code> and <code>verified</code> properties are also turned on by default to filter out any potential harmful content.</p>
+<p><strong>An example of a provider:</strong></p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">{
+  name: &apos;ZonerLOL&apos;,
+  query: {
+    query: &apos;x264-LOL&apos;,
+    min_seeds: 3
+  }
+}</code>
+</code></pre>
+<p>If you want to make a provider for <a href="https://kat.cr/">kat.cr</a> it is highly recommended you try it first in the browser by manually going to <a href="https://kat.cr/">kat.cr</a> and search for the content. This is because the title of the torrent will be subjected to regular expressions by the <a href="#extractors"><code>Extractors</code></a> to &apos;extract&apos; information about the torrent which will be used to find <a href="#metadata-providers">metadata</a>.</p>
+<h3 id="nyaa">Nyaa</h3><p>Additional anime content can be scraped from <a href="https://nyaa.se/">nyaa.se</a>, the method for scraping the content is similar to the <a href="#extratorrent">ExtraTorrent</a> and the <a href="#kat">KAT</a> method. It uses the <a href="https://popcorn-official.github.io/popcorn-api/variable/index.html#static-variable-nyaaAnimeProviders"><code>nyaaAnimeProviders</code></a> array, each <code>Object</code> in the array will be converted to a search query to <a href="https://nyaa.se/">nyaa.se</a>. This is done by the <a href="https://github.com/ChrisAlderson/nyaa-api-pt">nyaa-api-pt</a> module.</p>
+<p>Each provider needs a <code>name</code> property and a <code>query</code> property. The <code>name</code> property is a <code>String</code> will be used for logging purposes so that issues with the provider can be figured out easier. The <code>query</code> property is an <code>Object</code> which can contain various properties. These properties will be converted into a search query to <a href="https://nyaa.se/">nyaa.se</a>:</p>
+<p>The following <code>query</code> properties can be used:</p>
+<pre><code><code class="source-code prettyprint"> - filter              # Trusted uploader filter
+ - category            # The category to filter
+ - sub_category        # The sub category to filter
+ - term                # A search term
+ - user                # The id of the uploader
+ - offset              # The page to search on</code>
+</code></pre><p>Only anime will be scraped on <a href="https://nyaa.se/">nyaa.se</a>, this is because <a href="https://nyaa.se/">nyaa.se</a> is focuses on East Asian content. The <a href=""><code>Nyaa</code></a> class will automaticly add the <code>category</code> and <code>sub_category</code> properties. The <code>offset</code> does not to be indicated since the algorithm for scraping <a href="https://nya.se/">nyaa.se</a> will go through all the available pages (max of 100 pages/10.500 torrent due to site limitations).</p>
+<p><strong>An example of a provider:</strong></p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">{
+  name: &apos;Commie&apos;,
+  query: {
+    term: &apos;mkv&apos;,
+    user: 76430,
+    filter: &apos;trusted_only&apos;
+  }
+}</code>
+</code></pre>
+<p>If you want to make a provider for <a href="https://nyaa.se/">nyaa.se</a> it is highly recommended you try if first in the browser by manually to <a href="https://nyaa.se/">nyaa.se</a> and search for the content. This is because the title of the torrent will be subjected to regular expression by the <a href="#anime-extractor"><code>Extractor</code></a> for anime content. The information the extractor &apos;extracts&apos; will be used by the <a href="#metadata-providers">metadata providers</a>.</p>
+<h3 id="yts">YTS</h3><p><strong>NOTE:</strong> This provider will most likely be changed to use a YTS API wrapper module. No API wrappers exists for YTS which are using promises, so one needs to be made.</p>
+<h2 id="extractors">Extractors</h2><p>The extractors are made to get torrents from the content provider and extract content data from torrents.</p>
+<h3 id="base-extractor">Base Extractor</h3><p>The base extractor is made to extract all the torrents from the <a href="#extratorrent">ExtraTorrent</a>, <a href="#kat">KAT</a> and <a href="#nyaa">Nyaa</a> content providers. It has a method to iterate through all the available pages from the content provider and return all the torrents it has found. All extractors will extend this class.</p>
+<h3 id="anime-extractor">Anime Extractor</h3><p>The regular expression needs to get a <code>title</code>, <code>episode</code> and a <code>quality</code> property. A <code>season</code> property is optional, if the <code>season</code> is not in the episode title it will assume the torrent is from <code>season</code> 1. Down below you can see the method to get the needed data for an anime episode. If your content does not match any of these regular expressions, you can add the regular expression to the method.</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">_getAnimeData(torrent) {
+  const secondSeasonQuality = /\[.*\].(.*)\W+S(\d)...(\d{2,3})\W+(\d{3,4}p)/i; // [HorribleSubs] Fairy Tail S2 - 70 [1080p].mkv
+  const oneSeasonQuality = /\[.*\].(\D+)...(\d{2,3})\W+(\d{3,4}p)/i; // [HorribleSubs] Gangsta - 06 [480p].mkv
+  const secondSeason = /\[.*\].(\D+).S(\d+)...(\d{2,3}).*\.mkv/i; // [Commie] The World God Only Knows S2 - 12 [C0A4301E].mkv
+  const oneSeason = /\[.*\].(\D+)...(\d{2,3}).*\.mkv/i; // [Commie] Battery - 05 [38EC4270].mkv
+  if (torrent.title.match(secondSeasonQuality)) {
+   return this._extractAnime(torrent, secondSeasonQuality);
+ } else if (torrent.title.match(oneSeasonQuality)) {
+   return this._extractAnime(torrent, oneSeasonQuality);
+ } else if (torrent.title.match(secondSeason)) {
+    return this._extractAnime(torrent, secondSeason);
+  } else if  (torrent.title.match(oneSeason)) {
+    return this._extractAnime(torrent, oneSeason);
+  } else {
+    logger.warn(`${this.name}: Could not find data from torrent: &apos;${torrent.title}&apos;`);
+  }
+};</code>
+</code></pre>
+<h3 id="movie-extractor">Movie Extractor</h3><p>The regular expression for movies needs to get a <code>title</code>, <code>year</code> and a <code>quality</code> property. Down below you can see the method to get the needed data for a movie. If your content does not match any of these regular expressions, you can add the regular expression to the method.</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">_getMovieData(torrent, language) {
+  const threeDimensions = /(.*).(\d{4}).[3Dd]\D+(\d{3,4}p)/; // Journey to Space 2015 3D 1080p BRRip Half-SBS x264 AAC-ETRG
+  const fourKay = /(.*).(\d{4}).[4k]\D+(\d{3,4}p)/; // Spider Man 2002 4K REMASTERED Bluray 1080p TrueHD x264-Grym
+  const withYear = /(.*).(\d{4})\D+(\d{3,4}p)/; // Batman Begins 2005 720p BluRay x264 AC3 - Ozlem
+  if (torrent.title.match(threeDimensions)) {
+    return this._extractMovie(torrent, language, threeDimensions);
+  } else if (torrent.title.match(fourKay)) {
+    return this._extractMovie(torrent, language, fourKay);
+  } else if (torrent.title.match(withYear)) {
+    return this._extractMovie(torrent, language, withYear);
+  } else {
+    console.warn(`${this.name}: Could not find data from torrent: &apos;${torrent.title}&apos;`);
+  }
+};</code>
+</code></pre>
+<h3 id="show-extractor">Show Extractor</h3><p>The regular expression for shows needs to get a <code>title</code>, <code>season</code>, <code>episode</code> and a <code>quality</code> property. Down below you can see the method to get the needed data for a show episode. If your content does not match any of these regular expressions, you can add the regular expression to the method.</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">_getShowData(torrent) {
+  const seasonBased = /(.*).[sS](\d{2})[eE](\d{2})/; // Dexter S08E09 720p HDTV x264-IMMERSE
+  const vtv = /(.*).(\d{1,2})[x](\d{2})/; // The Whispers 1x09 (HDTV-x264-KILLERS)[VTV]
+  const dateBased = /(.*).(\d{4}).(\d{2}.\d{2})/; // Jimmy Fallon 2016 08 02 Jonah Hill HDTV x264-CROOKS
+  if (torrent.title.match(seasonBased)) {
+    return this._extractShow(torrent, seasonBased, false);
+  } else if (torrent.title.match(vtv)) {
+    return this._extractShow(torrent, vtv, false);
+  } else if (torrent.title.match(dateBased)) {
+    return this._extractShow(torrent, dateBased, true);
+  } else {
+    console.warn(`${this.name}: Could not find data from torrent: &apos;${torrent.title}&apos;`);
+  }
+};</code>
+</code></pre>
+<h2 id="helpers">Helpers</h2><p>The <code>helper.js</code> classes in each provider folder helps the providers to insert the scraped data into the MongoDB database. The providers need to call two methods.</p>
+<h3 id="anime--amp--show-helpers">Anime &amp; Show Helpers</h3><p>The first method to call is <a href="https://popcorn-official.github.io/popcorn-api/class/src/providers/anime/helper.js~Helper.html#instance-method-getHummingbirdInfo"><code>getHummingbirdInfo</code></a> for anime and <a href="https://popcorn-official.github.io/popcorn-api/class/src/providers/show/helper.js~Helper.html#instance-method-getTraktInfo"><code>getTraktInfo</code></a> for shows. These methods need a slug as a parameter (<a href="https://popcorn-official.github.io/popcorn-api/class/src/providers/show/helper.js~Helper.html#instance-method-getTraktInfo"><code>getTraktInfo</code></a> can also use an imdb id). These methods will fetch metadata from <a href="https://hummingbird.me/">Hummingbird.me</a> or <a href="https://trakt.tv">Trakt.tv</a> and return an object based on the schema of the mongoose model, but without any episodes.</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">getTraktInfo(slug);
+getHummingbirdInfo(slug);</code>
+</code></pre>
+<p>The second method to call is the <code>addEpisodes</code> method to attach the episodes to the object returned by <a href="https://popcorn-official.github.io/popcorn-api/class/src/providers/anime/helper.js~Helper.html#instance-method-getHummingbirdInfo"><code>getHummingbirdInfo</code></a> or <a href="https://popcorn-official.github.io/popcorn-api/class/src/providers/anime/helper.js~Helper.html#instance-method-getHummingbirdInfo"><code>getTraktInfo</code></a>. This object is the first parameter, the second one is the episodes object and the third parameter is the slug again.</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">addEpisodes(anime/show, episodes, slug);</code>
+</code></pre>
+<p>The episodes are structured in a particular way. In the episodes object you first have the seasons represented by a number. Nested in each season is another object which is the episode which is also represented by a number. In the episode object you have the qualities available for the episode. These qualities can be <code>480p</code>, <code>720p</code> or <code>1080p</code>. Finally inside the quality object you have the <code>url</code> to the torrent or magnet link, the amount of <code>seeds</code> and <code>peers</code> and lastly the name of the provider.</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">{
+  &apos;1&apos;: {
+    &apos;1&apos;: {
+      &apos;480p&apos;: {
+        url: &apos;magnet:?xt=urn:btih:LMJXHHNOW33Z3YGXJLCTJZ23WK2D6VO4&amp;dn=10.OClock.Live.S01E01.WS.PDTV.XviD-PVR&amp;tr=udp://tracker.openbittorrent.com:80&amp;tr=udp://open.demonii.com:80&amp;tr=udp://tracker.coppersurfer.tk:80&amp;tr=udp://tracker.leechers-paradise.org:6969&amp;tr=udp://exodus.desync.com:6969&apos;,
+        seeds: 0,
+        peers: 0,
+        provider: &apos;EZTV&apos;
+      }
+    }
+  }
+}</code>
+</code></pre>
+<h3 id="movie-helper">Movie Helper</h3><p>The first method to call is <a href="https://popcorn-official.github.io/popcorn-api/class/src/providers/movie/helper.js~Helper.html#instance-method-getTraktInfo"><code>getTraktInfo</code></a>. This method need a slug as a parameter, but can also use an imdb id). This method will fetch metadata from <a href="https://trakt.tv">Trakt.tv</a> and return an object based on the schema of the mongoose model, but without any torrents.</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">getTraktInfo(slug);</code>
+</code></pre>
+<p>The second method to call is the <a href="https://popcorn-official.github.io/popcorn-api/class/src/providers/movie/helper.js~Helper.html#instance-method-addTorrents"><code>addTorrents</code></a> method to attach the torrents to the object returned by <a href="https://popcorn-official.github.io/popcorn-api/class/src/providers/movie/helper.js~Helper.html#instance-method-getTraktInfo"><code>getTraktInfo</code></a>. This object is the first parameter, the second one is the torrents for the movie.</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">addTorrents(movie, torrents);</code>
+</code></pre>
+<p>The torrents are structured in a particular way. In the torrents object you first have the language of the torrents represented by a language code e.g. <code>en</code>. Nested inside the language are the qualities of the torrents. These qualities can be <code>720p</code> or <code>1080p</code>. Finally inside the quality object you have the <code>url</code> to the torrent or magnet link, the amount of <code>seeds</code> and <code>peers</code>, the <code>size</code> of the torrent in bits, the <code>fileSize</code> which is a more easily readable version of <code>size</code> and lastly the name of provider.</p>
+<pre><code class="lang-javascipt"><code class="source-code prettyprint">{
+  &apos;en&apos;: {
+    &apos;720p&apos;: {
+      url: &apos;magnet:?xt=urn:btih:1BEA4C992D1F7A765F3C943E627E881AC7FDAA35&amp;tr=udp://glotorrents.pw:6969/announce&amp;tr=udp://tracker.opentrackr.org:1337/announce&amp;tr=udp://torrent.gresille.org:80/announce&amp;tr=udp://tracker.openbittorrent.com:80&amp;tr=udp://tracker.coppersurfer.tk:6969&amp;tr=udp://tracker.leechers-paradise.org:6969&amp;tr=udp://p4p.arenabg.ch:1337&amp;tr=udp://tracker.internetwarriors.net:1337&apos;,
+      seed: 156,
+      peer: 44,
+      size: 819829146,
+      filesize: &apos;781.85 MB&apos;,
+      provider: &apos;YTS&apos;
+    }
+  }
+}</code>
+</code></pre>
+<h2 id="metadata-providers">Metadata Providers</h2><p>Metadata providers are providers which get data on a movie or get seasonal information from a show. Popcorn API uses two API services to get its metadata on anime, movies and shows.</p>
+<h3 id="-a-href--https---trakt-tv---trakt-tv--a-"><a href="https://trakt.tv/">Trakt.tv</a></h3><p><a href="https://trakt.tv/">Trakt.tv</a> is the metadata provider for movies and shows. It uses a module from <a href="https://github.com/vankasteelj">Jean van Kasteel</a> called <a href="https://github.com/vankasteelj/trakt.tv">trakt.tv</a>. For more information about the Trakt API you can click <a href="http://docs.trakt.apiary.io/">here</a>.</p>
+<h3 id="-a-href--https---thetvdb-com---thetvdb-com--a-"><a href="https://thetvdb.com/">TheTVDB.com</a></h3><p><a href="https://thetvdb.com/">TheTVDB.com</a> is the metadata provider for shows which have are datebased like &apos;@Midnight&apos;. It uses a module from <a href="https://github.com/edwellbrook">Ed Wellbrook</a> called <a href="https://github.com/edwellbrook/node-tvdb">node-tvdb</a>. For more information about the TVDB API you can click <a href="https://www.thetvdb.com/wiki/index.php/Programmers_API">here</a>.</p>
+<h3 id="-a-href--https---hummingbird-me--hummingbird-me--a-"><a href="https://hummingbird.me">Hummingbird.me</a></h3><p><a href="https://hummingbird.me">Hummingbird.me</a> is the metadata provider for anime. It uses the <a href="https://github.com/ChrisAlderson/hummingbird-api">hummingbird-api</a> module. For more information about the Hummingbird API you can click <a href="https://github.com/hummingbird-me/hummingbird/wiki">here</a>.</p>
+<h3 id="-a-href--https---fanart-tv---fanart-tv--a-"><a href="https://fanart.tv/">Fanart.tv</a></h3><p><a href="https://fanart.tv/">Fanart.tv</a> is the provider of the images used by movies and shows. It uses the <a href="https://github.com/ChrisAlderson/fanart.tv-api/">fanart.tv-api</a>. For more information about the Fanart API you can click <a href="http://docs.fanarttv.apiary.io/#">here</a>.</p>
+<h3 id="-a-href--https---www-omdbapi-com---omdbapi-com--a-"><a href="https://www.omdbapi.com/">OMDBapi.com</a></h3><p><a href="https://www.omdbapi.com/">OMDBapi.com</a> is the provider of the images used by movies. It uses the <a href="https://github.com/ChrisAlderson/omdb-api-pt">omdb-api-pt</a>. For more information about the OMDB API you can click <a href="https://www.omdbapi.com/">here</a>.</p>
+<h3 id="-a-href--https---www-themoviedb-org---themoviedb-org--a-"><a href="https://www.themoviedb.org/">TheMovieDB.org</a></h3><p><a href="https://www.themoviedb.org/">TheMovieDB.org</a> is the provider for the images used by movies and shows. It uses a module from <a href="https://github.com/sarathkcm">sarathkcm</a> called <a href="https://github.com/sarathkcm/TheMovieDBClient">themoviedbclient</a>. For more information about The MovieDB you can click <a href="https://www.themoviedb.org/documentation/api">here</a>.</p>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

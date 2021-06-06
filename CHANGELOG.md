@@ -1,8 +1,144 @@
-# Change log
+# Change Log
 
-All notable changes to this project will be documented in this file. See
-[standard-version](https://github.com/conventional-changelog/standard-version)
-for commit guidelines.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+<a name="3.5.0"></a>
+# 3.5.0 (2021-06-06)
+
+
+### Bug Fixes
+
+* Fix tests for synopsis searching ([e8a58b3](https://github.com/popcorn-official/popcorn-api/commit/e8a58b3))
+* **flow:** Fix flow config for windows ([a93743a](https://github.com/popcorn-official/popcorn-api/commit/a93743a))
+* **flow:** Make flow tests pass ([53c4c5b](https://github.com/popcorn-official/popcorn-api/commit/53c4c5b))
+* **models:** Fix where animeshow and show would be the same ([ac135a8](https://github.com/popcorn-official/popcorn-api/commit/ac135a8))
+* **pop-api-scraper:** Fix where status files would be empty ([ebcd4e5](https://github.com/popcorn-official/popcorn-api/commit/ebcd4e5))
+* Fix api for pop-ap@0.1.0 ([e2d7931](https://github.com/popcorn-official/popcorn-api/commit/e2d7931))
+* fix appveyor shield ([0325cec](https://github.com/popcorn-official/popcorn-api/commit/0325cec))
+* Fix build with rollup commonjs ([0f2e739](https://github.com/popcorn-official/popcorn-api/commit/0f2e739))
+* Fix running dredd and mocha tests ([ce14d34](https://github.com/popcorn-official/popcorn-api/commit/ce14d34))
+* Flow  now works with mongoose models ([09e8b8e](https://github.com/popcorn-official/popcorn-api/commit/09e8b8e))
+
+
+### Features
+
+* Add issue and pr templates ([04e95d9](https://github.com/popcorn-official/popcorn-api/commit/04e95d9))
+* Add support for appveyor ([04cc12f](https://github.com/popcorn-official/popcorn-api/commit/04cc12f))
+* Add support for standard-version ([8d3efce](https://github.com/popcorn-official/popcorn-api/commit/8d3efce))
+* Build with rollupjs ([957b61d](https://github.com/popcorn-official/popcorn-api/commit/957b61d))
+* Text indexes search (@MrcRjs) ([f1e8fd2](https://github.com/popcorn-official/popcorn-api/commit/f1e8fd2))
+
+
+
+<a name="3.4.0"></a>
+# 3.4.0 (2021-06-06)
+
+
+### Bug Fixes
+
+* Fix tests for synopsis searching ([e8a58b3](https://github.com/popcorn-official/popcorn-api/commit/e8a58b3))
+* **flow:** Fix flow config for windows ([a93743a](https://github.com/popcorn-official/popcorn-api/commit/a93743a))
+* **flow:** Make flow tests pass ([53c4c5b](https://github.com/popcorn-official/popcorn-api/commit/53c4c5b))
+* **models:** Fix where animeshow and show would be the same ([ac135a8](https://github.com/popcorn-official/popcorn-api/commit/ac135a8))
+* **pop-api-scraper:** Fix where status files would be empty ([ebcd4e5](https://github.com/popcorn-official/popcorn-api/commit/ebcd4e5))
+* Fix api for pop-ap@0.1.0 ([e2d7931](https://github.com/popcorn-official/popcorn-api/commit/e2d7931))
+* fix appveyor shield ([0325cec](https://github.com/popcorn-official/popcorn-api/commit/0325cec))
+* Fix build with rollup commonjs ([0f2e739](https://github.com/popcorn-official/popcorn-api/commit/0f2e739))
+* Fix running dredd and mocha tests ([ce14d34](https://github.com/popcorn-official/popcorn-api/commit/ce14d34))
+* Flow  now works with mongoose models ([09e8b8e](https://github.com/popcorn-official/popcorn-api/commit/09e8b8e))
+
+
+### Features
+
+* Add issue and pr templates ([04e95d9](https://github.com/popcorn-official/popcorn-api/commit/04e95d9))
+* Add support for appveyor ([04cc12f](https://github.com/popcorn-official/popcorn-api/commit/04cc12f))
+* Add support for standard-version ([8d3efce](https://github.com/popcorn-official/popcorn-api/commit/8d3efce))
+* Build with rollupjs ([957b61d](https://github.com/popcorn-official/popcorn-api/commit/957b61d))
+* Text indexes search (@MrcRjs) ([f1e8fd2](https://github.com/popcorn-official/popcorn-api/commit/f1e8fd2))
+
+
+
+<a name="3.3.0"></a>
+# 3.3.0 (2021-06-06)
+
+
+### Bug Fixes
+
+* Fix tests for synopsis searching ([e8a58b3](https://github.com/popcorn-official/popcorn-api/commit/e8a58b3))
+* **flow:** Fix flow config for windows ([a93743a](https://github.com/popcorn-official/popcorn-api/commit/a93743a))
+* **flow:** Make flow tests pass ([53c4c5b](https://github.com/popcorn-official/popcorn-api/commit/53c4c5b))
+* **models:** Fix where animeshow and show would be the same ([ac135a8](https://github.com/popcorn-official/popcorn-api/commit/ac135a8))
+* **pop-api-scraper:** Fix where status files would be empty ([ebcd4e5](https://github.com/popcorn-official/popcorn-api/commit/ebcd4e5))
+* Fix api for pop-ap@0.1.0 ([e2d7931](https://github.com/popcorn-official/popcorn-api/commit/e2d7931))
+* fix appveyor shield ([0325cec](https://github.com/popcorn-official/popcorn-api/commit/0325cec))
+* Fix build with rollup commonjs ([0f2e739](https://github.com/popcorn-official/popcorn-api/commit/0f2e739))
+* Fix running dredd and mocha tests ([ce14d34](https://github.com/popcorn-official/popcorn-api/commit/ce14d34))
+* Flow  now works with mongoose models ([09e8b8e](https://github.com/popcorn-official/popcorn-api/commit/09e8b8e))
+
+
+### Features
+
+* Add issue and pr templates ([04e95d9](https://github.com/popcorn-official/popcorn-api/commit/04e95d9))
+* Add support for appveyor ([04cc12f](https://github.com/popcorn-official/popcorn-api/commit/04cc12f))
+* Add support for standard-version ([8d3efce](https://github.com/popcorn-official/popcorn-api/commit/8d3efce))
+* Build with rollupjs ([957b61d](https://github.com/popcorn-official/popcorn-api/commit/957b61d))
+* Text indexes search (@MrcRjs) ([f1e8fd2](https://github.com/popcorn-official/popcorn-api/commit/f1e8fd2))
+
+
+
+<a name="3.2.0"></a>
+# 3.2.0 (2021-06-06)
+
+
+### Bug Fixes
+
+* Fix tests for synopsis searching ([e8a58b3](https://github.com/popcorn-official/popcorn-api/commit/e8a58b3))
+* **flow:** Fix flow config for windows ([a93743a](https://github.com/popcorn-official/popcorn-api/commit/a93743a))
+* **flow:** Make flow tests pass ([53c4c5b](https://github.com/popcorn-official/popcorn-api/commit/53c4c5b))
+* **models:** Fix where animeshow and show would be the same ([ac135a8](https://github.com/popcorn-official/popcorn-api/commit/ac135a8))
+* **pop-api-scraper:** Fix where status files would be empty ([ebcd4e5](https://github.com/popcorn-official/popcorn-api/commit/ebcd4e5))
+* Fix api for pop-ap@0.1.0 ([e2d7931](https://github.com/popcorn-official/popcorn-api/commit/e2d7931))
+* fix appveyor shield ([0325cec](https://github.com/popcorn-official/popcorn-api/commit/0325cec))
+* Fix build with rollup commonjs ([0f2e739](https://github.com/popcorn-official/popcorn-api/commit/0f2e739))
+* Fix running dredd and mocha tests ([ce14d34](https://github.com/popcorn-official/popcorn-api/commit/ce14d34))
+* Flow  now works with mongoose models ([09e8b8e](https://github.com/popcorn-official/popcorn-api/commit/09e8b8e))
+
+
+### Features
+
+* Add issue and pr templates ([04e95d9](https://github.com/popcorn-official/popcorn-api/commit/04e95d9))
+* Add support for appveyor ([04cc12f](https://github.com/popcorn-official/popcorn-api/commit/04cc12f))
+* Add support for standard-version ([8d3efce](https://github.com/popcorn-official/popcorn-api/commit/8d3efce))
+* Build with rollupjs ([957b61d](https://github.com/popcorn-official/popcorn-api/commit/957b61d))
+* Text indexes search (@MrcRjs) ([f1e8fd2](https://github.com/popcorn-official/popcorn-api/commit/f1e8fd2))
+
+
+
+<a name="3.1.0"></a>
+# 3.1.0 (2021-06-06)
+
+
+### Bug Fixes
+
+* Fix tests for synopsis searching ([e8a58b3](https://github.com/popcorn-official/popcorn-api/commit/e8a58b3))
+* **flow:** Fix flow config for windows ([a93743a](https://github.com/popcorn-official/popcorn-api/commit/a93743a))
+* **flow:** Make flow tests pass ([53c4c5b](https://github.com/popcorn-official/popcorn-api/commit/53c4c5b))
+* **models:** Fix where animeshow and show would be the same ([ac135a8](https://github.com/popcorn-official/popcorn-api/commit/ac135a8))
+* **pop-api-scraper:** Fix where status files would be empty ([ebcd4e5](https://github.com/popcorn-official/popcorn-api/commit/ebcd4e5))
+* Fix api for pop-ap@0.1.0 ([e2d7931](https://github.com/popcorn-official/popcorn-api/commit/e2d7931))
+* fix appveyor shield ([0325cec](https://github.com/popcorn-official/popcorn-api/commit/0325cec))
+* Fix build with rollup commonjs ([0f2e739](https://github.com/popcorn-official/popcorn-api/commit/0f2e739))
+* Fix running dredd and mocha tests ([ce14d34](https://github.com/popcorn-official/popcorn-api/commit/ce14d34))
+* Flow  now works with mongoose models ([09e8b8e](https://github.com/popcorn-official/popcorn-api/commit/09e8b8e))
+
+
+### Features
+
+* Add issue and pr templates ([04e95d9](https://github.com/popcorn-official/popcorn-api/commit/04e95d9))
+* Add support for appveyor ([04cc12f](https://github.com/popcorn-official/popcorn-api/commit/04cc12f))
+* Add support for standard-version ([8d3efce](https://github.com/popcorn-official/popcorn-api/commit/8d3efce))
+* Build with rollupjs ([957b61d](https://github.com/popcorn-official/popcorn-api/commit/957b61d))
+* Text indexes search (@MrcRjs) ([f1e8fd2](https://github.com/popcorn-official/popcorn-api/commit/f1e8fd2))
 
 
 

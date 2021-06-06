@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="">
+  <title data-ice="title">Source | popcorn-api</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="og:type" content="website"><meta property="og:url" content="https://popcorntime.sh"><meta property="og:site_name" content="popcorn-api"><meta property="og:title" content="popcorn-api"><meta property="og:image" content="https://avatars2.githubusercontent.com/u/7267937"><meta property="og:description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="og:author" content="https://twitter.com/popcorntimetv"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="popcorn-api"><meta property="twitter:description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="twitter:image" content="https://avatars2.githubusercontent.com/u/7267937"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/popcorn-official/popcorn-api"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/ContentController.js~ContentController.html">ContentController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/ExportController.js~ExportController.html">ExportController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/IndexController.js~IndexController.html">IndexController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#middleware">middleware</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/middleware/Cli.js~Cli.html">Cli</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-promptSchemas">promptSchemas</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-animemovie">models/animemovie</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/animemovie/AnimeMovieModel.js~AnimeMovieModel.html">AnimeMovieModel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-animeshow">models/animeshow</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/animeshow/AnimeShowModel.js~AnimeShowModel.html">AnimeShowModel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-content">models/content</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/content/ContentModel.js~ContentModel.html">ContentModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-contentSchema">contentSchema</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Images">Images</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Rating">Rating</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="http://mongoosejs.com">Model</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-movie">models/movie</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/movie/MovieModel.js~MovieModel.html">MovieModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-movieSchema">movieSchema</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-providerconfig">models/providerconfig</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/providerconfig/ProviderConfigModel.js~ProviderConfigModel.html">ProviderConfigModel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-show">models/show</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/show/ShowModel.js~ShowModel.html">ShowModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-showSchema">showSchema</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Episode">Episode</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper">scraper</a><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/eztv-api-pt">Eztv</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/fanart.tv-api">Fanart</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/horriblesubs-api">HorribleSubs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/kat-api-pt">Kat</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/nyaa-api-pt">Nyaa</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/omdb-api-pt">Omdb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/vankasteelj/tmdbapi">Tmdb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/vankasteelj/trakt.tv">Trakt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/edwellbrook/node-tvdb">Tvdb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/yts-api-pt">Yts</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-configs">scraper/configs</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-eztvConfig">eztvConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-horribleSubsConfig">horribleSubsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-katMovieConfig">katMovieConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-nyaaCommieConfig">nyaaCommieConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-nyaaFffConfig">nyaaFffConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-nyaaGgConfig">nyaaGgConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ytsConfig">ytsConfig</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-helpers">scraper/helpers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/helpers/AbstractHelper.js~AbstractHelper.html">AbstractHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html">MovieHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html">ShowHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/scraper/helpers/IHelper.js~IHelper.html">IHelper</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-providers">scraper/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html">BaseProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/BulkProvider.js~BulkProvider.html">BulkProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/MovieProvider.js~MovieProvider.html">MovieProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/ShowProvider.js~ShowProvider.html">ShowProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/YtsProvider.js~YtsProvider.html">YtsProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-providers-maps">scraper/providers/maps</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-movieMap">movieMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-showMap">showMap</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1>Source <img data-ice="coverageBadge" src="./badge.svg"><span data-ice="totalCoverageCount" class="total-coverage-count">170/185</span></h1>
+
+<table class="files-summary" data-ice="files" data-use-coverage="true">
+  <thead>
+    <tr>
+      <td>File</td>
+      <td>Identifier</td>
+      <td class="coverage">Document</td>
+      <td style="display: none;">Size</td>
+      <td style="display: none;">Lines</td>
+      <td style="display: none;">Updated</td>
+    </tr>
+  </thead>
+  <tbody>
+    
+  <tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/controllers/ContentController.js.html">src/controllers/ContentController.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/controllers/ContentController.js~ContentController.html">ContentController</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">6/6</span></td>
+      <td style="display: none;" data-ice="size">3539 byte</td>
+      <td style="display: none;" data-ice="lines">144</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/controllers/ExportController.js.html">src/controllers/ExportController.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/controllers/ExportController.js~ExportController.html">ExportController</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">3/3</span></td>
+      <td style="display: none;" data-ice="size">2004 byte</td>
+      <td style="display: none;" data-ice="lines">79</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/controllers/IndexController.js.html">src/controllers/IndexController.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/controllers/IndexController.js~IndexController.html">IndexController</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">5/5</span></td>
+      <td style="display: none;" data-ice="size">3334 byte</td>
+      <td style="display: none;" data-ice="lines">136</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/controllers/index.js.html#errorLines=35,49,59">src/controllers/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">40 %</span><span data-ice="coverageCount" class="coverage-count">2/5</span></td>
+      <td style="display: none;" data-ice="size">2012 byte</td>
+      <td style="display: none;" data-ice="lines">120</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/index.js.html">src/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">1225 byte</td>
+      <td style="display: none;" data-ice="lines">64</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/middleware/Cli.js.html">src/middleware/Cli.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/middleware/Cli.js~Cli.html">Cli</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">19/19</span></td>
+      <td style="display: none;" data-ice="size">10900 byte</td>
+      <td style="display: none;" data-ice="lines">396</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/middleware/index.js.html">src/middleware/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">57 byte</td>
+      <td style="display: none;" data-ice="lines">2</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/middleware/promptschemas.js.html#errorLines=148,159,28,7,73,83">src/middleware/promptschemas.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-promptSchemas">promptSchemas</a></span></td>
+      <td class="coverage"><span data-ice="coverage">53 %</span><span data-ice="coverageCount" class="coverage-count">7/13</span></td>
+      <td style="display: none;" data-ice="size">3126 byte</td>
+      <td style="display: none;" data-ice="lines">175</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/animemovie/AnimeMovieModel.js.html">src/models/animemovie/AnimeMovieModel.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/models/animemovie/AnimeMovieModel.js~AnimeMovieModel.html">AnimeMovieModel</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">256 byte</td>
+      <td style="display: none;" data-ice="lines">10</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/animemovie/animeMovieSchema.js.html">src/models/animemovie/animeMovieSchema.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">312 byte</td>
+      <td style="display: none;" data-ice="lines">14</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/animemovie/index.js.html">src/models/animemovie/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">526 byte</td>
+      <td style="display: none;" data-ice="lines">23</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/animeshow/AnimeShowModel.js.html">src/models/animeshow/AnimeShowModel.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/models/animeshow/AnimeShowModel.js~AnimeShowModel.html">AnimeShowModel</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">248 byte</td>
+      <td style="display: none;" data-ice="lines">10</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/animeshow/animeShowSchema.js.html">src/models/animeshow/animeShowSchema.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">307 byte</td>
+      <td style="display: none;" data-ice="lines">14</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/animeshow/index.js.html">src/models/animeshow/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">515 byte</td>
+      <td style="display: none;" data-ice="lines">23</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/content/ContentModel.js.html">src/models/content/ContentModel.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/models/content/ContentModel.js~ContentModel.html">ContentModel</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">13/13</span></td>
+      <td style="display: none;" data-ice="size">3784 byte</td>
+      <td style="display: none;" data-ice="lines">194</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/content/contentSchema.js.html#errorLines=8">src/models/content/contentSchema.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-contentSchema">contentSchema</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
+      <td style="display: none;" data-ice="size">652 byte</td>
+      <td style="display: none;" data-ice="lines">45</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/index.js.html">src/models/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">207 byte</td>
+      <td style="display: none;" data-ice="lines">6</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/movie/MovieModel.js.html">src/models/movie/MovieModel.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/models/movie/MovieModel.js~MovieModel.html">MovieModel</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">7/7</span></td>
+      <td style="display: none;" data-ice="size">2652 byte</td>
+      <td style="display: none;" data-ice="lines">118</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/movie/index.js.html">src/models/movie/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">470 byte</td>
+      <td style="display: none;" data-ice="lines">23</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/movie/movieSchema.js.html">src/models/movie/movieSchema.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-movieSchema">movieSchema</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">574 byte</td>
+      <td style="display: none;" data-ice="lines">30</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/providerconfig/ProviderConfigModel.js.html">src/models/providerconfig/ProviderConfigModel.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/models/providerconfig/ProviderConfigModel.js~ProviderConfigModel.html">ProviderConfigModel</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">10/10</span></td>
+      <td style="display: none;" data-ice="size">2495 byte</td>
+      <td style="display: none;" data-ice="lines">112</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/providerconfig/index.js.html">src/models/providerconfig/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">478 byte</td>
+      <td style="display: none;" data-ice="lines">18</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/providerconfig/providerConfigSchema.js.html">src/models/providerconfig/providerConfigSchema.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">583 byte</td>
+      <td style="display: none;" data-ice="lines">38</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/show/ShowModel.js.html">src/models/show/ShowModel.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/models/show/ShowModel.js~ShowModel.html">ShowModel</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">12/12</span></td>
+      <td style="display: none;" data-ice="size">4707 byte</td>
+      <td style="display: none;" data-ice="lines">207</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/show/index.js.html">src/models/show/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">459 byte</td>
+      <td style="display: none;" data-ice="lines">23</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/models/show/showSchema.js.html">src/models/show/showSchema.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-showSchema">showSchema</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">878 byte</td>
+      <td style="display: none;" data-ice="lines">46</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/apiModules.js.html">src/scraper/apiModules.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">10/10</span></td>
+      <td style="display: none;" data-ice="size">3392 byte</td>
+      <td style="display: none;" data-ice="lines">156</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/configs/bulkConfigs.js.html#errorLines=30">src/scraper/configs/bulkConfigs.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-eztvConfig">eztvConfig</a></span>
+<span><a href="variable/index.html#static-variable-horribleSubsConfig">horribleSubsConfig</a></span></td>
+      <td class="coverage"><span data-ice="coverage">50 %</span><span data-ice="coverageCount" class="coverage-count">1/2</span></td>
+      <td style="display: none;" data-ice="size">817 byte</td>
+      <td style="display: none;" data-ice="lines">45</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/configs/index.js.html">src/scraper/configs/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">193 byte</td>
+      <td style="display: none;" data-ice="lines">5</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/configs/movieConfigs.js.html">src/scraper/configs/movieConfigs.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-katMovieConfig">katMovieConfig</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">773 byte</td>
+      <td style="display: none;" data-ice="lines">35</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/configs/showConfigs.js.html#errorLines=51,64,77">src/scraper/configs/showConfigs.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-nyaaCommieConfig">nyaaCommieConfig</a></span>
+<span><a href="variable/index.html#static-variable-nyaaFffConfig">nyaaFffConfig</a></span>
+<span><a href="variable/index.html#static-variable-nyaaGgConfig">nyaaGgConfig</a></span></td>
+      <td class="coverage"><span data-ice="coverage">40 %</span><span data-ice="coverageCount" class="coverage-count">2/5</span></td>
+      <td style="display: none;" data-ice="size">3907 byte</td>
+      <td style="display: none;" data-ice="lines">214</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/configs/ytsConfigs.js.html">src/scraper/configs/ytsConfigs.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-ytsConfig">ytsConfig</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">551 byte</td>
+      <td style="display: none;" data-ice="lines">28</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/helpers/AbstractHelper.js.html">src/scraper/helpers/AbstractHelper.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/scraper/helpers/AbstractHelper.js~AbstractHelper.html">AbstractHelper</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">7/7</span></td>
+      <td style="display: none;" data-ice="size">2040 byte</td>
+      <td style="display: none;" data-ice="lines">89</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/helpers/IHelper.js.html">src/scraper/helpers/IHelper.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/scraper/helpers/IHelper.js~IHelper.html">IHelper</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">4/4</span></td>
+      <td style="display: none;" data-ice="size">1682 byte</td>
+      <td style="display: none;" data-ice="lines">53</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/helpers/MovieHelper.js.html">src/scraper/helpers/MovieHelper.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html">MovieHelper</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">9/9</span></td>
+      <td style="display: none;" data-ice="size">7624 byte</td>
+      <td style="display: none;" data-ice="lines">265</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/helpers/ShowHelper.js.html">src/scraper/helpers/ShowHelper.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html">ShowHelper</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">12/12</span></td>
+      <td style="display: none;" data-ice="size">12443 byte</td>
+      <td style="display: none;" data-ice="lines">426</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/helpers/index.js.html">src/scraper/helpers/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">111 byte</td>
+      <td style="display: none;" data-ice="lines">3</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/index.js.html">src/scraper/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">799 byte</td>
+      <td style="display: none;" data-ice="lines">50</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/providers/BaseProvider.js.html">src/scraper/providers/BaseProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html">BaseProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">20/20</span></td>
+      <td style="display: none;" data-ice="size">10493 byte</td>
+      <td style="display: none;" data-ice="lines">354</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/providers/BulkProvider.js.html">src/scraper/providers/BulkProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/scraper/providers/BulkProvider.js~BulkProvider.html">BulkProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">2/2</span></td>
+      <td style="display: none;" data-ice="size">1493 byte</td>
+      <td style="display: none;" data-ice="lines">51</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/providers/MovieProvider.js.html">src/scraper/providers/MovieProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/scraper/providers/MovieProvider.js~MovieProvider.html">MovieProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">4/4</span></td>
+      <td style="display: none;" data-ice="size">4093 byte</td>
+      <td style="display: none;" data-ice="lines">153</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/providers/ShowProvider.js.html">src/scraper/providers/ShowProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/scraper/providers/ShowProvider.js~ShowProvider.html">ShowProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">4/4</span></td>
+      <td style="display: none;" data-ice="size">4521 byte</td>
+      <td style="display: none;" data-ice="lines">171</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/providers/YtsProvider.js.html">src/scraper/providers/YtsProvider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/scraper/providers/YtsProvider.js~YtsProvider.html">YtsProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">3/3</span></td>
+      <td style="display: none;" data-ice="size">2518 byte</td>
+      <td style="display: none;" data-ice="lines">83</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/providers/index.js.html">src/scraper/providers/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">201 byte</td>
+      <td style="display: none;" data-ice="lines">5</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/providers/maps/movieMap.js.html">src/scraper/providers/maps/movieMap.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-movieMap">movieMap</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">196 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/scraper/providers/maps/showMap.js.html#errorLines=7">src/scraper/providers/maps/showMap.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-showMap">showMap</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
+      <td style="display: none;" data-ice="size">14071 byte</td>
+      <td style="display: none;" data-ice="lines">275</td>
+      <td style="display: none;" data-ice="updated">2021-06-06 14:35:23 (UTC)</td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">test/scraper/helpers/ShowHelper.spec.js | popcorn-api</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="og:type" content="website"><meta property="og:url" content="https://popcorntime.sh"><meta property="og:site_name" content="popcorn-api"><meta property="og:title" content="popcorn-api"><meta property="og:image" content="https://avatars2.githubusercontent.com/u/7267937"><meta property="og:description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="og:author" content="https://twitter.com/popcorntimetv"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="popcorn-api"><meta property="twitter:description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="twitter:image" content="https://avatars2.githubusercontent.com/u/7267937"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/popcorn-official/popcorn-api"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/ContentController.js~ContentController.html">ContentController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/ExportController.js~ExportController.html">ExportController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/IndexController.js~IndexController.html">IndexController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#middleware">middleware</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/middleware/Cli.js~Cli.html">Cli</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-promptSchemas">promptSchemas</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-animemovie">models/animemovie</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/animemovie/AnimeMovieModel.js~AnimeMovieModel.html">AnimeMovieModel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-animeshow">models/animeshow</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/animeshow/AnimeShowModel.js~AnimeShowModel.html">AnimeShowModel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-content">models/content</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/content/ContentModel.js~ContentModel.html">ContentModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-contentSchema">contentSchema</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Images">Images</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Rating">Rating</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="http://mongoosejs.com">Model</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-movie">models/movie</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/movie/MovieModel.js~MovieModel.html">MovieModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-movieSchema">movieSchema</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-providerconfig">models/providerconfig</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/providerconfig/ProviderConfigModel.js~ProviderConfigModel.html">ProviderConfigModel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-show">models/show</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/show/ShowModel.js~ShowModel.html">ShowModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-showSchema">showSchema</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Episode">Episode</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper">scraper</a><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/eztv-api-pt">Eztv</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/fanart.tv-api">Fanart</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/horriblesubs-api">HorribleSubs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/kat-api-pt">Kat</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/nyaa-api-pt">Nyaa</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/omdb-api-pt">Omdb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/vankasteelj/tmdbapi">Tmdb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/vankasteelj/trakt.tv">Trakt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/edwellbrook/node-tvdb">Tvdb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/yts-api-pt">Yts</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-configs">scraper/configs</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-eztvConfig">eztvConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-horribleSubsConfig">horribleSubsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-katMovieConfig">katMovieConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-nyaaCommieConfig">nyaaCommieConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-nyaaFffConfig">nyaaFffConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-nyaaGgConfig">nyaaGgConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ytsConfig">ytsConfig</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-helpers">scraper/helpers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/helpers/AbstractHelper.js~AbstractHelper.html">AbstractHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html">MovieHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html">ShowHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/scraper/helpers/IHelper.js~IHelper.html">IHelper</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-providers">scraper/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html">BaseProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/BulkProvider.js~BulkProvider.html">BulkProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/MovieProvider.js~MovieProvider.html">MovieProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/ShowProvider.js~ShowProvider.html">ShowProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/YtsProvider.js~YtsProvider.html">YtsProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-providers-maps">scraper/providers/maps</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-movieMap">movieMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-showMap">showMap</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">test/scraper/helpers/ShowHelper.spec.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// Import the necessary modules.
+// @flow
+/* eslint-disable no-unused-expressions */
+/* eslint-disable quote-props */
+import { expect } from &apos;chai&apos;
+import {
+  Database,
+  PopApi
+} from &apos;pop-api&apos;
+import sinon from &apos;sinon&apos;
+
+import testShow from &apos;../../data/show.json&apos;
+import { logger } from &apos;..&apos;
+import { Show } from &apos;../../../src/models&apos;
+import { ShowHelper } from &apos;../../../src/scraper/helpers&apos;
+import {
+  fanart,
+  trakt,
+  tmdb,
+  tvdb
+} from &apos;../../../src/scraper/apiModules&apos;
+import { name } from &apos;../../../package.json&apos;
+import * as abstractHelperTests from &apos;./AbstractHelper.spec&apos;
+
+/** @test {ShowHelper} */
+describe(&apos;ShowHelper&apos;, () =&gt; {
+  /**
+   * A mock torrent object.
+   * @type {Object}
+   */
+  const torrent: Object = {
+    &apos;1&apos;: {
+      &apos;1&apos;: {
+        &apos;480p&apos;: {
+          url: &apos;url&apos;,
+          seeds: 0,
+          peers: 0,
+          provider: &apos;test&apos;
+        }
+      },
+      &apos;2&apos;: {
+        &apos;720p&apos;: {
+          url: &apos;url&apos;,
+          seeds: 0,
+          peers: 0,
+          provider: &apos;test&apos;
+        }
+      }
+    }
+  }
+
+  /**
+   * A mock datebased torrent object.
+   * @type {Object}
+   */
+  const torrentDatebased: Object = {
+    &apos;2016&apos;: {
+      &apos;10-02&apos;: {
+        &apos;480p&apos;: {
+          url: &apos;url&apos;,
+          seeds: 0,
+          peers: 0,
+          provider: &apos;test&apos;
+        }
+      },
+      &apos;10-09&apos;: {
+        &apos;720p&apos;: {
+          url: &apos;url&apos;,
+          seeds: 0,
+          peers: 0,
+          provider: &apos;test&apos;
+        }
+      }
+    }
+  }
+
+  /**
+   * The show helper to test.
+   * @type {ShowHelper}
+   */
+  let showHelper: ShowHelper
+
+  /**
+   * The database middleware to connect to MongoDB.
+   * @type {Database}
+   */
+  let database: Database
+
+  /**
+   * Hook for setting up the ShowHelper tests.
+   * @type {Function}
+   */
+  before(done =&gt; {
+    if (!global.logger) {
+      global.logger = logger
+    }
+
+    showHelper = new ShowHelper({
+      name: &apos;ShowHelper&apos;,
+      Model: Show
+    })
+
+    database = new Database(PopApi, {
+      database: name
+    })
+    database.connect()
+      .then(() =&gt; Show.remove({}))
+      .then(() =&gt; done())
+      .catch(done)
+  })
+
+  /** @test {ShowHelper#_updateNumSeasons} */
+  it.skip(&apos;should update the number of seasons for a show&apos;, () =&gt; {
+    expect(true).to.be.true
+  })
+
+  /** @test {ShowHelper#_updateEpisode} */
+  it(&apos;should update an episode for an existing &apos;, () =&gt; {
+    const matching = JSON.parse(JSON.stringify(testShow.episodes[0]))
+    const episode = JSON.parse(JSON.stringify(testShow.episodes[0]))
+    const show = JSON.parse(JSON.stringify(testShow))
+
+    let res = showHelper._updateEpisode(matching, episode, show, &apos;480p&apos;)
+    expect(res).to.be.an(&apos;object&apos;)
+    res = showHelper._updateEpisode(matching, episode, show, &apos;720p&apos;)
+    expect(res).to.be.an(&apos;object&apos;)
+  })
+
+  /** @test {ShowHelper#_updateEpisode} */
+  it(&apos;should update an episode for an existing &apos;, () =&gt; {
+    const matching = JSON.parse(JSON.stringify(testShow.episodes[0]))
+    const episode = JSON.parse(JSON.stringify(testShow.episodes[0]))
+    const show = JSON.parse(JSON.stringify(testShow))
+
+    episode.torrents[&apos;480p&apos;] = {
+      seeds: 0,
+      url: &apos;test&apos;
+    }
+    const res = showHelper._updateEpisode(matching, episode, show, &apos;480p&apos;)
+    expect(res).to.be.an(&apos;object&apos;)
+  })
+
+  /** @test {ShowHelper#_updateEpisode} */
+  it(&apos;should update an episode for an existing &apos;, () =&gt; {
+    const matching = JSON.parse(JSON.stringify(testShow.episodes[0]))
+    const episode = JSON.parse(JSON.stringify(testShow.episodes[0]))
+    const show = JSON.parse(JSON.stringify(testShow))
+
+    matching.torrents = {}
+    let res = showHelper._updateEpisode(matching, episode, show, &apos;480p&apos;)
+    expect(res).to.be.an(&apos;object&apos;)
+    res = showHelper._updateEpisode(matching, episode, show, &apos;720p&apos;)
+    expect(res).to.be.an(&apos;object&apos;)
+  })
+
+  /** @test {ShowHelper#_updateEpisode} */
+  it(&apos;should update an episode for an existing &apos;, () =&gt; {
+    const matching = JSON.parse(JSON.stringify(testShow.episodes[0]))
+    const episode = JSON.parse(JSON.stringify(testShow.episodes[0]))
+    const show = JSON.parse(JSON.stringify(testShow))
+
+    episode.torrents = {}
+    const res = showHelper._updateEpisode(matching, episode, show, &apos;480p&apos;)
+    expect(res).to.be.an(&apos;object&apos;)
+  })
+
+  /** @test {ShowHelper#_updateEpisodes} */
+  it(&apos;should save a given show&apos;, done =&gt; {
+    const foundStub = sinon.stub(showHelper.Model, &apos;findOne&apos;)
+    foundStub.returns(null)
+
+    showHelper._updateEpisodes(testShow).then(res =&gt; {
+      expect(res).to.be.an(&apos;object&apos;)
+      foundStub.restore()
+
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#_updateEpisodes} */
+  it(&apos;should update a given show&apos;, done =&gt; {
+    const foundStub = sinon.stub(showHelper.Model, &apos;findOne&apos;)
+    foundStub.returns(testShow)
+    const updateStub = sinon.stub(showHelper.Model, &apos;findOneAndUpdate&apos;)
+    updateStub.returns(testShow)
+
+    showHelper._updateEpisodes(testShow).then(res =&gt; {
+      expect(res).to.be.an(&apos;object&apos;)
+      foundStub.restore()
+      updateStub.restore()
+
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#_updateEpisodes} */
+  it(&apos;should update a given show&apos;, done =&gt; {
+    const found = JSON.parse(JSON.stringify(testShow))
+    found.episodes[0].first_aired = Date.now()
+    found.episodes[0].episode = 10
+
+    const foundStub = sinon.stub(showHelper.Model, &apos;findOne&apos;)
+    foundStub.returns(found)
+    const updateStub = sinon.stub(showHelper.Model, &apos;findOneAndUpdate&apos;)
+    updateStub.returns(testShow)
+
+    showHelper._updateEpisodes(testShow).then(res =&gt; {
+      expect(res).to.be.an(&apos;object&apos;)
+      foundStub.restore()
+      updateStub.restore()
+
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#_updateEpisodes} */
+  it(&apos;should catch and print an error&apos;, done =&gt; {
+    const foundStub = sinon.stub(showHelper.Model, &apos;findOne&apos;)
+    foundStub.throws()
+
+    showHelper._updateEpisodes(testShow).then(res =&gt; {
+      expect(res).to.be.undefined
+      foundStub.restore()
+
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#_addSeasonalSeason} */
+  it(&apos;should add a seasonal season to a show&apos;, done =&gt; {
+    const show = JSON.parse(JSON.stringify(testShow))
+    show.latest_episode = 0
+
+    showHelper._addSeasonalSeason(show, torrent, 1, &apos;westworld&apos;).then(res =&gt; {
+      expect(res).to.be.undefined
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#_addSeasonalSeason} */
+  it(&apos;should add a seasonal season to a show&apos;, done =&gt; {
+    const show = JSON.parse(JSON.stringify(testShow))
+
+    showHelper._addSeasonalSeason(show, torrent, 1, &apos;westworld&apos;).then(res =&gt; {
+      expect(res).to.be.undefined
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#_addSeasonalSeason} */
+  it(&apos;should add a seasonal season to a show&apos;, done =&gt; {
+    const show = JSON.parse(JSON.stringify(testShow))
+    const stub = sinon.stub(trakt.seasons, &apos;season&apos;)
+    stub.rejects()
+
+    showHelper._addSeasonalSeason(show, torrent, 1, &apos;westworld&apos;).then(res =&gt; {
+      expect(res).to.be.undefined
+      stub.restore()
+
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#_addDateBasedSeason} */
+  it(&apos;should add a date based season to a show&apos;, done =&gt; {
+    const show = JSON.parse(JSON.stringify(testShow))
+    show.latest_episode = 0
+    show.tvdb_id = 296762
+
+    showHelper._addDateBasedSeason(show, {
+      &apos;dateBased&apos;: true,
+      ...torrentDatebased
+    }, 2016).then(res =&gt; {
+      expect(res).to.be.undefined
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#_addDateBasedSeason} */
+  it(&apos;should not add a datebased season of episode 0&apos;, done =&gt; {
+    const show = JSON.parse(JSON.stringify(testShow))
+    show.tvdb_id = 296762
+
+    const stub = sinon.stub(tvdb, &apos;getSeriesAllById&apos;)
+    const tvdbShow = {
+      firstAired: &apos;2016-10-02&apos;,
+      episodes: [{
+        airedEpisodeNumber: 0,
+        airedSeason: 1,
+        episodeName: &apos;Chestnut&apos;,
+        firstAired: &apos;2016-10-09&apos;,
+        id: 5748834,
+        overview: &apos;A pair of guests &#xE2; first-timer William, and repeat visitor Logan &#xE2; arrive at Westworld with different expectations and agendas. Bernard  and Quality Assurance head Theresa Cullen debate whether a recent host anomaly is contagious. Meanwhile, behavior engineer Elsie Hughes tweaks the emotions of Maeve, a madam in Sweetwater&#xE2;s brothel, in order to avoid a recall. Cocky programmer Lee Sizemore pitches his latest narrative to the team, but Dr. Ford has other ideas. The Man in Black conscripts a condemned man, Lawrence, to help him uncover Westworld&#xE2;s deepest secrets.&apos;
+      }]
+    }
+    stub.resolves(tvdbShow)
+
+    showHelper._addDateBasedSeason(show, {
+      &apos;dateBased&apos;: true,
+      ...torrentDatebased
+    }, 2016).then(res =&gt; {
+      expect(res).to.be.undefined
+      stub.restore()
+
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#_addDateBasedSeason} */
+  it(&apos;should catch an error when adding a datebased season&apos;, done =&gt; {
+    const show = JSON.parse(JSON.stringify(testShow))
+    show.tvdb_id = 296762
+
+    const stub = sinon.stub(tvdb, &apos;getSeriesAllById&apos;)
+    stub.throws()
+
+    showHelper._addDateBasedSeason(show, {
+      &apos;dateBased&apos;: true,
+      ...torrentDatebased
+    }, 2016).then(res =&gt; {
+      expect(res).to.be.undefined
+      stub.restore()
+
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#addEpisodes} */
+  it(&apos;should add episodes to a seasonal show&apos;, done =&gt; {
+    const stub = sinon.stub(showHelper, &apos;_updateEpisodes&apos;)
+    stub.resolves()
+
+    showHelper.addEpisodes(testShow, {
+      &apos;dateBased&apos;: true,
+      ...torrent
+    }, testShow.slug).then(res =&gt; {
+      expect(true).to.be.true
+      stub.restore()
+
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#addEpisodes} */
+  it(&apos;should add episodes to a datebased show&apos;, done =&gt; {
+    const stub = sinon.stub(showHelper, &apos;_updateEpisodes&apos;)
+    stub.resolves()
+
+    showHelper.addEpisodes(testShow, torrent, testShow.slug).then(res =&gt; {
+      expect(true).to.be.true
+      stub.restore()
+
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#addEpisodes} */
+  it(&apos;should throw an error when adding episodes&apos;, done =&gt; {
+    const stub = sinon.stub(showHelper, &apos;_addSeasonalSeason&apos;)
+    stub.throws()
+
+    showHelper.addEpisodes(testShow, torrent, testShow.slug).then(res =&gt; {
+      expect(res).to.be.undefined
+      stub.restore()
+
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#_getTmdbImages} */
+  it(&apos;should fail to get show images from TMDB&apos;, done =&gt; {
+    const image = [{
+      iso_639_1: null,
+      file_path: null
+    }]
+    const stub = sinon.stub(tmdb.tv, &apos;images&apos;)
+    stub.resolves({
+      posters: image,
+      backdrops: image
+    })
+
+    showHelper._getTmdbImages()
+      .then(done)
+      .catch(err =&gt; {
+        expect(err).to.be.an(&apos;Error&apos;)
+        stub.restore()
+
+        done()
+      })
+  })
+
+  /** @test {ShowHelper#_getTvdbImages} */
+  it(&apos;should get show images from TVDB&apos;, done =&gt; {
+    showHelper._getTvdbImages(296762)
+      .then(res =&gt; abstractHelperTests.testImages(res, done))
+      .catch(done)
+  })
+
+  /** @test {ShowHelper#_getTvdbImages} */
+  it(&apos;should fail to get show images from TVDB&apos;, done =&gt; {
+    const stub = sinon.stub(tvdb, &apos;getSeriesById&apos;)
+    stub.resolves({
+      banner: null
+    })
+
+    showHelper._getTvdbImages(296762)
+      .then(done)
+      .catch(err =&gt; {
+        expect(err).to.be.an(&apos;Error&apos;)
+        stub.restore()
+
+        done()
+      })
+  })
+
+  /** @test {ShowHelper#_getFanartImages} */
+  it(&apos;should get show images from Fanart&apos;, done =&gt; {
+    showHelper._getFanartImages(75682)
+      .then(res =&gt; abstractHelperTests.testImages(res, done))
+      .catch(done)
+  })
+
+  /** @test {ShowHelper#_getFanartImages} */
+  it(`should fail to get show images from Fanart`, done =&gt; {
+    abstractHelperTests.testGetFanartImages({
+      clearart: [{
+        url: &apos;url&apos;
+      }]
+    }, &apos;show&apos;, fanart, showHelper, done)
+  })
+
+  /** @test {ShowHelper#_getFanartImages} */
+  it(`should fail to get show images from Fanart`, done =&gt; {
+    abstractHelperTests.testGetFanartImages(
+      {}, &apos;show&apos;, fanart, showHelper, done
+    )
+  })
+
+  /** @test {ShowHelper#getImages} */
+  it(&apos;should get show images from various sources&apos;, done =&gt; {
+    showHelper.getImages({
+      tmdbId: 75682,
+      tvdbId: 296762
+    }).then(res =&gt; abstractHelperTests.testImages(res, done))
+      .catch(done)
+  })
+
+  /** @test {ShowHelper#getTraktInfo} */
+  it(&apos;should get info from Trakt and make a new show object&apos;, done =&gt; {
+    showHelper.getTraktInfo(&apos;westworld&apos;).then(res =&gt; {
+      expect(res).to.be.an(&apos;object&apos;)
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#getTraktInfo} */
+  it(&apos;should get info from Trakt and make a new show object with 0 watching&apos;, done =&gt; {
+    const stub = sinon.stub(trakt.shows, &apos;watching&apos;)
+    stub.resolves()
+
+    showHelper.getTraktInfo(&apos;westworld&apos;).then(res =&gt; {
+      expect(res).to.be.an(&apos;object&apos;)
+
+      stub.restore()
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#getTraktInfo} */
+  it(&apos;should get info from Trakt and make a new shows object with no genres&apos;, done =&gt; {
+    const stub = sinon.stub(trakt.shows, &apos;summary&apos;)
+    stub.returns(Promise.resolve({
+      ids: {
+        imdb: &apos;imdb&apos;,
+        tmdb: &apos;tmdb&apos;,
+        tvdb: &apos;tvdb&apos;
+      },
+      airs: {
+        day: &apos;day&apos;,
+        time: &apos;time&apos;
+      },
+      released: &apos;2016-01-01&apos;,
+      genres: undefined
+    }))
+
+    showHelper.getTraktInfo(&apos;westworld&apos;).then(res =&gt; {
+      expect(res).to.be.an(&apos;object&apos;)
+
+      stub.restore()
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#getTraktInfo} */
+  it(&apos;should not get info from Trakt&apos;, done =&gt; {
+    const stub = sinon.stub(trakt.shows, &apos;summary&apos;)
+    stub.throws()
+
+    showHelper.getTraktInfo(&apos;westworld&apos;).then(res =&gt; {
+      expect(res).to.be.undefined
+
+      stub.restore()
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#getTraktInfo} */
+  it(&apos;should not get info from Trakt&apos;, done =&gt; {
+    const stub = sinon.stub(trakt.shows, &apos;summary&apos;)
+    stub.resolves({
+      ids: {
+        imdb: null
+      }
+    })
+
+    showHelper.getTraktInfo(&apos;westworld&apos;).then(res =&gt; {
+      expect(res).to.be.undefined
+
+      stub.restore()
+      done()
+    }).catch(done)
+  })
+
+  /** @test {ShowHelper#getTraktInfo} */
+  it(&apos;should not get info from Trakt&apos;, done =&gt; {
+    const stub = sinon.stub(trakt.shows, &apos;summary&apos;)
+    stub.resolves(null)
+
+    showHelper.getTraktInfo(&apos;westworld&apos;).then(res =&gt; {
+      expect(res).to.be.undefined
+
+      stub.restore()
+      done()
+    }).catch(done)
+  })
+
+  /**
+   * Hook for tearing down the ShowHelper tests.
+   * @type {Function}
+   */
+  after(done =&gt; {
+    database.disconnect()
+      .then(() =&gt; done())
+      .catch(done)
+  })
+})
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

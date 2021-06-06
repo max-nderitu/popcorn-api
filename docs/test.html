@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="">
+  <title data-ice="title">Test | popcorn-api</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="og:type" content="website"><meta property="og:url" content="https://popcorntime.sh"><meta property="og:site_name" content="popcorn-api"><meta property="og:title" content="popcorn-api"><meta property="og:image" content="https://avatars2.githubusercontent.com/u/7267937"><meta property="og:description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="og:author" content="https://twitter.com/popcorntimetv"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="popcorn-api"><meta property="twitter:description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="twitter:image" content="https://avatars2.githubusercontent.com/u/7267937"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/popcorn-official/popcorn-api"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/ContentController.js~ContentController.html">ContentController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/ExportController.js~ExportController.html">ExportController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/IndexController.js~IndexController.html">IndexController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#middleware">middleware</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/middleware/Cli.js~Cli.html">Cli</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-promptSchemas">promptSchemas</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-animemovie">models/animemovie</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/animemovie/AnimeMovieModel.js~AnimeMovieModel.html">AnimeMovieModel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-animeshow">models/animeshow</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/animeshow/AnimeShowModel.js~AnimeShowModel.html">AnimeShowModel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-content">models/content</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/content/ContentModel.js~ContentModel.html">ContentModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-contentSchema">contentSchema</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Images">Images</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Rating">Rating</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="http://mongoosejs.com">Model</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-movie">models/movie</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/movie/MovieModel.js~MovieModel.html">MovieModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-movieSchema">movieSchema</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-providerconfig">models/providerconfig</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/providerconfig/ProviderConfigModel.js~ProviderConfigModel.html">ProviderConfigModel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-show">models/show</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/show/ShowModel.js~ShowModel.html">ShowModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-showSchema">showSchema</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Episode">Episode</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper">scraper</a><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/eztv-api-pt">Eztv</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/fanart.tv-api">Fanart</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/horriblesubs-api">HorribleSubs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/kat-api-pt">Kat</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/nyaa-api-pt">Nyaa</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/omdb-api-pt">Omdb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/vankasteelj/tmdbapi">Tmdb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/vankasteelj/trakt.tv">Trakt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/edwellbrook/node-tvdb">Tvdb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/yts-api-pt">Yts</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-configs">scraper/configs</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-eztvConfig">eztvConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-horribleSubsConfig">horribleSubsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-katMovieConfig">katMovieConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-nyaaCommieConfig">nyaaCommieConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-nyaaFffConfig">nyaaFffConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-nyaaGgConfig">nyaaGgConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ytsConfig">ytsConfig</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-helpers">scraper/helpers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/helpers/AbstractHelper.js~AbstractHelper.html">AbstractHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html">MovieHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html">ShowHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/scraper/helpers/IHelper.js~IHelper.html">IHelper</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-providers">scraper/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html">BaseProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/BulkProvider.js~BulkProvider.html">BulkProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/MovieProvider.js~MovieProvider.html">MovieProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/ShowProvider.js~ShowProvider.html">ShowProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/YtsProvider.js~YtsProvider.html">YtsProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-providers-maps">scraper/providers/maps</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-movieMap">movieMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-showMap">showMap</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1>Test</h1>
+<table class="test-summary">
+  <thead>
+    <tr>
+      <td class="test-description">Description</td>
+      <td class="test-target">Identifier</td>
+    </tr>
+  </thead>
+
+  <tbody data-ice="tests"><tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber40"><p>ContentController</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/ContentController.js~ContentController.html">ContentController</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber99"><p>should check the attributes of the ContentController</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>ContentController#constructor</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber107"><p>should not throw an error when calling the implemented registerRoutes method</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/ContentController.js~ContentController.html#instance-method-registerRoutes">ContentController#registerRoutes</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber113"><p>with an empty database</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/ContentController.js~ContentController.html">ContentController</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber125">test/controllers/ContentController.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>ContentController#getContents</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber133">test/controllers/ContentController.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/ContentController.js~ContentController.html#instance-method-getPage">ContentController#getPage</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber141">test/controllers/ContentController.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>ContentController#getContent</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber149">test/controllers/ContentController.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>ContentController#getRandomContent</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber158"><p>with a filled database</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/ContentController.js~ContentController.html">ContentController</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber182">test/controllers/ContentController.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>ContentController#getContents</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber190">test/controllers/ContentController.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/ContentController.js~ContentController.html#instance-method-getPage">ContentController#getPage</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber209">test/controllers/ContentController.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/ContentController.js~ContentController.html#instance-method-getPage">ContentController#getPage</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber231">test/controllers/ContentController.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>ContentController#getContent</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber239">test/controllers/ContentController.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>ContentController#getRandomContent</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber248"><p>will throw errors</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/ContentController.js~ContentController.html">ContentController</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber250">test/controllers/ContentController.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>ContentController#getContents</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber264">test/controllers/ContentController.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/ContentController.js~ContentController.html#instance-method-getPage">ContentController#getPage</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber278">test/controllers/ContentController.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>ContentController#getContent</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ContentController.spec.js.html#lineNumber292">test/controllers/ContentController.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>ContentController#getRandomContent</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/controllers/ExportControler.spec.js.html#lineNumber13"><p>ExportController</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/ExportController.js~ExportController.html">ExportController</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/controllers/ExportControler.spec.js.html#lineNumber38"><p>will work as expected</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/ExportController.js~ExportController.html">ExportController</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ExportControler.spec.js.html#lineNumber82"><p>should get a 200 status from the GET [/exports/:collection] route</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/ExportController.js~ExportController.html#instance-method-getExport">ExportController#getExport</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ExportControler.spec.js.html#lineNumber98"><p>should get a 200 status from the GET [/exports/:collection] route</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/ExportController.js~ExportController.html#instance-method-getExport">ExportController#getExport</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/controllers/ExportControler.spec.js.html#lineNumber121"><p>will throw errors</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/ExportController.js~ExportController.html">ExportController</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ExportControler.spec.js.html#lineNumber123"><p>should get a 500 status from the GET [/exports/:collection] route</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/ExportController.js~ExportController.html#instance-method-getExport">ExportController#getExport</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/ExportControler.spec.js.html#lineNumber131"><p>should get a 500 status form the GET [/exports/:collection] route</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/ExportController.js~ExportController.html#instance-method-getExport">ExportController#getExport</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/controllers/IndexController.spec.js.html#lineNumber22"><p>IndexController</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/IndexController.js~IndexController.html">IndexController</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/controllers/IndexController.spec.js.html#lineNumber87"><p>should not throw an error when calling the implemented registerRoutes methods</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/IndexController.js~IndexController.html#instance-method-registerRoutes">IndexController#registerRoutes</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/controllers/IndexController.spec.js.html#lineNumber93"><p>should test if IndexController has a _Server</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/IndexController.js~IndexController.html#static-member-_Server">IndexController._Server</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/controllers/IndexController.spec.js.html#lineNumber99"><p>will work as expected</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/IndexController.js~IndexController.html">IndexController</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/IndexController.spec.js.html#lineNumber108"><p>should get a 200 status from the GET [/logs/error] route</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/IndexController.js~IndexController.html#instance-method-getErrorLog">IndexController#getErrorLog</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/IndexController.spec.js.html#lineNumber124"><p>should get a 200 status from the GET [/status] route</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/IndexController.js~IndexController.html#instance-method-getIndex">IndexController#getIndex</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/controllers/IndexController.spec.js.html#lineNumber158"><p>will throw errors</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/IndexController.js~IndexController.html">IndexController</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/IndexController.spec.js.html#lineNumber160"><p>should get a 500 status from the GET [/logs/error] route</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/IndexController.js~IndexController.html#instance-method-getErrorLog">IndexController#getErrorLog</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/controllers/IndexController.spec.js.html#lineNumber168"><p>should get a 500 status form the  GET [/status] route</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/controllers/IndexController.js~IndexController.html#instance-method-getIndex">IndexController#getIndex</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber18"><p>Cli</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html">Cli</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber85"><p>should check the static attributes of the Cli</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#static-member-_Name">Cli._Name</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber91"><p>should create a new Cli instance without arguments to parse</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-constructor-constructor">Cli#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber100"><p>should check the attributes of the Cli</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-constructor-constructor">Cli#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber110"><p>should initiate the options for the Cli</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-method-initOptions">Cli#initOptions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber116"><p>should get the help message</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-method-getHelp">Cli#getHelp</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber122"><p>should construct a movie torrent object</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-method-_movieTorrent">Cli#_movieTorrent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber131"><p>should construct a show torrent object</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-method-_showTorrent">Cli#_showTorrent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber146"><p>should get a torrent from a link</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-method-_getTorrent">Cli#_getTorrent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber159"><p>should fail to get a torrent from a number</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-method-_getTorrent">Cli#_getTorrent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber175"><p>should run the movie content prompt</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-method-_moviePrompt">Cli#_moviePrompt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber197"><p>should catch an error when running the movie content prompt</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-method-_moviePrompt">Cli#_moviePrompt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber216"><p>should run the show content prompt</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-method-_showPrompt">Cli#_showPrompt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber239"><p>should catch an error when running the show content prompt</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-method-_showPrompt">Cli#_showPrompt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber258">test/middleware/Cli.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-method-_content">Cli#_content</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber279"><p>should run the --content option with the &apos;null&apos;</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-method-_content">Cli#_content</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber287"><p>should run the --export option with the &apos;show&apos; option</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-method-_export">Cli#_export</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber296"><p>should run the --export option and reject the result</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>CLI#_export</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber315"><p>should run the --import option with a non-existing file as input</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-method-_import">Cli#_import</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber331">test/middleware/Cli.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/middleware/Cli.js~Cli.html#instance-method-_import">Cli#_import</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber352"><p>should run the --import option and reject the result</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>CLI#_import</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber371"><p>should invoke the --content option</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>Cli#_run</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber390"><p>should invoke the --export</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>Cli#_run</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber409"><p>should invoke the --import option</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>Cli#_run</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber431"><p>should invoke the --start option</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>Cli#_run</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/Cli.spec.js.html#lineNumber443"><p>should not parse the arguments since there are none</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>Cli#_run</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/middleware/promptschemas.spec.js.html#lineNumber9"><p>promptschemas</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="variable/index.html#static-variable-promptSchemas">promptSchemas</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/promptschemas.spec.js.html#lineNumber11"><p>should have all the prompt schemas</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="variable/index.html#static-variable-promptSchemas">promptSchemas</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/promptschemas.spec.js.html#lineNumber23"><p>should validate the input for the imdb schema</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="variable/index.html#static-variable-promptSchemas">promptSchemas</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/promptschemas.spec.js.html#lineNumber32"><p>should validate the input for the torrent schema</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="variable/index.html#static-variable-promptSchemas">promptSchemas</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/promptschemas.spec.js.html#lineNumber44"><p>should validate the input for the language schema</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="variable/index.html#static-variable-promptSchemas">promptSchemas</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/promptschemas.spec.js.html#lineNumber53"><p>should validate the input for the season schema</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="variable/index.html#static-variable-promptSchemas">promptSchemas</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/middleware/promptschemas.spec.js.html#lineNumber62"><p>should validate the input for the episode schema</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="variable/index.html#static-variable-promptSchemas">promptSchemas</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/models/AnimeMovie.spec.js.html#lineNumber9"><p>AnimeMovie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>AnimeMovie</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/models/AnimeMovie.spec.js.html#lineNumber32"><p>should check the attributes of a anime movie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>AnimeMovie#constructor</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/models/AnimeMovie.spec.js.html#lineNumber37"><p>should check the attributes of an empty anime movie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>AnimeMovie#constructor</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/models/AnimeShow.spec.js.html#lineNumber9"><p>AnimeShow</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>AnimeShow</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/models/AnimeShow.spec.js.html#lineNumber33"><p>should check the attributes of a anime show</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>AnimeShow#constructor</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/models/AnimeShow.spec.js.html#lineNumber38"><p>should check the attributes of an empty anime show</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>AnimeShow#constructor</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/models/Movie.spec.js.html#lineNumber47"><p>Movie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>Movie</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/models/Movie.spec.js.html#lineNumber70"><p>should check the attributes of a movie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>Movie#constructor</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/models/Movie.spec.js.html#lineNumber75"><p>should check the attributes of an empty movie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>Movie#constructor</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/models/ProviderConfig.spec.js.html#lineNumber9"><p>ProviderConfig</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>ProviderConfig</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/models/ProviderConfig.spec.js.html#lineNumber39"><p>should check the attributes of a provider configuration</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>ProviderConfig#constructor</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/models/ProviderConfig.spec.js.html#lineNumber59"><p>should check the attributes of an empty provider configuration</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>ProviderConfig#constructor</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/models/Show.spec.js.html#lineNumber61"><p>Show</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>Show</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/models/Show.spec.js.html#lineNumber84"><p>should check the attributes of a show</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>Show#constructor</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/models/Show.spec.js.html#lineNumber89"><p>should check the attributes of an empty show</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>Show#constructor</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/scraper/helpers/AbstractHelper.spec.js.html#lineNumber73"><p>AbstractHelper</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/AbstractHelper.js~AbstractHelper.html">AbstractHelper</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/AbstractHelper.spec.js.html#lineNumber92"><p>should check the attributes of the BaseHelper</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/AbstractHelper.js~AbstractHelper.html#instance-constructor-constructor">AbstractHelper#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/AbstractHelper.spec.js.html#lineNumber97"><p>should check if AbstractHelper has a static Holder attribute</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/AbstractHelper.js~AbstractHelper.html#static-member-Holder">AbstractHelper.Holder</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/AbstractHelper.spec.js.html#lineNumber103"><p>should check if AbstractHelper has a static DefaultImages attribute</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/AbstractHelper.js~AbstractHelper.html#static-member-DefaultImages">AbstractHelper.DefaultImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/AbstractHelper.spec.js.html#lineNumber109"><p>should check if all the images are found</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/AbstractHelper.js~AbstractHelper.html#instance-method-checkImages">AbstractHelper#checkImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/AbstractHelper.spec.js.html#lineNumber120"><p>should throw an error when not all images are found</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/AbstractHelper.js~AbstractHelper.html#instance-method-checkImages">AbstractHelper#checkImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/scraper/helpers/IHelper.spec.js.html#lineNumber9"><p>IHelper</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/IHelper.js~IHelper.html">IHelper</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/IHelper.spec.js.html#lineNumber25"><p>should throw an error when calling the getTrakt method</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/IHelper.js~IHelper.html#instance-method-getTraktInfo">IHelper#getTraktInfo</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/IHelper.spec.js.html#lineNumber31"><p>should throw an error when calling the checkImages method</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/IHelper.js~IHelper.html#instance-method-checkImages">IHelper#checkImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/IHelper.spec.js.html#lineNumber37"><p>should throw an error when calling the getImages method</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/IHelper.js~IHelper.html#instance-method-getImages">IHelper#getImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber25"><p>MovieHelper</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html">MovieHelper</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber62"><p>should update the torrent for an existing movie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_updateTorrent">MovieHelper#_updateTorrent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber71"><p>should update the torrent for an existing movie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_updateTorrent">MovieHelper#_updateTorrent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber84"><p>should update the torrent for an existing movie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_updateTorrent">MovieHelper#_updateTorrent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber94"><p>should update the torrent for an existing movie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_updateTorrent">MovieHelper#_updateTorrent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber104"><p>should update the torrent for an existing movie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_updateTorrent">MovieHelper#_updateTorrent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber114"><p>should update the torrent for an existing movie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_updateTorrent">MovieHelper#_updateTorrent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber124"><p>should update the torrent for an existing movie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_updateTorrent">MovieHelper#_updateTorrent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber135"><p>should save a given movie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_updateMovie">MovieHelper#_updateMovie</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber148"><p>should update a given movie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_updateMovie">MovieHelper#_updateMovie</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber164"><p>should update a given movie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_updateMovie">MovieHelper#_updateMovie</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber181"><p>should catch and print an error</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_updateMovie">MovieHelper#_updateMovie</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber194"><p>should add torrents to a movie</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-addTorrents">MovieHelper#addTorrents</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber221"><p>should fail to get movie images from TMDB</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_getTmdbImages">MovieHelper#_getTmdbImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber243"><p>should get movie images from TMDB</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_getTmdbImages">MovieHelper#_getTmdbImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber250"><p>should get movie images from OMDB</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_getOmdbImages">MovieHelper#_getOmdbImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber257"><p>should fail to get movie images from OMDB</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_getOmdbImages">MovieHelper#_getOmdbImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber275"><p>should get movie images from Fanart</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_getFanartImages">MovieHelper#_getFanartImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber282">test/scraper/helpers/MovieHelper.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_getFanartImages">MovieHelper#_getFanartImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber291">test/scraper/helpers/MovieHelper.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-_getFanartImages">MovieHelper#_getFanartImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber298"><p>should get movie images from various sources</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-getImages">MovieHelper#getImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber307"><p>should get movie images from various sources</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-getImages">MovieHelper#getImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber321"><p>should get info from Trakt and make a new movie object with 0 watching</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-getTraktInfo">MovieHelper#getTraktInfo</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber334"><p>should get info from Trakt and make a new movie object with no genres</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-getTraktInfo">MovieHelper#getTraktInfo</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber354"><p>should not get info from Trakt</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-getTraktInfo">MovieHelper#getTraktInfo</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/MovieHelper.spec.js.html#lineNumber367"><p>should not get info from Trakt</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html#instance-method-getTraktInfo">MovieHelper#getTraktInfo</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber26"><p>ShowHelper</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html">ShowHelper</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber118"><p>should update an episode for an existing </p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_updateEpisode">ShowHelper#_updateEpisode</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber130"><p>should update an episode for an existing </p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_updateEpisode">ShowHelper#_updateEpisode</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber144"><p>should update an episode for an existing </p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_updateEpisode">ShowHelper#_updateEpisode</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber157"><p>should update an episode for an existing </p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_updateEpisode">ShowHelper#_updateEpisode</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber168"><p>should save a given show</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_updateEpisodes">ShowHelper#_updateEpisodes</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber181"><p>should update a given show</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_updateEpisodes">ShowHelper#_updateEpisodes</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber197"><p>should update a given show</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_updateEpisodes">ShowHelper#_updateEpisodes</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber217"><p>should catch and print an error</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_updateEpisodes">ShowHelper#_updateEpisodes</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber230"><p>should add a seasonal season to a show</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_addSeasonalSeason">ShowHelper#_addSeasonalSeason</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber241"><p>should add a seasonal season to a show</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_addSeasonalSeason">ShowHelper#_addSeasonalSeason</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber251"><p>should add a seasonal season to a show</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_addSeasonalSeason">ShowHelper#_addSeasonalSeason</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber265"><p>should add a date based season to a show</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_addDateBasedSeason">ShowHelper#_addDateBasedSeason</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber280"><p>should not add a datebased season of episode 0</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_addDateBasedSeason">ShowHelper#_addDateBasedSeason</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber310"><p>should catch an error when adding a datebased season</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_addDateBasedSeason">ShowHelper#_addDateBasedSeason</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber329"><p>should add episodes to a seasonal show</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-addEpisodes">ShowHelper#addEpisodes</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber345"><p>should add episodes to a datebased show</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-addEpisodes">ShowHelper#addEpisodes</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber358"><p>should throw an error when adding episodes</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-addEpisodes">ShowHelper#addEpisodes</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber371"><p>should fail to get show images from TMDB</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_getTmdbImages">ShowHelper#_getTmdbImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber393"><p>should get show images from TVDB</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_getTvdbImages">ShowHelper#_getTvdbImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber400"><p>should fail to get show images from TVDB</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_getTvdbImages">ShowHelper#_getTvdbImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber417"><p>should get show images from Fanart</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_getFanartImages">ShowHelper#_getFanartImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber424">test/scraper/helpers/ShowHelper.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_getFanartImages">ShowHelper#_getFanartImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber433">test/scraper/helpers/ShowHelper.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-_getFanartImages">ShowHelper#_getFanartImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber440"><p>should get show images from various sources</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-getImages">ShowHelper#getImages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber449"><p>should get info from Trakt and make a new show object</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-getTraktInfo">ShowHelper#getTraktInfo</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber457"><p>should get info from Trakt and make a new show object with 0 watching</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-getTraktInfo">ShowHelper#getTraktInfo</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber470"><p>should get info from Trakt and make a new shows object with no genres</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-getTraktInfo">ShowHelper#getTraktInfo</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber495"><p>should not get info from Trakt</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-getTraktInfo">ShowHelper#getTraktInfo</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber508"><p>should not get info from Trakt</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-getTraktInfo">ShowHelper#getTraktInfo</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/helpers/ShowHelper.spec.js.html#lineNumber525"><p>should not get info from Trakt</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html#instance-method-getTraktInfo">ShowHelper#getTraktInfo</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/scraper/providers/BaseProvider.spec.js.html#lineNumber15"><p>BaseProvider</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html">BaseProvider</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BaseProvider.spec.js.html#lineNumber37"><p>should check if BaseProvider has a static ContentTypes attributes</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>BaseProvider.Types</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BaseProvider.spec.js.html#lineNumber43"><p>should not get any movie content</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html#instance-method-_getMovieContent">BaseProvider#_getMovieContent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BaseProvider.spec.js.html#lineNumber62"><p>should not get any show content</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html#instance-method-_getShowContent">BaseProvider#_getShowContent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BaseProvider.spec.js.html#lineNumber76"><p>should return an error </p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html#instance-method-getContent">BaseProvider#getContent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BaseProvider.spec.js.html#lineNumber87"><p>should throw an error when calling the extractContent method</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html#instance-method-extractContent">BaseProvider#extractContent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BaseProvider.spec.js.html#lineNumber93"><p>should not get info from a given torrent object</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html#instance-method-getContentData">BaseProvider#getContentData</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BaseProvider.spec.js.html#lineNumber107"><p>should throw an error when calling the attachTorrent method</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span>BaseProvider#attachtTorrent</span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BaseProvider.spec.js.html#lineNumber113"><p>should throw an error when calling the getAllContent method</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html#instance-method-getAllContent">BaseProvider#getAllContent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BaseProvider.spec.js.html#lineNumber122"><p>should get the results of all the torrents</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html#instance-method-getAllTorrents">BaseProvider#getAllTorrents</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BaseProvider.spec.js.html#lineNumber139"><p>should get no torrents to concatenate</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html#instance-method-getAllTorrents">BaseProvider#getAllTorrents</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BaseProvider.spec.js.html#lineNumber161"><p>should return a the number of the total pages to scrape</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html#instance-method-getTotalPages">BaseProvider#getTotalPages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BaseProvider.spec.js.html#lineNumber181"><p>should return a the number of the total pages to scrape</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html#instance-method-getTotalPages">BaseProvider#getTotalPages</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BaseProvider.spec.js.html#lineNumber196"><p>should set the configuration to scrape</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html#instance-method-setConfig">BaseProvider#setConfig</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BaseProvider.spec.js.html#lineNumber214"><p>should not be able to get the total pages to scrape</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html#instance-method-scrapeConfig">BaseProvider#scrapeConfig</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BaseProvider.spec.js.html#lineNumber227"><p>should throw and catch an error to continue</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html#instance-method-scrapeConfig">BaseProvider#scrapeConfig</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/scraper/providers/BulkProvider.spec.js.html#lineNumber18"><p>BulkProvider</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BulkProvider.js~BulkProvider.html">BulkProvider</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BulkProvider.spec.js.html#lineNumber53"><p>should return a list of all the inserted torrents</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BulkProvider.js~BulkProvider.html#instance-method-scrapeConfig">BulkProvider#scrapeConfig</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/BulkProvider.spec.js.html#lineNumber72"><p>should throw and catch an error while scraping</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BulkProvider.js~BulkProvider.html#instance-method-scrapeConfig">BulkProvider#scrapeConfig</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/scraper/providers/MovieProvider.spec.js.html#lineNumber19"><p>MovieProvider</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/MovieProvider.js~MovieProvider.html">MovieProvider</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/MovieProvider.spec.js.html#lineNumber55"><p>should extract movie information based on a regex</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/MovieProvider.js~MovieProvider.html#instance-method-extractContent">MovieProvider#extractContent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/MovieProvider.spec.js.html#lineNumber83"><p>should create a new movie object with a torrent attached</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/MovieProvider.js~MovieProvider.html#instance-method-attachTorrent">MovieProvider#attachTorrent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/MovieProvider.spec.js.html#lineNumber107"><p>should get no content from an empty torrents array</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/MovieProvider.js~MovieProvider.html#instance-method-getAllContent">MovieProvider#getAllContent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/MovieProvider.spec.js.html#lineNumber119"><p>should get no content from a filled torrents array</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/MovieProvider.js~MovieProvider.html#instance-method-getAllContent">MovieProvider#getAllContent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/MovieProvider.spec.js.html#lineNumber133"><p>should merge the torrent objects into one</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/MovieProvider.js~MovieProvider.html#instance-method-getAllContent">MovieProvider#getAllContent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/scraper/providers/ShowProvider.spec.js.html#lineNumber19"><p>ShowProvider</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/ShowProvider.js~ShowProvider.html">ShowProvider</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/ShowProvider.spec.js.html#lineNumber77"><p>should extract show information based on a seasonal regex</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/ShowProvider.js~ShowProvider.html#instance-method-extractContent">ShowProvider#extractContent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/ShowProvider.spec.js.html#lineNumber95"><p>should extract show information based on a datebased regex</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/ShowProvider.js~ShowProvider.html#instance-method-extractContent">ShowProvider#extractContent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/ShowProvider.spec.js.html#lineNumber112"><p>should not extract show information based on a regex</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/ShowProvider.js~ShowProvider.html#instance-method-extractContent">ShowProvider#extractContent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/ShowProvider.spec.js.html#lineNumber126"><p>should create a new show object with a torrent attached</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/ShowProvider.js~ShowProvider.html#instance-method-attachTorrent">ShowProvider#attachTorrent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/ShowProvider.spec.js.html#lineNumber155"><p>should get no content from an empty torrents array</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/ShowProvider.js~ShowProvider.html#instance-method-getAllContent">ShowProvider#getAllContent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/ShowProvider.spec.js.html#lineNumber167"><p>should get no content from a filled torrents array</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/ShowProvider.js~ShowProvider.html#instance-method-getAllContent">ShowProvider#getAllContent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/ShowProvider.spec.js.html#lineNumber181"><p>should merge the torrent objects into one</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/ShowProvider.js~ShowProvider.html#instance-method-getAllContent">ShowProvider#getAllContent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/ShowProvider.spec.js.html#lineNumber197"><p>should return a list of all the inserted torrents</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html#instance-method-scrapeConfig">ShowProvider#scrapeConfig</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/scraper/providers/YtsProvider.spec.js.html#lineNumber18"><p>YtsProvider</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/YtsProvider.js~YtsProvider.html">YtsProvider</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/YtsProvider.spec.js.html#lineNumber65"><p>should extract movie information form a YTS object</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/YtsProvider.js~YtsProvider.html#instance-method-extractContent">YtsProvider#extractContent</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/YtsProvider.spec.js.html#lineNumber78"><p>should get movie data from a given torrent</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/YtsProvider.js~YtsProvider.html#instance-method-getContentData">YtsProvider#getContentData</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/scraper/providers/YtsProvider.spec.js.html#lineNumber100"><p>should return a list of all the inserted torrents</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html#instance-method-scrapeConfig">YtsProvider#scrapeConfig</a></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

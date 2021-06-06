@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../../">
+  <title data-ice="title">src/scraper/providers/maps/showMap.js | popcorn-api</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="og:type" content="website"><meta property="og:url" content="https://popcorntime.sh"><meta property="og:site_name" content="popcorn-api"><meta property="og:title" content="popcorn-api"><meta property="og:image" content="https://avatars2.githubusercontent.com/u/7267937"><meta property="og:description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="og:author" content="https://twitter.com/popcorntimetv"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="popcorn-api"><meta property="twitter:description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="twitter:image" content="https://avatars2.githubusercontent.com/u/7267937"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/popcorn-official/popcorn-api"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/ContentController.js~ContentController.html">ContentController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/ExportController.js~ExportController.html">ExportController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/IndexController.js~IndexController.html">IndexController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#middleware">middleware</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/middleware/Cli.js~Cli.html">Cli</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-promptSchemas">promptSchemas</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-animemovie">models/animemovie</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/animemovie/AnimeMovieModel.js~AnimeMovieModel.html">AnimeMovieModel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-animeshow">models/animeshow</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/animeshow/AnimeShowModel.js~AnimeShowModel.html">AnimeShowModel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-content">models/content</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/content/ContentModel.js~ContentModel.html">ContentModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-contentSchema">contentSchema</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Images">Images</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Rating">Rating</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="http://mongoosejs.com">Model</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-movie">models/movie</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/movie/MovieModel.js~MovieModel.html">MovieModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-movieSchema">movieSchema</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-providerconfig">models/providerconfig</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/providerconfig/ProviderConfigModel.js~ProviderConfigModel.html">ProviderConfigModel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-show">models/show</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/show/ShowModel.js~ShowModel.html">ShowModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-showSchema">showSchema</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Episode">Episode</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper">scraper</a><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/eztv-api-pt">Eztv</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/fanart.tv-api">Fanart</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/horriblesubs-api">HorribleSubs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/kat-api-pt">Kat</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/nyaa-api-pt">Nyaa</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/omdb-api-pt">Omdb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/vankasteelj/tmdbapi">Tmdb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/vankasteelj/trakt.tv">Trakt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/edwellbrook/node-tvdb">Tvdb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/yts-api-pt">Yts</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-configs">scraper/configs</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-eztvConfig">eztvConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-horribleSubsConfig">horribleSubsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-katMovieConfig">katMovieConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-nyaaCommieConfig">nyaaCommieConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-nyaaFffConfig">nyaaFffConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-nyaaGgConfig">nyaaGgConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ytsConfig">ytsConfig</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-helpers">scraper/helpers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/helpers/AbstractHelper.js~AbstractHelper.html">AbstractHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html">MovieHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html">ShowHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/scraper/helpers/IHelper.js~IHelper.html">IHelper</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-providers">scraper/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html">BaseProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/BulkProvider.js~BulkProvider.html">BulkProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/MovieProvider.js~MovieProvider.html">MovieProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/ShowProvider.js~ShowProvider.html">ShowProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/YtsProvider.js~YtsProvider.html">YtsProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-providers-maps">scraper/providers/maps</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-movieMap">movieMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-showMap">showMap</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/scraper/providers/maps/showMap.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// @flow
+
+/**
+ * Map for correcting show slugs.
+ * @type {Object}
+ */
+const showMap: {
+  [key: string]: string
+} = {
+  &apos;60-minutes-us&apos;: &apos;60-minutes&apos;,
+  &apos;91-days&apos;: &apos;ninety-one-days&apos;,
+  &apos;ace-attorney&apos;: &apos;gyakuten-saiban&apos;,
+  &apos;ace-of-diamond&apos;: &apos;diamond-no-ace&apos;,
+  &apos;active-raid&apos;: &apos;active-raid-kidou-kyoushuushitsu-dai-hakkei&apos;,
+  &apos;ai-mai-mi-mousou-catastrophie&apos;: &apos;ai-mai-mi-mousou-catastrophe&apos;,
+  &apos;akagami-no-shirayukihime&apos;: &apos;akagami-no-shirayuki-hime&apos;,
+  &apos;akb0048&apos;: &apos;akb0048-first-stage&apos;,
+  &apos;alderamin-on-the-sky&apos;: &apos;nejimaki-seirei-senki-tenkyou-no-alderamin&apos;,
+  &apos;american-crime&apos;: &apos;american-crime-1969&apos;,
+  &apos;ani-tore-ex&apos;: &apos;anitore-ex&apos;,
+  &apos;argevollen&apos;: &apos;shirogane-no-ishi-argevollen&apos;,
+  &apos;arpeggio-of-blue-steel-ars-nova&apos;: &apos;aoki-hagane-no-arpeggio-ars-nova&apos;,
+  &apos;arslan-senki&apos;: &apos;kigyou-senshi-arslan&apos;,
+  &apos;assassination-classroom&apos;: &apos;ansatsu-kyoushitsu&apos;,
+  &apos;b-project&apos;: &apos;b-project-kodou-ambitious&apos;,
+  &apos;bachelor-live&apos;: &apos;the-bachelor-live&apos;,
+  &apos;ballers-2015&apos;: &apos;ballers&apos;,
+  &apos;battle-girls-time-paradox&apos;: &apos;sengoku-otome-momoiro-paradox&apos;,
+  &apos;big-brother-us&apos;: &apos;big-brother-2000&apos;,
+  &apos;blackish&apos;: &apos;black-ish&apos;,
+  &apos;blazbluealter-memory&apos;: &apos;blazblue-alter-memory&apos;,
+  &apos;bobs-burgers&apos;: &apos;bob-s-burgers&apos;,
+  &apos;bonjour-sweet-love-patisserie&apos;: &apos;bonjour-koiaji-patisserie&apos;,
+  &apos;bordertown-2015&apos;: &apos;bordertown-2016&apos;,
+  &apos;bottom-biting-bug&apos;: &apos;oshiri-kajiri-mushi&apos;,
+  &apos;brotherhoodfinal-fantasy-xv&apos;: &apos;brotherhood-final-fantasy-xv&apos;,
+  &apos;brynhildr-in-the-darkness&apos;: &apos;gokukoku-no-brynhildr&apos;,
+  &apos;cardfight-vanguard-g-girs-crisis&apos;: &apos;cardfight-vanguard-g-gears-crisis-hen&apos;,
+  &apos;celebrity-big-brother&apos;: &apos;celebrity-big-brother-2001&apos;,
+  &apos;chaos-dragon&apos;: &apos;chaos-dragon-sekiryuu-seneki&apos;,
+  &apos;chicago-pd&apos;: &apos;chicago-p-d&apos;,
+  &apos;childrens-hospital-us&apos;: &apos;childrens-hospital&apos;,
+  &apos;concrete-revolutio&apos;: &apos;concrete-revolutio-choujin-gensou&apos;,
+  &apos;cooper-barretts-guide-to-surviving-life&apos;: &apos;cooper-barrett-s-guide-to-surviving-life-2016&apos;,
+  &apos;cosmos-a-space-time-odyssey&apos;: &apos;cosmos-a-spacetime-odyssey&apos;,
+  &apos;croisee-in-a-foreign-labyrinth&apos;: &apos;ikoku-meiro-no-croisee&apos;,
+  &apos;cross-ange&apos;: &apos;cross-ange-tenshi-to-ryuu-no-rinbu&apos;,
+  &apos;d.gray-man-hallow&apos;: &apos;d-gray-man-hallow&apos;,
+  &apos;daimidaler&apos;: &apos;kenzen-robo-daimidaler&apos;,
+  &apos;danganronpa-3-future-arc&apos;: &apos;danganronpa-3-the-end-of-kibougamine-gakuen-mirai-hen&apos;,
+  &apos;danganronpa-the-animation&apos;: &apos;danganronpa-kibou-no-gakuen-to-zetsubou-no-koukousei-the-animation&apos;,
+  &apos;danmachi&apos;: &apos;dungeon-ni-deai-wo-motomeru-no-wa-machigatteiru-no-darou-ka&apos;,
+  &apos;dcs-legends-of-tomorrow&apos;: &apos;dc-s-legends-of-tomorrow&apos;,
+  &apos;dd-hokuto-no-ken-2-ichigo-aji-&apos;: &apos;dd-hokuto-no-ken-2-ichigo-aji&apos;,
+  &apos;diabolik-lovers-more-blood&apos;: &apos;diabolik-lovers-2nd-season&apos;,
+  &apos;digimon-adventure-tri&apos;: &apos;digimon-adventure-tri-4&apos;,
+  &apos;doll-and-em&apos;: &apos;doll-em&apos;,
+  &apos;dusk-maiden-of-amnesia&apos;: &apos;tasogare-otome-x-amnesia&apos;,
+  &apos;ebiten&apos;: &apos;ebiten-kouritsu-ebisugawa-koukou-tenmonbu&apos;,
+  &apos;engaged-to-the-unidentified&apos;: &apos;mikakunin-de-shinkoukei&apos;,
+  &apos;fuse-memoirs-of-the-hunter-girl&apos;: &apos;fuse-teppou-musume-no-torimonochou&apos;,
+  &apos;garo-the-animation&apos;: &apos;garo-honoo-no-kokuin-special&apos;,
+  &apos;garo-the-crimson-moon&apos;: &apos;garo-guren-no-tsuki&apos;,
+  &apos;garothe-crimson-moon&apos;: &apos;garo-guren-no-tsuki&apos;,
+  &apos;gate&apos;: &apos;gate-jieitai-kanochi-nite-kaku-tatakaeri&apos;,
+  &apos;gen-ei-o-kakeru-taiyou-il-sole-penetra-le-illusioni&apos;: &apos;genei-wo-kakeru-taiyou&apos;,
+  &apos;ghost-in-the-shell-arise-alternative-architecture&apos;: &apos;ghost-in-the-shell-arise-tv&apos;,
+  &apos;girl-friend-beta&apos;: &apos;girlfriend-kari&apos;,
+  &apos;gold-rush&apos;: &apos;gold-rush-2010&apos;,
+  &apos;greys-anatomy&apos;: &apos;grey-s-anatomy&apos;,
+  &apos;gundam-reconguista-in-g&apos;: &apos;gundam-g-no-reconguista&apos;,
+  &apos;gundam-unicorn&apos;: &apos;mobile-suit-gundam-unicorn&apos;,
+  &apos;hackadoll-the-animation&apos;: &apos;hacka-doll-the-animation&apos;,
+  &apos;hakkenden-eight-dogs-of-the-east&apos;: &apos;hakkenden-touhou-hakken-ibun&apos;,
+  &apos;hakuoki-reimeiroku&apos;: &apos;hakuouki-reimeiroku&apos;,
+  &apos;hamatora&apos;: &apos;hamatora-the-animation&apos;,
+  &apos;haruchika&apos;: &apos;haruchika-haruta-to-chika-wa-seishun-suru&apos;,
+  &apos;hawaii-five-0-2010&apos;: &apos;hawaii-five-0&apos;,
+  &apos;hayate-no-gotoku-cuties&apos;: &apos;hayate-the-combat-butler-cuties&apos;,
+  &apos;heartland-ca&apos;: &apos;heartland-2007-ca&apos;,
+  &apos;hells-kitchen-us&apos;: &apos;hell-s-kitchen-2005&apos;,
+  &apos;hentai-ouji-to-warawanai-neko&apos;: &apos;hentai-ouji-to-warawanai-neko-specials&apos;,
+  &apos;hi-scoool-seha-girl&apos;: &apos;sega-hard-girls&apos;,
+  &apos;highschool-dxd-born&apos;: &apos;high-school-dxd-born&apos;,
+  &apos;house-of-cards-2013&apos;: &apos;house-of-cards&apos;,
+  &apos;how-its-made-dream-cars&apos;: &apos;how-it-s-made-dream-cars&apos;,
+  &apos;how-its-made&apos;: &apos;how-it-s-made&apos;,
+  &apos;hozuki-no-reitetsu&apos;: &apos;hoozuki-no-reitetsu&apos;,
+  &apos;hyperdimension-neptunia-the-animation&apos;: &apos;choujigen-game-neptune-the-animation&apos;,
+  &apos;imocho-another-shitty-sister-ln-adaptation&apos;: &apos;saikin-imouto-no-yousu-ga-chotto-okashiin-da-ga&apos;,
+  &apos;infinite-stratos-2&apos;: &apos;is-infinite-stratos-2&apos;,
+  &apos;intelligence-us&apos;: &apos;intelligence-2014&apos;,
+  &apos;inu-x-boku-secret-service&apos;: &apos;inu-x-boku-ss&apos;,
+  &apos;its-always-sunny-in-philadelphia&apos;: &apos;it-s-always-sunny-in-philadelphia&apos;,
+  &apos;james-mays-cars-of-the-people&apos;: &apos;james-may-s-cars-of-the-people&apos;,
+  &apos;jericho-2016&apos;: &apos;jericho-1969&apos;,
+  &apos;k-return-of-kings&apos;: &apos;k-2015&apos;,
+  &apos;k&apos;: &apos;k-project&apos;,
+  &apos;kaasan-mom-s-life&apos;: &apos;mainichi-kaasan&apos;,
+  &apos;kabaneri-of-the-iron-fortress&apos;: &apos;koutetsujou-no-kabaneri&apos;,
+  &apos;kaiji-s2-against-all-rules&apos;: &apos;gyakkyou-burai-kaiji-hakairoku-hen&apos;,
+  &apos;kaiji-ultimate-survivor&apos;: &apos;gyakkyou-burai-kaiji-ultimate-survivor&apos;,
+  &apos;kamisama-kiss-2&apos;: &apos;kamisama-hajimemashita-2&apos;,
+  &apos;kamisama-kiss&apos;: &apos;kamisama-hajimemashita-kiss&apos;,
+  &apos;kamisama-no-memo-chou&apos;: &apos;kamisama-no-memochou&apos;,
+  &apos;kateikyoushi-hitman-reborn&apos;: &apos;katekyo-hitman-reborn&apos;,
+  &apos;kindaichi-case-files-r&apos;: &apos;kindaichi-shounen-no-jikenbo-returns&apos;,
+  &apos;kitchen-nightmares-us&apos;: &apos;kitchen-nightmares&apos;,
+  &apos;kuroko-s-basketball&apos;: &apos;kuroko-no-basket&apos;,
+  &apos;kuroshitsuji-book-of-circus&apos;: &apos;black-butler-book-of-circus&apos;,
+  &apos;kyoukaisenjou-no-horizon&apos;: &apos;horizon-in-the-middle-of-nowhere&apos;,
+  &apos;la-corda-d-oro-blue-sky&apos;: &apos;kiniro-no-corda-blue-sky&apos;,
+  &apos;la-storia-della-arcana-famiglia&apos;: &apos;arcana-famiglia&apos;,
+  &apos;lance-n--masques&apos;: &apos;lance-n-masques&apos;,
+  &apos;last-man-standing-us&apos;: &apos;last-man-standing-2011&apos;,
+  &apos;law-and-order-svu&apos;: &apos;law-order-special-victims-unit&apos;,
+  &apos;litchi-hikari-club&apos;: &apos;litchi-de-hikari-club&apos;,
+  &apos;little-witch-academia-the-enchanted-parade&apos;: &apos;little-witch-academia-2&apos;,
+  &apos;locodol&apos;: &apos;futsuu-no-joshikousei-ga-locodol-yatte-mita&apos;,
+  &apos;love-live-the-school-idol-movie&apos;: &apos;love-live-school-idol-project-movie&apos;,
+  &apos;luck-&amp;-logic&apos;: &apos;luck-logic&apos;,
+  &apos;lupin-iii-(2015)&apos;: &apos;lupin-iii&apos;,
+  &apos;magi&apos;: &apos;magi-the-labyrinth-of-magic&apos;,
+  &apos;magic-kaito-1412&apos;: &apos;magic-kaito-tv&apos;,
+  &apos;magical-girl-lyrical-nanoha-the-movie-2nd&apos;: &apos;mahou-shoujo-lyrical-nanoha-the-movie-2nd-a-s&apos;,
+  &apos;mahouka&apos;: &apos;mahouka-koukou-no-rettousei&apos;,
+  &apos;majestic-prince&apos;: &apos;ginga-kikoutai-majestic-prince&apos;,
+  &apos;majikoi~oh-samurai-girls&apos;: &apos;maji-de-watashi-ni-koi-shinasai&apos;,
+  &apos;mangaka-san-to-assistant-san-to&apos;: &apos;mangaka-san-to-assistant-san-to-the-animation&apos;,
+  &apos;maoyuu-maou-yuusha&apos;: &apos;maoyu&apos;,
+  &apos;maria-the-virgin-witch&apos;: &apos;junketsu-no-maria&apos;,
+  &apos;marvels-agent-carter&apos;: &apos;marvel-s-agent-carter&apos;,
+  &apos;marvels-agents-of-s-h-i-e-l-d&apos;: &apos;marvel-s-agents-of-s-h-i-e-l-d&apos;,
+  &apos;marvels-daredevil&apos;: &apos;marvel-s-daredevil&apos;,
+  &apos;marvels-jessica-jones&apos;: &apos;marvel-s-jessica-jones&apos;,
+  &apos;mekakucity-actors&apos;: &apos;mekaku-city-actors&apos;,
+  &apos;mike-and-molly&apos;: &apos;mike-molly&apos;,
+  &apos;mondaijitachi-ga-isekai-kara-kuru-sou-desu-yo&apos;: &apos;problem-children-are-coming-from-another-world-aren-t-they&apos;,
+  &apos;moretsu-pirates&apos;: &apos;bodacious-space-pirates&apos;,
+  &apos;moritasan-wa-mukuchi&apos;: &apos;morita-san-wa-mukuchi&apos;,
+  &apos;mushibugyo&apos;: &apos;mushibugyou&apos;,
+  &apos;mushishi-tokubetsu-hen-hihamukage&apos;: &apos;mushishi-special-hihamukage&apos;,
+  &apos;my-sister-came-onee-chan-ga-kita&apos;: &apos;onee-chan-ga-kita&apos;,
+  &apos;naruto-sd-rock-lee-no-seishun-full-power-ninden&apos;: &apos;rock-lee-no-seishun-full-power-ninden&apos;,
+  &apos;naruto-shippuuden&apos;: &apos;naruto-shippuden&apos;,
+  &apos;ninja-slayer&apos;: &apos;ninja-slayer-from-animation&apos;,
+  &apos;no-rin&apos;: &apos;nourin&apos;,
+  &apos;no.-6&apos;: &apos;no-6&apos;,
+  &apos;non-non-biyori-repeat&apos;: &apos;non-non-biyori-2&apos;,
+  &apos;noukome&apos;: &apos;noucome-my-mental-choices-are-completely-interfering-with-my-school-romantic-comedy&apos;,
+  &apos;okusama-ga-seitokaichou&apos;: &apos;okusama-ga-seitokaichou-okusama-gekijou&apos;,
+  &apos;one-piece-3d2y&apos;: &apos;one-piece-3d2y-special&apos;,
+  &apos;one-week-friends&apos;: &apos;isshuukan-friends&apos;,
+  &apos;ore-twintail-ni-narimasu&apos;: &apos;ore-twintails-ni-narimasu&apos;,
+  &apos;parasyte-the-maxim&apos;: &apos;kiseijuu&apos;,
+  &apos;perception&apos;: &apos;perception-2012&apos;,
+  &apos;phi-brain&apos;: &apos;phi-brain-kami-no-puzzle&apos;,
+  &apos;photo-kano&apos;: &apos;photokano&apos;,
+  &apos;planetarian&apos;: &apos;planetarian-chiisana-hoshi-no-yume&apos;,
+  &apos;polar-bear-cafe&apos;: &apos;polar-bear-s-cafe&apos;,
+  &apos;power-2014&apos;: &apos;power&apos;,
+  &apos;poyopoyo&apos;: &apos;poyopoyo-kansatsu-nikki&apos;,
+  &apos;prey-uk&apos;: &apos;prey-2014&apos;,
+  &apos;proof-us&apos;: &apos;proof&apos;,
+  &apos;puzzle-and-dragons-cross&apos;: &apos;puzzle-dragons-x&apos;,
+  &apos;reckless&apos;: &apos;reckless-2014&apos;,
+  &apos;resurrection-us&apos;: &apos;resurrection-2014&apos;,
+  &apos;revolution-2012&apos;: &apos;revolution&apos;,
+  &apos;ro-kyu-bu-fast-break&apos;: &apos;ro-kyu-bu&apos;,
+  &apos;robotics;notes&apos;: &apos;robotics-notes&apos;,
+  &apos;rowdy-sumo-wrestler-matsutaro&apos;: &apos;abarenbou-kishi-matsutarou&apos;,
+  &apos;rozen-maiden-(2013)&apos;: &apos;rozen-maiden-zuruckspulen&apos;,
+  &apos;rush-us&apos;: &apos;rush-2014&apos;,
+  &apos;ryuugajou-nanana-no-maizoukin&apos;: &apos;ryuugajou-nanana-no-maizoukin-tv&apos;,
+  &apos;saekano&apos;: &apos;saenai-heroine-no-sodate-kata&apos;,
+  &apos;sailor-moon-crystal&apos;: &apos;bishoujo-senshi-sailor-moon-crystal&apos;,
+  &apos;saint-seiya-the-lost-canvas&apos;: &apos;saint-seiya-the-lost-canvas-meiou-shinwa&apos;,
+  &apos;sakamichi-no-apollon&apos;: &apos;kids-on-the-slope&apos;,
+  &apos;saki-episode-of-side-a&apos;: &apos;saki-achiga-hen-episode-of-side-a&apos;,
+  &apos;saki-the-nationals&apos;: &apos;saki-zenkoku-hen&apos;,
+  &apos;sanctuary-us&apos;: &apos;sanctuary&apos;,
+  &apos;satisfaction-us&apos;: &apos;satisfaction-2014&apos;,
+  &apos;scandal-us&apos;: &apos;scandal&apos;,
+  &apos;schitts-creek&apos;: &apos;schitt-s-creek&apos;,
+  &apos;second-chance&apos;: &apos;second-chance-2016&apos;,
+  &apos;seisen-cerberus&apos;: &apos;seisen-cerberus-ryuukoku-no-fatalites&apos;,
+  &apos;seitokai-no-ichizon-lv.2&apos;: &apos;seitokai-no-ichizon-lv-2&apos;,
+  &apos;sengoku-musou-sanada-no-shou&apos;: &apos;sengoku-musou-sp-sanada-no-shou&apos;,
+  &apos;senki-zesshou-symphogear-g&apos;: &apos;senki-zesshou-symphogear-g-in-the-distance-that-day-when-the-star-became-music&apos;,
+  &apos;senki-zesshou-symphogear-gx&apos;: &apos;senki-zesshou-symphogear-3&apos;,
+  &apos;senki-zesshou-symphogear&apos;: &apos;senki-zesshou-symphogear-meteoroid-falling-burning-and-disappear-then&apos;,
+  &apos;seraph-of-the-end&apos;: &apos;owari-no-seraph&apos;,
+  &apos;she-and-her-cat-everything-flows&apos;: &apos;kanojo-to-kanojo-no-neko-everything-flows&apos;,
+  &apos;she-and-her-cat&apos;: &apos;kanojo-to-kanojo-no-neko&apos;,
+  &apos;shimoneta&apos;: &apos;shimoneta-to-iu-gainen-ga-sonzai-shinai-taikutsu-na-sekai&apos;,
+  &apos;shin-atashinchi&apos;: &apos;shin-atashin-chi&apos;,
+  &apos;shin-sekai-yori&apos;: &apos;shinsekai-yori&apos;,
+  &apos;shin-strange-&apos;: &apos;shin-strange&apos;,
+  &apos;shingeki-no-kyojin&apos;: &apos;attack-on-titan&apos;,
+  &apos;shokugeki-no-soma&apos;: &apos;shokugeki-no-souma&apos;,
+  &apos;shomin-sample&apos;: &apos;ore-ga-ojou-sama-gakkou-ni-shomin-sample-toshite-rachirareta-ken&apos;,
+  &apos;shounen-hollywood&apos;: &apos;shounen-hollywood-holly-stage-for-49&apos;,
+  &apos;so-i-can-t-play-h&apos;: &apos;dakara-boku-wa-h-ga-dekinai&apos;,
+  &apos;soniani-super-sonico-the-animation&apos;: &apos;super-sonico-the-animation&apos;,
+  &apos;space-brothers&apos;: &apos;uchuu-kyoudai&apos;,
+  &apos;space-dandy-2&apos;: &apos;space-dandy-2nd-season&apos;,
+  &apos;space-patrol-luluco&apos;: &apos;uchuu-patrol-luluco&apos;,
+  &apos;stan-lees-lucky-man&apos;: &apos;stan-lee-s-lucky-man&apos;,
+  &apos;steins;gate&apos;: &apos;steins-gate&apos;,
+  &apos;stella-jogakuin-koutouka-c3-bu&apos;: &apos;stella-jogakuin-koutou-ka-c-bu&apos;,
+  &apos;straight-title-robot-anime&apos;: &apos;chokkyuu-hyoudai-robot-anime-straight-title&apos;,
+  &apos;strange-&apos;: &apos;strange&apos;,
+  &apos;suisei-no-gargantia&apos;: &apos;gargantia-on-the-verdurous-planet&apos;,
+  &apos;sukitte-ii-na-yo.&apos;: &apos;sukitte-ii-na-yo&apos;,
+  &apos;survivors-remorse&apos;: &apos;survivor-s-remorse&apos;,
+  &apos;teekyu&apos;: &apos;teekyuu&apos;,
+  &apos;teen-wolf&apos;: &apos;teen-wolf-2011&apos;,
+  &apos;the-bridge-us&apos;: &apos;the-bridge-2013&apos;,
+  &apos;the-comedians-us&apos;: &apos;the-comedians-2015&apos;,
+  &apos;the-disappearance-of-nagato-yuki-chan&apos;: &apos;nagato-yuki-chan-no-shoushitsu&apos;,
+  &apos;the-idolm@ster-cinderella-girls&apos;: &apos;the-idolm-ster-cinderella-girls&apos;,
+  &apos;the-idolm@ster&apos;: &apos;the-idolm-ster&apos;,
+  &apos;the-kennedys-uk&apos;: &apos;the-kennedys-2015&apos;,
+  &apos;the-knight-in-the-area&apos;: &apos;area-no-kishi&apos;,
+  &apos;the-league&apos;: &apos;the-league-2009&apos;,
+  &apos;the-librarians-us&apos;: &apos;the-librarians-2014&apos;,
+  &apos;the-magicians-us&apos;: &apos;the-magicians&apos;,
+  &apos;the-new-prince-of-tennis-ova-vs-genius10&apos;: &apos;new-prince-of-tennis-ova-vs-genius10&apos;,
+  &apos;the-new-prince-of-tennis-specials&apos;: &apos;new-prince-of-tennis-specials&apos;,
+  &apos;the-new-prince-of-tennis&apos;: &apos;new-prince-of-tennis&apos;,
+  &apos;the-pilot-s-love-song&apos;: &apos;toaru-hikuushi-e-no-koiuta&apos;,
+  &apos;the-world-god-only-knows-goddesses-arc&apos;: &apos;the-world-god-only-knows-goddess-arc&apos;,
+  &apos;this-is-england-90&apos;: &apos;this-is-england-90-2015&apos;,
+  &apos;time-travel-shoujo&apos;: &apos;time-travel-shoujo-mari-waka-to-8-nin-no-kagakusha-tachi&apos;,
+  &apos;tokyo-ghoul-root-a&apos;: &apos;tokyo-ghoul-2&apos;,
+  &apos;tonari-no-kaibutsu-kun&apos;: &apos;my-little-monster&apos;,
+  &apos;tsukiuta.-the-animation&apos;: &apos;tsukiuta-the-animation&apos;,
+  &apos;twin-angel-twinkle-paradise&apos;: &apos;kaitou-tenshi-twin-angel-kyun-kyun-tokimeki-paradise&apos;,
+  &apos;unlimited-fafnir&apos;: &apos;juuou-mujin-no-fafnir&apos;,
+  &apos;usagi-drop&apos;: &apos;bunny-drop&apos;,
+  &apos;uta-no-prince-sama-2&apos;: &apos;uta-no-prince-sama-maji-love-2000&apos;,
+  &apos;uta-no-prince-sama-revolutions&apos;: &apos;uta-no-prince-sama-maji-love-3&apos;,
+  &apos;uta-no-prince-sama&apos;: &apos;uta-no-prince-sama-maji-love-1000&apos;,
+  &apos;utakoi&apos;: &apos;chouyaku-hyakuninisshu-uta-koi&apos;,
+  &apos;valvrave-the-liberator&apos;: &apos;kakumeiki-valvrave&apos;,
+  &apos;wake-up-girls-seven-idols&apos;: &apos;wake-up-girls-shichinin-no-idol&apos;,
+  &apos;wake-up-girls-zoo&apos;: &apos;wake-up-girl-zoo&apos;,
+  &apos;watamote&apos;: &apos;watashi-ga-motenai-no-wa-dou-kangaetemo-omaera-ga-warui&apos;,
+  &apos;whose-line-is-it-anyway-us&apos;: &apos;whose-line-is-it-anyway-1998&apos;,
+  &apos;wooser-no-sono-higurashi-mugen-hen&apos;: &apos;wooser-no-sono-higurashi&apos;,
+  &quot;working&apos;&quot;: &apos;working-2&apos;,
+  &apos;working&apos;: &apos;working-1&apos;,
+  &apos;yahari-ore-no-seishun-love-come-wa-machigatteiru-zoku&apos;: &apos;yahari-ore-no-seishun-love-comedy-wa-machigatteiru-zoku&apos;,
+  &apos;yahari-ore-no-seishun-love-come-wa-machigatteiru&apos;: &apos;yahari-ore-no-seishun-love-comedy-wa-machigatteiru-ova&apos;,
+  &apos;yama-no-susume-2&apos;: &apos;yama-no-susume-second-season-ova&apos;,
+  &apos;yamada-kun-and-the-seven-witches&apos;: &apos;yamada-kun-to-7-nin-no-majo&apos;,
+  &apos;yami-shibai-japanese-ghost-stories-2&apos;: &apos;yami-shibai-2nd-season&apos;,
+  &apos;yami-shibai-japanese-ghost-stories-3&apos;: &apos;yami-shibai-3rd-season&apos;,
+  &apos;yami-shibai-japanese-ghost-stories&apos;: &apos;yami-shibai&apos;,
+  &apos;young-and-hungry&apos;: &apos;young-hungry&apos;,
+  &apos;youre-the-worst-2014&apos;: &apos;you-re-the-worst&apos;,
+  &apos;youre-the-worst&apos;: &apos;you-re-the-worst&apos;,
+  &apos;yuki-yuna-wa-yusha-de-aru&apos;: &apos;yuuki-yuuna-wa-yuusha-de-aru&apos;,
+  &apos;yurumate3dei&apos;: &apos;yurumates-3d&apos;,
+  &apos;yuruyuri&apos;: &apos;yuru-yuri&apos;,
+  &apos;yuushibu&apos;: &apos;yuusha-ni-narenakatta-ore-wa-shibushibu-shuushoku-wo-ketsui-shimashita&apos;,
+  &apos;zero-no-tsukaima-final&apos;: &apos;zero-no-tsukaima-f&apos;,
+  &apos;zx-ignition&apos;: &apos;z-x-ignition&apos;
+}
+
+/**
+ * Export the movie map.
+ * @type {Object}
+ */
+export default showMap
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

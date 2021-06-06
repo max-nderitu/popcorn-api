@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">test/controllers/ContentController.spec.js | popcorn-api</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="og:type" content="website"><meta property="og:url" content="https://popcorntime.sh"><meta property="og:site_name" content="popcorn-api"><meta property="og:title" content="popcorn-api"><meta property="og:image" content="https://avatars2.githubusercontent.com/u/7267937"><meta property="og:description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="og:author" content="https://twitter.com/popcorntimetv"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="popcorn-api"><meta property="twitter:description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="twitter:image" content="https://avatars2.githubusercontent.com/u/7267937"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/popcorn-official/popcorn-api"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/ContentController.js~ContentController.html">ContentController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/ExportController.js~ExportController.html">ExportController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/IndexController.js~IndexController.html">IndexController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#middleware">middleware</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/middleware/Cli.js~Cli.html">Cli</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-promptSchemas">promptSchemas</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-animemovie">models/animemovie</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/animemovie/AnimeMovieModel.js~AnimeMovieModel.html">AnimeMovieModel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-animeshow">models/animeshow</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/animeshow/AnimeShowModel.js~AnimeShowModel.html">AnimeShowModel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-content">models/content</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/content/ContentModel.js~ContentModel.html">ContentModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-contentSchema">contentSchema</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Images">Images</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Rating">Rating</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="http://mongoosejs.com">Model</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-movie">models/movie</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/movie/MovieModel.js~MovieModel.html">MovieModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-movieSchema">movieSchema</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-providerconfig">models/providerconfig</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/providerconfig/ProviderConfigModel.js~ProviderConfigModel.html">ProviderConfigModel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models-show">models/show</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/show/ShowModel.js~ShowModel.html">ShowModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-showSchema">showSchema</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Episode">Episode</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper">scraper</a><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/eztv-api-pt">Eztv</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/fanart.tv-api">Fanart</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/horriblesubs-api">HorribleSubs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/kat-api-pt">Kat</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/nyaa-api-pt">Nyaa</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/omdb-api-pt">Omdb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/vankasteelj/tmdbapi">Tmdb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/vankasteelj/trakt.tv">Trakt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/edwellbrook/node-tvdb">Tvdb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/ChrisAlderson/yts-api-pt">Yts</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-configs">scraper/configs</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-eztvConfig">eztvConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-horribleSubsConfig">horribleSubsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-katMovieConfig">katMovieConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-nyaaCommieConfig">nyaaCommieConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-nyaaFffConfig">nyaaFffConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-nyaaGgConfig">nyaaGgConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ytsConfig">ytsConfig</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-helpers">scraper/helpers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/helpers/AbstractHelper.js~AbstractHelper.html">AbstractHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/helpers/MovieHelper.js~MovieHelper.html">MovieHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/helpers/ShowHelper.js~ShowHelper.html">ShowHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/scraper/helpers/IHelper.js~IHelper.html">IHelper</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-providers">scraper/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/BaseProvider.js~BaseProvider.html">BaseProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/BulkProvider.js~BulkProvider.html">BulkProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/MovieProvider.js~MovieProvider.html">MovieProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/ShowProvider.js~ShowProvider.html">ShowProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/scraper/providers/YtsProvider.js~YtsProvider.html">YtsProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#scraper-providers-maps">scraper/providers/maps</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-movieMap">movieMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-showMap">showMap</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">test/controllers/ContentController.spec.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// Import the necessary modules.
+// @flow
+/* eslint-disable no-unused-expressions */
+import &apos;dotenv/config&apos;
+import { expect } from &apos;chai&apos;
+import express, { type $Application } from &apos;express&apos;
+import request from &apos;supertest&apos;
+import sinon from &apos;sinon&apos;
+import {
+  ContentService,
+  Database,
+  PopApi
+} from &apos;pop-api&apos;
+import type { MongooseModel } from &apos;mongoose&apos;
+
+import ContentController from &apos;../../src/controllers/ContentController&apos;
+import testAnime from &apos;../data/animeshow&apos;
+import testMovie from &apos;../data/movie&apos;
+import testShow from &apos;../data/show&apos;
+import {
+  AnimeShow as Anime,
+  Movie,
+  Show
+} from &apos;../../src/models&apos;
+import { name } from &apos;../../package.json&apos;
+
+/**
+  * Test suite for fetching content from the database.
+  * @param {!string} content - The content to test.
+  * @param {!Model} Model - The model object of the content to fetch.
+  * @param {!Object} testContent - The test content to test with.
+  * @returns {undefined}
+  */
+function testContentController(
+  content: string,
+  Model: MongooseModel,
+  testContent: Object
+): void {
+  /** @test {ContentController} */
+  describe(&apos;ContentController&apos;, () =&gt; {
+    /**
+     * The express instance to test with.
+     * @type {Express}
+     */
+    let app: $Application
+
+    /**
+      * The base content controller object to test.
+      * @type {ContentController}
+      */
+    let contentController: ContentController
+
+    /**
+      * The id of the content to get.
+      * @type {string}
+      */
+    let id: string
+
+    /**
+     * The database middleware from `pop-api`.
+     * @type {Database}
+     */
+    let database: Database
+
+    /**
+     * The content service for the controller.
+     * @type {ContentService}
+     */
+    let service: ContentService
+
+    /**
+      * Hook for setting up the Controller tests.
+      * @type {Function}
+      */
+    before(done =&gt; {
+      app = express()
+
+      service = new ContentService({
+        Model,
+        projection: {
+          imdb_id: 1
+        }
+      })
+      contentController = new ContentController({
+        basePath: content,
+        service
+      })
+      contentController.registerRoutes(app)
+
+      database = new Database(PopApi, {
+        database: name
+      })
+      database.connect()
+        .then(() =&gt; done())
+        .catch(done)
+    })
+
+    /** @test {ContentController#constructor} */
+    it(&apos;should check the attributes of the ContentController&apos;, () =&gt; {
+      expect(contentController.basePath).to.be.a(&apos;string&apos;)
+      expect(contentController.basePath).to.equal(content)
+      expect(contentController.service).to.be.an(&apos;object&apos;)
+      expect(contentController.service).to.equal(service)
+    })
+
+    /** @test {ContentController#registerRoutes} */
+    it(&apos;should not throw an error when calling the implemented registerRoutes method&apos;, () =&gt; {
+      expect(contentController.registerRoutes)
+        .to.not.throw(&apos;Using default method: \&apos;registerRoutes\&apos;&apos;)
+    })
+
+    /** @test {ContentController} */
+    describe(&apos;with an empty database&apos;, () =&gt; {
+      /**
+        * Hook for setting up the AudioController tests.
+        * @type {Function}
+        */
+      before(done =&gt; {
+        Model.remove({})
+          .then(() =&gt; done())
+          .catch(done)
+      })
+
+      /** @test {ContentController#getContents} */
+      it(`should get a 204 status from the GET [/${content}s] route`, done =&gt; {
+        request(app).get(`/${content}s`)
+          .expect(204)
+          .then(() =&gt; done())
+          .catch(done)
+      })
+
+      /** @test {ContentController#getPage} */
+      it(`should get a 204 status from the GET [/${content}s/:page] route`, done =&gt; {
+        request(app).get(`/${content}s/1`)
+          .expect(204)
+          .then(() =&gt; done())
+          .catch(done)
+      })
+
+      /** @test {ContentController#getContent} */
+      it(`should get a 204 status from the GET [/${content}/:id] route`, done =&gt; {
+        request(app).get(`/${content}/${id}`)
+          .expect(204)
+          .then(() =&gt; done())
+          .catch(done)
+      })
+
+      /** @test {ContentController#getRandomContent} */
+      it(`should get a 204 status from the GET [/random/${content}] route`, done =&gt; {
+        request(app).get(`/random/${content}`)
+          .expect(204)
+          .then(() =&gt; done())
+          .catch(done)
+      })
+    })
+
+    /** @test {ContentController} */
+    describe(&apos;with a filled database&apos;, () =&gt; {
+      /**
+        * The query object passed along to the &apos;getAudios&apos; tests.
+        * @type {[type]}
+        */
+      let query: Object
+
+      /**
+        * Hook for setting up the AudioController tests.
+        * @type {Function}
+        */
+      before(done =&gt; {
+        query = {
+          keywords: &apos;String&apos;,
+          genre: &apos;all&apos;,
+          order: -1
+        }
+
+        new Model(testContent).save()
+          .then(() =&gt; done())
+          .catch(done)
+      })
+
+      /** @test {ContentController#getContents} */
+      it(`should get a 200 status from the GET [/${content}] route`, done =&gt; {
+        request(app).get(`/${content}s`)
+          .expect(200)
+          .then(() =&gt; done())
+          .catch(done)
+      })
+
+      /** @test {ContentController#getPage} */
+      it(`should get a 200 status from the GET [/${content}s/:page] route`, done =&gt; {
+        request(app).get(`/${content}s/1`).query({
+          genre: &apos;sci-fi&apos;
+        }).expect(200)
+          .then(res =&gt; {
+            const random = Math.floor(Math.random() * res.body.length)
+            id = res.body[random].imdb_id
+
+            done()
+          }).catch(done)
+      })
+
+      /**
+       * Helper function to test the `/contents/:page` route.
+       * @param {!string} sort - The sorting method to use.
+       * @returns {undefined}
+       */
+      function testGetPage(sort: string): void {
+        /** @test {ContentController#getPage} */
+        it(`should get a 200 status from the GET [/${content}s/:page] route`, done =&gt; {
+          request(app).get(`/${content}s/1`).query({
+            ...query,
+            genre: &apos;string&apos;,
+            sort
+          }).expect(200)
+            .then(() =&gt; done())
+            .catch(done)
+        })
+      }
+
+      // Execute the tests.
+      [
+        &apos;faulty&apos;,
+        &apos;name&apos;,
+        &apos;rating&apos;,
+        &apos;released&apos;,
+        &apos;trending&apos;,
+        &apos;year&apos;
+      ].map(testGetPage)
+
+      /** @test {ContentController#getContent} */
+      it(`should get a 200 status from the GET [/${content}/:id] route`, done =&gt; {
+        request(app).get(`/${content}/${id}`)
+          .expect(200)
+          .then(() =&gt; done())
+          .catch(done)
+      })
+
+      /** @test {ContentController#getRandomContent} */
+      it(`should get a 200 status from the GET [/random/${content}] route`, done =&gt; {
+        request(app).get(`/random/${content}`)
+          .expect(200)
+          .then(() =&gt; done())
+          .catch(done)
+      })
+    })
+
+    /** @test {ContentController} */
+    describe(&apos;will throw errors&apos;, () =&gt; {
+      /** @test {ContentController#getContents} */
+      it(`should get a 500 status from the GET [/${content}s] route`, done =&gt; {
+        const stub = sinon.stub(Model, &apos;count&apos;)
+        stub.rejects()
+
+        request(app).get(`/${content}s`)
+          .expect(500)
+          .then(() =&gt; {
+            stub.restore()
+            done()
+          })
+          .catch(done)
+      })
+
+      /** @test {ContentController#getPage} */
+      it(`should get a 500 status from the GET [/${content}s/:page] route`, done =&gt; {
+        const stub = sinon.stub(Model, &apos;aggregate&apos;)
+        stub.rejects()
+
+        request(app).get(`/${content}s/1`)
+          .expect(500)
+          .then(() =&gt; {
+            stub.restore()
+            done()
+          })
+          .catch(done)
+      })
+
+      /** @test {ContentController#getContent} */
+      it(`should get a 500 status from the GET [/${content}/:id] route`, done =&gt; {
+        const stub = sinon.stub(Model, &apos;findOne&apos;)
+        stub.rejects()
+
+        request(app).get(`/${content}/${id}`)
+          .expect(500)
+          .then(() =&gt; {
+            stub.restore()
+            done()
+          })
+          .catch(done)
+      })
+
+      /** @test {ContentController#getRandomContent} */
+      it(`should get a 500 status from the GET [/random/${content}] route`, done =&gt; {
+        const stub = sinon.stub(Model, &apos;aggregate&apos;)
+        stub.rejects()
+
+        request(app).get(`/random/${content}`)
+          .expect(500)
+          .then(() =&gt; {
+            stub.restore()
+            done()
+          })
+          .catch(done)
+      })
+    })
+
+    /**
+      * Hook for tearing down the AudioController tests.
+      * @type {Function}
+      */
+    after(done =&gt; {
+      Model.findOneAndRemove({
+        _id: testContent.id
+      }).exec()
+        .then(() =&gt; database.disconnect())
+        .then(() =&gt; done())
+        .catch(done)
+    })
+  })
+}
+
+const itemTypes = [
+  [&apos;anime&apos;, Anime, testAnime],
+  [&apos;movie&apos;, Movie, testMovie],
+  [&apos;show&apos;, Show, testShow]
+]
+itemTypes.map(i =&gt; testContentController(...i))
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

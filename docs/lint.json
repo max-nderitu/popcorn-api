@@ -1,0 +1,393 @@
+[
+  {
+    "name": "IHelper#getImages",
+    "filePath": "src/scraper/helpers/IHelper.js",
+    "lines": [
+      {
+        "lineNumber": 23,
+        "line": "  /**"
+      },
+      {
+        "lineNumber": 24,
+        "line": "   * Get images for the content you want."
+      },
+      {
+        "lineNumber": 25,
+        "line": "   * @abstract"
+      },
+      {
+        "lineNumber": 26,
+        "line": "   * @protected"
+      },
+      {
+        "lineNumber": 27,
+        "line": "   * @param {!number} tmdbId - The tmdb id of the content you want the images"
+      },
+      {
+        "lineNumber": 28,
+        "line": "   * from."
+      },
+      {
+        "lineNumber": 29,
+        "line": "   * @param {!string} imdbId - The imdb id of the content you want the images"
+      },
+      {
+        "lineNumber": 30,
+        "line": "   * from."
+      },
+      {
+        "lineNumber": 31,
+        "line": "   * @param {!number} tvdbId - The tvdb id of the content you want the images"
+      },
+      {
+        "lineNumber": 32,
+        "line": "   * from."
+      },
+      {
+        "lineNumber": 33,
+        "line": "   * @throws {Error} - Using default method: '_getImages'."
+      },
+      {
+        "lineNumber": 34,
+        "line": "   * @returns {Promise<Object>} - Object with banner, fanart and poster"
+      },
+      {
+        "lineNumber": 35,
+        "line": "   * images."
+      },
+      {
+        "lineNumber": 36,
+        "line": "   */"
+      },
+      {
+        "lineNumber": 37,
+        "line": "  getImages({tmdbId, imdbId, tvdbId}: Object): Promise<Object> {"
+      }
+    ],
+    "codeParams": [
+      "*"
+    ],
+    "docParams": [
+      "tmdbId",
+      "imdbId",
+      "tvdbId"
+    ]
+  },
+  {
+    "name": "MovieHelper#getImages",
+    "filePath": "src/scraper/helpers/MovieHelper.js",
+    "lines": [
+      {
+        "lineNumber": 198,
+        "line": "  /**"
+      },
+      {
+        "lineNumber": 199,
+        "line": "   * Get movie images."
+      },
+      {
+        "lineNumber": 200,
+        "line": "   * @override"
+      },
+      {
+        "lineNumber": 201,
+        "line": "   * @protected"
+      },
+      {
+        "lineNumber": 202,
+        "line": "   * @param {!number} tmdbId - The tmdb id of the movie you want the images"
+      },
+      {
+        "lineNumber": 203,
+        "line": "   * from."
+      },
+      {
+        "lineNumber": 204,
+        "line": "   * @param {!string} imdbId - The imdb id of the movie you want the images"
+      },
+      {
+        "lineNumber": 205,
+        "line": "   * from."
+      },
+      {
+        "lineNumber": 206,
+        "line": "   * @returns {Promise<Object>} - Object with banner, fanart and poster images."
+      },
+      {
+        "lineNumber": 207,
+        "line": "   */"
+      },
+      {
+        "lineNumber": 208,
+        "line": "  getImages({tmdbId, imdbId}: Object): Promise<Object> {"
+      }
+    ],
+    "codeParams": [
+      "*"
+    ],
+    "docParams": [
+      "tmdbId",
+      "imdbId"
+    ]
+  },
+  {
+    "name": "ShowHelper#getImages",
+    "filePath": "src/scraper/helpers/ShowHelper.js",
+    "lines": [
+      {
+        "lineNumber": 349,
+        "line": "  /**"
+      },
+      {
+        "lineNumber": 350,
+        "line": "   * Get TV show images."
+      },
+      {
+        "lineNumber": 351,
+        "line": "   * @override"
+      },
+      {
+        "lineNumber": 352,
+        "line": "   * @protected"
+      },
+      {
+        "lineNumber": 353,
+        "line": "   * @param {!number} tmdbId - The tmdb id of the show you want the images"
+      },
+      {
+        "lineNumber": 354,
+        "line": "   * from."
+      },
+      {
+        "lineNumber": 355,
+        "line": "   * @param {!number} tvdbId - The tvdb id of the show you want the images"
+      },
+      {
+        "lineNumber": 356,
+        "line": "   * from."
+      },
+      {
+        "lineNumber": 357,
+        "line": "   * @returns {Promise<Object>} - Object with banner, fanart and poster images."
+      },
+      {
+        "lineNumber": 358,
+        "line": "   */"
+      },
+      {
+        "lineNumber": 359,
+        "line": "  getImages({tmdbId, tvdbId}: Object): Promise<Object> {"
+      }
+    ],
+    "codeParams": [
+      "*"
+    ],
+    "docParams": [
+      "tmdbId",
+      "tvdbId"
+    ]
+  },
+  {
+    "name": "BaseProvider#extractContent",
+    "filePath": "src/scraper/providers/BaseProvider.js",
+    "lines": [
+      {
+        "lineNumber": 126,
+        "line": "  /**"
+      },
+      {
+        "lineNumber": 127,
+        "line": "   * Extract content information based on a regex."
+      },
+      {
+        "lineNumber": 128,
+        "line": "   * @abstract"
+      },
+      {
+        "lineNumber": 129,
+        "line": "   * @protected"
+      },
+      {
+        "lineNumber": 130,
+        "line": "   * @param {!Object} options - The options to extract content information."
+      },
+      {
+        "lineNumber": 131,
+        "line": "   * @param {!Object} options.torrent - The torrent to extract the content"
+      },
+      {
+        "lineNumber": 132,
+        "line": "   * information."
+      },
+      {
+        "lineNumber": 133,
+        "line": "   * @param {!Object} options.regex - The regex object to extract the content"
+      },
+      {
+        "lineNumber": 134,
+        "line": "   * information."
+      },
+      {
+        "lineNumber": 135,
+        "line": "   * @param {?string} [lang] - The language of the torrent."
+      },
+      {
+        "lineNumber": 136,
+        "line": "   * @throws {Error} - Using default method: 'extractContent'"
+      },
+      {
+        "lineNumber": 137,
+        "line": "   * @returns {Object|undefined} - Information about the content from the"
+      },
+      {
+        "lineNumber": 138,
+        "line": "   * torrent."
+      },
+      {
+        "lineNumber": 139,
+        "line": "   */"
+      },
+      {
+        "lineNumber": 140,
+        "line": "  extractContent({torrent, regex, lang}: Object): Object | void {"
+      }
+    ],
+    "codeParams": [
+      "*"
+    ],
+    "docParams": [
+      "options",
+      "lang"
+    ]
+  },
+  {
+    "name": "MovieProvider#extractContent",
+    "filePath": "src/scraper/providers/MovieProvider.js",
+    "lines": [
+      {
+        "lineNumber": 15,
+        "line": "  /**"
+      },
+      {
+        "lineNumber": 16,
+        "line": "   * Extract content information based on a regex."
+      },
+      {
+        "lineNumber": 17,
+        "line": "   * @override"
+      },
+      {
+        "lineNumber": 18,
+        "line": "   * @protected"
+      },
+      {
+        "lineNumber": 19,
+        "line": "   * @param {!Object} options - The options to extract content information."
+      },
+      {
+        "lineNumber": 20,
+        "line": "   * @param {!Object} options.torrent - The torrent to extract the content"
+      },
+      {
+        "lineNumber": 21,
+        "line": "   * information."
+      },
+      {
+        "lineNumber": 22,
+        "line": "   * @param {!Object} options.regex - The regex object to extract the content"
+      },
+      {
+        "lineNumber": 23,
+        "line": "   * information."
+      },
+      {
+        "lineNumber": 24,
+        "line": "   * @param {?string} [lang] - The language of the torrent."
+      },
+      {
+        "lineNumber": 25,
+        "line": "   * @returns {Object|undefined} - Information about the content from the"
+      },
+      {
+        "lineNumber": 26,
+        "line": "   * torrent."
+      },
+      {
+        "lineNumber": 27,
+        "line": "   */"
+      },
+      {
+        "lineNumber": 28,
+        "line": "  extractContent({torrent, regex, lang}: Object): Object | void {"
+      }
+    ],
+    "codeParams": [
+      "*"
+    ],
+    "docParams": [
+      "options",
+      "lang"
+    ]
+  },
+  {
+    "name": "YtsProvider#extractContent",
+    "filePath": "src/scraper/providers/YtsProvider.js",
+    "lines": [
+      {
+        "lineNumber": 11,
+        "line": "  /**"
+      },
+      {
+        "lineNumber": 12,
+        "line": "   * Extract content information based on a regex."
+      },
+      {
+        "lineNumber": 13,
+        "line": "   * @override"
+      },
+      {
+        "lineNumber": 14,
+        "line": "   * @protected"
+      },
+      {
+        "lineNumber": 15,
+        "line": "   * @param {!Object} options - The options to extract content information."
+      },
+      {
+        "lineNumber": 16,
+        "line": "   * @param {!Object} options.torrent - The torrent to extract the content"
+      },
+      {
+        "lineNumber": 17,
+        "line": "   * information."
+      },
+      {
+        "lineNumber": 18,
+        "line": "   * @param {?string} [lang] - The language of the torrent."
+      },
+      {
+        "lineNumber": 19,
+        "line": "   * @returns {Object|undefined} - Information about the content from the"
+      },
+      {
+        "lineNumber": 20,
+        "line": "   * torrent."
+      },
+      {
+        "lineNumber": 21,
+        "line": "   */"
+      },
+      {
+        "lineNumber": 22,
+        "line": "  extractContent({torrent, lang}: Object): Object | void {"
+      }
+    ],
+    "codeParams": [
+      "*"
+    ],
+    "docParams": [
+      "options",
+      "lang"
+    ]
+  }
+]

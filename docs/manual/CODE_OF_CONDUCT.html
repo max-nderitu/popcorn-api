@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../">
+  <title data-ice="title">Manual | popcorn-api</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="og:type" content="website"><meta property="og:url" content="https://popcorntime.sh"><meta property="og:site_name" content="popcorn-api"><meta property="og:title" content="popcorn-api"><meta property="og:image" content="https://avatars2.githubusercontent.com/u/7267937"><meta property="og:description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="og:author" content="https://twitter.com/popcorntimetv"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="popcorn-api"><meta property="twitter:description" content="Popcorn Time API is developed to make it easier for anyone to create their own version of Popcorn Time."><meta property="twitter:image" content="https://avatars2.githubusercontent.com/u/7267937"></head>
+<body class="layout-container manual-root" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/popcorn-official/popcorn-api"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div class="manual-toc-root">
+  
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/overview.html"><a href="manual/overview.html#overview" data-ice="link">Overview</a></li>
+<li data-ice="manualNav" class="indent-h1" data-link="manual/overview.html"><a href="manual/overview.html#documentation" data-ice="link">Documentation</a></li>
+<li data-ice="manualNav" class="indent-h1" data-link="manual/overview.html"><a href="manual/overview.html#folder-structure" data-ice="link">Folder structure</a></li>
+<li data-ice="manualNav" class="indent-h1" data-link="manual/overview.html"><a href="manual/overview.html#versioning" data-ice="link">Versioning</a></li>
+<li data-ice="manualNav" class="indent-h1" data-link="manual/overview.html"><a href="manual/overview.html#license" data-ice="link">License</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/installation.html"><a href="manual/installation.html" data-ice="link">Installation</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/usage.html"><a href="manual/usage.html" data-ice="link">Usage</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/usage.html"><a href="manual/usage.html#npm" data-ice="link">npm</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/usage.html"><a href="manual/usage.html#gulp" data-ice="link">Gulp</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/usage.html"><a href="manual/usage.html#global" data-ice="link">Global</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/example.html"><a href="manual/example.html#example" data-ice="link">Example</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#status" data-ice="link">Status</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#logs" data-ice="link">Logs</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#export" data-ice="link">Export</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#anime" data-ice="link">Anime</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#movie" data-ice="link">Movie</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#show" data-ice="link">Show</a></li>
+<li data-ice="manualNav" class="indent-h1" data-link="manual/example.html"><a href="manual/example.html#query-strings" data-ice="link">Query strings</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#sorting" data-ice="link">Sorting</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#ordering" data-ice="link">Ordering</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#genres" data-ice="link">Genres</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/example.html"><a href="manual/example.html#movies--amp--shows" data-ice="link">Movies &amp; Shows</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/example.html"><a href="manual/example.html#anime" data-ice="link">Anime</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/example.html"><a href="manual/example.html#keywords" data-ice="link">Keywords</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/tutorial.html"><a href="manual/tutorial.html" data-ice="link">Tutorial</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial.html"><a href="manual/tutorial.html#scraper" data-ice="link">Scraper</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial.html"><a href="manual/tutorial.html#content-providers" data-ice="link">Content Providers</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#extratorrent" data-ice="link">ExtraTorrent</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#eztv" data-ice="link">EZTV</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial.html"><a href="manual/tutorial.html#getallshows" data-ice="link">getAllShows</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial.html"><a href="manual/tutorial.html#getshowdata" data-ice="link">getShowData</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#horriblesubs" data-ice="link">Horriblesubs</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial.html"><a href="manual/tutorial.html#getallanime" data-ice="link">getAllAnime</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/tutorial.html"><a href="manual/tutorial.html#getanimedata" data-ice="link">getAnimeData</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#kat" data-ice="link">KAT</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#nyaa" data-ice="link">Nyaa</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#yts" data-ice="link">YTS</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial.html"><a href="manual/tutorial.html#extractors" data-ice="link">Extractors</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#base-extractor" data-ice="link">Base Extractor</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#anime-extractor" data-ice="link">Anime Extractor</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#movie-extractor" data-ice="link">Movie Extractor</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#show-extractor" data-ice="link">Show Extractor</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial.html"><a href="manual/tutorial.html#helpers" data-ice="link">Helpers</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#anime--amp--show-helpers" data-ice="link">Anime &amp; Show Helpers</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#movie-helper" data-ice="link">Movie Helper</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/tutorial.html"><a href="manual/tutorial.html#metadata-providers" data-ice="link">Metadata Providers</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#-a-href--https---trakt-tv---trakt-tv--a-" data-ice="link">Trakt.tv</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#-a-href--https---thetvdb-com---thetvdb-com--a-" data-ice="link">TheTVDB.com</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#-a-href--https---hummingbird-me--hummingbird-me--a-" data-ice="link">Hummingbird.me</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#-a-href--https---fanart-tv---fanart-tv--a-" data-ice="link">Fanart.tv</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#-a-href--https---www-omdbapi-com---omdbapi-com--a-" data-ice="link">OMDBapi.com</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/tutorial.html"><a href="manual/tutorial.html#-a-href--https---www-themoviedb-org---themoviedb-org--a-" data-ice="link">TheMovieDB.org</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#change-log" data-ice="link">Change Log</a></li>
+<li data-ice="manualNav" class="indent-h1" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#3-1-0--2021-06-06-" data-ice="link">3.1.0 (2021-06-06)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-83ca4a24f77ea749f827a7d623db48e2ca821ed0--2-2-4--a---17-12-2016-" data-ice="link">2.2.4 (17-12-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-e7537765cf91e16ed81999325e06657e7ebcfbf6--2-2-3--a---19-11-2016-" data-ice="link">2.2.3 (19-11-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-528abcbe1e4dca514647ff23881a2baf23c7df8b--2-2-2--a---26-10-2016-" data-ice="link">2.2.2 (26-10-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-3d4c99b1fc9ce8455542b427017ccd6cc74833f6--2-2-1--a---23-08-2016-" data-ice="link">2.2.1 (23-08-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-1fcf1f130ba3f2eeb167b2d115b9ae5c1e32ed04--2-2-0--a---11-08-2016-" data-ice="link">2.2.0 (11-08-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-3c94446e39fad43a744cfb30134f26b433dc8e67--2-1-0--a---02-08-2016-" data-ice="link">2.1.0 (02-08-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-c773837a3932261618db33b2bcbd25474c86cc9a--2-0-0--a---20-06-2016-" data-ice="link">2.0.0 (20-06-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-433dc80daad41228c000a86d607abfb1d092c18b--1-1-0--a---20-03-2016-" data-ice="link">1.1.0 (20-03-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-cb89f8a0d5d8baf1b87d606b334b125d7ae2cfba--1-0-2--a---14-03-2016-" data-ice="link">1.0.2 (14-03-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-3280e84bdf7def38c24c2012215cec0be3aceaf9--1-0-1--a---06-03-2016-" data-ice="link">1.0.1 (06-03-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#bug-fixes" data-ice="link">Bug Fixes</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#-a-href--https---github-com-popcorn-official-popcorn-api-commit-75bb4c9a958cadcf906d3eb25edd3c7650ea349f--1-0-0--a---01-03-2016-" data-ice="link">1.0.0 (01-03-2016)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CHANGELOG.html"><a href="manual/CHANGELOG.html#features" data-ice="link">Features</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html" data-ice="link">Contributing</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#raising-issues" data-ice="link">Raising Issues</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#report-a-bug" data-ice="link">Report A Bug</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#feature-requests" data-ice="link">Feature Requests</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#pull-requests" data-ice="link">Pull Requests</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#commit-messages" data-ice="link">Commit Messages</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#styleguides" data-ice="link">Styleguides</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#javascript-styleguide" data-ice="link">JavaScript Styleguide</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#tests-styleguide" data-ice="link">Tests Styleguide</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#documentation-styleguide" data-ice="link">Documentation Styleguide</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#setting-up-for-development" data-ice="link">Setting up for development</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#npm-scripts" data-ice="link">npm scripts</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/CONTRIBUTING.html"><a href="manual/CONTRIBUTING.html#git-hooks" data-ice="link">Git hooks</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/CODE_OF_CONDUCT.html"><a href="manual/CODE_OF_CONDUCT.html" data-ice="link">Contributor Covenant Code of Conduct</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CODE_OF_CONDUCT.html"><a href="manual/CODE_OF_CONDUCT.html#our-pledge" data-ice="link">Our Pledge</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CODE_OF_CONDUCT.html"><a href="manual/CODE_OF_CONDUCT.html#our-standards" data-ice="link">Our Standards</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CODE_OF_CONDUCT.html"><a href="manual/CODE_OF_CONDUCT.html#our-responsibilities" data-ice="link">Our Responsibilities</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CODE_OF_CONDUCT.html"><a href="manual/CODE_OF_CONDUCT.html#scope" data-ice="link">Scope</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CODE_OF_CONDUCT.html"><a href="manual/CODE_OF_CONDUCT.html#enforcement" data-ice="link">Enforcement</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/CODE_OF_CONDUCT.html"><a href="manual/CODE_OF_CONDUCT.html#attribution" data-ice="link">Attribution</a></li>
+</ul>
+  </div>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="contributor-covenant-code-of-conduct">Contributor Covenant Code of Conduct</h1><ul>
+<li><a href="#our-pledge">Our Pledge</a></li>
+<li><a href="#our-standards">Our Standards</a></li>
+<li><a href="#our-responsibilities">Our Responsibilities</a></li>
+<li><a href="#scope">Scope</a></li>
+<li><a href="#enforcement">Enforcement</a></li>
+<li><a href="#attribution">Attribution</a></li>
+</ul>
+<h2 id="our-pledge">Our Pledge</h2><p>In the interest of fostering an open and welcoming environment, we as
+contributors and maintainers pledge to making participation in our project and
+our community a harassment-free experience for everyone, regardless of age,
+body size, disability, ethnicity, gender identity and expression, level of
+experience, nationality, personal appearance, race, religion, or sexual
+identity and orientation.</p>
+<h2 id="our-standards">Our Standards</h2><p>Examples of behavior that contributes to creating a positive environment
+include:</p>
+<ul>
+<li>Using welcoming and inclusive language</li>
+<li>Being respectful of differing viewpoints and experiences</li>
+<li>Gracefully accepting constructive criticism</li>
+<li>Focusing on what is best for the community</li>
+<li>Showing empathy towards other community members</li>
+</ul>
+<p>Examples of unacceptable behavior by participants include:</p>
+<ul>
+<li>The use of sexualized language or imagery and unwelcome sexual attention or advances</li>
+<li>Trolling, insulting/derogatory comments, and personal or political attacks</li>
+<li>Public or private harassment</li>
+<li>Publishing others&apos; private information, such as a physical or electronic address, without explicit permission</li>
+<li>Other conduct which could reasonably be considered inappropriate in a professional setting</li>
+</ul>
+<h2 id="our-responsibilities">Our Responsibilities</h2><p>Project maintainers are responsible for clarifying the standards of acceptable
+behavior and are expected to take appropriate and fair corrective action in
+response to any instances of unacceptable behavior.</p>
+<p>Project maintainers have the right and responsibility to remove, edit, or
+reject comments, commits, code, wiki edits, issues, and other contributions
+that are not aligned to this Code of Conduct, or to ban temporarily or
+permanently any contributor for other behaviors that they deem inappropriate,
+threatening, offensive, or harmful.</p>
+<h2 id="scope">Scope</h2><p>This Code of Conduct applies both within project spaces and in public spaces
+when an individual is representing the project or its community. Examples of
+representing a project or community include using an official project e-mail
+address, posting via an official social media account, or acting as an
+appointed representative at an online or offline event. Representation of a
+project may be further defined and clarified by project maintainers.</p>
+<h2 id="enforcement">Enforcement</h2><p>Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported by contacting the project team at <code>hello@popcorntime.sh</code>. The
+project team will review and investigate all complaints, and will respond in a
+way that it deems appropriate to the circumstances. The project team is
+obligated to maintain confidentiality with regard to the reporter of an
+incident. Further details of specific enforcement policies may be posted
+separately.</p>
+<p>Project maintainers who do not follow or enforce the Code of Conduct in good
+faith may face temporary or permanent repercussions as determined by other
+members of the project&apos;s leadership.</p>
+<h2 id="attribution">Attribution</h2><p>This Code of Conduct is adapted from the Contributor Covenant, version 1.4,
+available at <a href="http://contributor-covenant.org/version/1/4">http://contributor-covenant.org/version/1/4</a></p>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
